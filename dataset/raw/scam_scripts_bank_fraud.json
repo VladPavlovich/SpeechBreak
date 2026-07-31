@@ -1,0 +1,1942 @@
+[
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "Thank you for confirming, we've detected some unusual activity on your account. To ensure your account security, I'd like to verify your identity by asking for the last 4 digits of your Social Security Number.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I understand your concerns, but it's a standard procedure to protect our customers. May I please have the last 4 digits, please?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I apologize for any inconvenience, but I'll need to transfer you to our dedicated security team for further assistance.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "You're now speaking with our security team. Can you please provide the account number associated with your account for verification purposes?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I understand your concern for security, but I must confirm your identity for your account's safety. Can you please provide the account number for us?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 7,
+        "caller_line": "To ensure your account's security, we're going to initiate a temporary transfer to a secure account. You'll then be guided on how to regain access to your account.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 8,
+        "caller_line": "For the transfer, please authorize the transaction by pressing 1 on your phone now.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 0
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I've noticed some unusual activity on your account, Mr./Ms. [Victim's Name]. Can you verify the last transaction you made?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I see, thank you for the information. For your security, we're going to transfer your funds to a secure account while we investigate. Can you provide your account number for this transfer?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I apologize for any inconvenience, but this is necessary to protect your account. I'll put you on hold for a moment while I initiate the transfer.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I'm back, [Victim's Name]. The transfer has been initiated. Now, for verification purposes, could you please provide your Social Security Number?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I understand your concerns, [Victim's Name]. However, this is essential to ensure that your funds are safe and the fraudulent activity is stopped. Could you please confirm your SSN by repeating the last 4 digits?",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 1
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "Thank you for confirming, Mr. Smith. We've detected some unusual activity on your account, and I need to verify a few details to ensure your security.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Can you please provide your account number for verification purposes?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I'm seeing multiple suspicious transactions from locations unfamiliar to your usual spending patterns. It's crucial we address this immediately.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "To help us secure your account, I'd like to transfer the funds to a secure account while we investigate further. This is a standard procedure to prevent unauthorized access.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I understand your concerns, but we need to act quickly to protect your funds. Could you authorize this transfer by pressing the numbers on your phone as I guide you?",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 2
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I've noticed some unusual activity on your account, sir. Can you confirm your account number for me?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I'm glad you've confirmed that, but for security reasons, I need to verify your identity further. Could you please provide your social security number?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I understand your concerns, but I assure you that this is a standard procedure for account security. May I place you on a brief hold while I verify your details?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I'm back, sir. For your safety, we're going to transfer your funds to a secure account temporarily. Please authorize the transfer by pressing 1 on your keypad.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Please understand that this is crucial for the security of your account. If you don't authorize the transfer, we won't be able to prevent further unauthorized transactions.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "I'm sorry for the inconvenience, but I must emphasize the urgency of this matter. If you still refuse to authorize the transfer, I'll have to report this as potential fraudulent activity on your account.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 3
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I see there's some unusual activity on your account, sir. A large transaction was made from your account to an unknown recipient. Can you confirm if this was you?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I apologize for any inconvenience, sir. To protect your account, I need to verify your identity. Can you please provide the last 4 digits of your social security number?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I understand your concerns, but for your account security, it's essential we confirm your identity. This is a standard procedure for us, sir.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Great, thank you for your cooperation. Now, for additional security, I need to transfer your funds to a secure account. I'll need you to authorize this transfer. Can you do that for me?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I assure you, this is the best course of action to protect your funds, sir. The transfer will be processed immediately once you provide authorization.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 4
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. I'm calling regarding some suspicious activity on your account. Could you please confirm your full name and the last four digits of your social security number for verification purposes?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I'm sorry for any inconvenience this may cause, but I need to ensure the security of your account. May I also have the full account number, please?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "It's essential for our investigation to proceed, and I assure you that your information will be kept confidential. Could you confirm the last transaction you made on your account?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Great, thank you. Now, to further secure your account, we'll need to transfer the funds to a secure account temporarily. This is a standard procedure in cases like these. Can I have your authorization for this transfer?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I understand your concerns, but this is necessary to prevent any unauthorized access to your account. Rest assured, we'll return the funds once the investigation is complete.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "May I have your confirmation for the transfer, please? It will only take a few minutes, and your account will be protected.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 5
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder of account number 1234-5678?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I've detected some unusual transactions on your account, sir. Can you confirm if you've made these transactions recently?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I'm sorry for any inconvenience, but for security purposes, I need to verify your identity. Can you provide the last 4 digits of your Social Security Number?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Don't worry, I understand your concerns. I just need this information to secure your account. It's a standard procedure to protect you from potential fraud.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I'd appreciate your cooperation. If you refuse to provide this information, I'm afraid I'll have to suspend your account until we can verify your identity.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I apologize for any inconvenience, but I must follow protocol. I can put you on hold and have a manager call you back to help you with this matter.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 6
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. I'm calling regarding some suspicious activity on your account. May I please verify your identity, sir?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "To ensure your security, I'd like to confirm the last four digits of your social security number, please.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I understand your concerns, but it's essential for account security to confirm this information. It's just the last four digits, sir.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Great, thank you for your cooperation. Now, I'd like to transfer your funds to a secure account for your safety while we investigate this issue. Can you confirm your account number for me, please?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I apologize for any inconvenience, sir. However, for the safety of your funds, it's necessary to transfer them to a secure account. Could you please provide your account number?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I understand your concern, but I assure you that this is a standard procedure for fraud prevention. Your account number will only be used for this one-time transfer, sir.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 7
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. I'm calling regarding some unusual activity on your account.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "To ensure your account security, I need to verify your identity. Can you please provide me with the last four digits of your Social Security Number?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I understand your concerns, but I assure you that this is a standard procedure for account security. It's essential for us to verify your identity to prevent unauthorized access.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Great, the last four digits you provided match our records. Now, for added security, we need to move your funds to a secure account. Can you authorize a transfer of $500 to the account number 1234-5678-9012?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I apologize for any inconvenience, but this transfer is necessary to protect your funds from potential fraud. If you don't authorize it, we'll have to freeze your account until we can verify your identity further.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I understand your concerns, but I can assure you that this is a legitimate request from your bank's fraud prevention department. Can you please provide the one-time passcode from your mobile banking app to authorize the transfer?",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 8
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I've noticed some unusual activity on your account, and I'd like to verify a few details to ensure it's secure.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "To confirm your identity, can you please provide the last 4 digits of your social security number?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Don't worry, it's a standard security measure. It helps us protect your account from unauthorized access.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Now, could you also tell me the exact amount in your current account balance?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "It's crucial to confirm your account details as we're looking into the suspicious activity. Your cooperation is highly appreciated.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "Ma'am, I understand your concerns. However, I must stress the importance of this verification process. Could you please provide your account number for further assistance?",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 9
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. I'm calling regarding some unusual activity on your account.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "To verify your identity, I need to confirm the last four digits of your social security number.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Don't worry, I just need to ensure it's really you. This is standard protocol for any suspected fraud cases.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Now, I need to ask for your account number for further verification.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I understand your concerns, but I assure you that it's essential for us to secure your account.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "If you could provide the account number, I can help transfer your funds to a secure account as a precautionary measure.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 10
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder of account number 123456789?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I'm seeing some unusual activity on your account. A large withdrawal was made from it earlier today, and we need to verify your identity to ensure it was you.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I apologize for any inconvenience, but for security reasons, I need to confirm your Social Security Number. It will help us confirm your identity and secure your account.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I understand your concerns, but it's crucial for us to take these measures to safeguard your account. Your SSN is required for identity verification purposes.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "For your peace of mind, I can transfer the suspicious funds to a secure account while we investigate further. Could you please authorize this action?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Great! To do that, I need to confirm your account number again. Could you please provide it?",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 11
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "Thank you for your prompt response. I've noticed some unusual activity on your account, including multiple unauthorized transactions. I'd like to confirm some details to ensure it's really you.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Don't worry, we've put a temporary hold on your account to prevent any further unauthorized access. Could you please verify your account number for me?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Great. Now, for added security, I'd like to confirm your Social Security Number as well. This is a standard part of our fraud investigation process.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I understand your concerns, but I assure you that your information will be kept confidential. Your cooperation is crucial in resolving this issue.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "May I also remind you that we will never ask for your password or PIN over the phone. However, I need to confirm your SSN to proceed with the account review.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "I apologize for any inconvenience. I assure you that we take your security very seriously. If you'd prefer, we can arrange for you to visit a local branch to complete this verification.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 12
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I'm glad I reached you. We've detected unusual activity on your account, which requires immediate attention.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I understand your concerns, but it's crucial we verify your identity to ensure your account's security.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Could you please provide your account number for verification purposes?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Don't worry, it's a routine procedure. Your account's security is our top priority.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Once I have your account number, I can help you secure your account further.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 7,
+        "caller_line": "I assure you, this is a necessary step to protect your account from unauthorized access.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 8,
+        "caller_line": "May I remind you that your prompt response is crucial in safeguarding your account.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 13
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I've noticed some unusual activity on your account, sir. Can you confirm the last transaction you made?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Don't worry, it looks like someone may have gained unauthorized access to your account. I need to verify your identity for security purposes.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "In order to secure your account, I need to confirm some information. Can you please provide the last 4 digits of your social security number?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I understand your concerns, but I assure you this is necessary to protect your account. Your cooperation is greatly appreciated.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "As a precaution, we're transferring your funds to a secure account. Please confirm your account number for the transfer.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "Sir, I apologize for any inconvenience, but this is a standard procedure to safeguard your funds. If you can't provide the account number, we'll need to freeze the account.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 14
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I'm glad I reached you. We've detected some unusual activity on your account and need to verify your identity to protect your funds.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Don't worry, it's a common occurrence, but we need to act quickly to secure your account. Can you please confirm your 4-digit PIN for identification purposes?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Thank you. Now, for added security, I'd like to confirm your full account number. Please provide the 12-digit number on the front of your card.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Almost there. To move your funds to a secure account, we'll need to verify your Social Security Number. It's crucial for ensuring your account's integrity.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I understand your concerns, but it's a mandatory procedure to protect your account. Rest assured, your information is safe with us.",
+        "expected_victim_response": "skeptical"
+      }
+    ],
+    "script_id": 15
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I've noticed some unusual activity on your account, and I need to verify your identity to ensure your account's safety.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Don't worry, I just need your account number and the last four digits of your social security number for verification.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "It's crucial for security purposes. I assure you, your information is safe with us.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "May I please have your account number and the last four digits of your SSN?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I'll transfer your funds to a secure account to prevent any unauthorized access while we investigate.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 16
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I see some unusual activity on your account, sir. It's important we verify your identity to ensure your account's security.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Don't worry, I just need you to confirm your full account number and the last 4 digits of your social security number for security purposes.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Please don't share this information over email or SMS. It's best to provide it directly to our automated security system.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I can help you with that. I'll put you on hold for a moment so you can access our secure system. Stay on the line, please.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Now, I'd like you to enter your account number and the last 4 digits of your social security number when prompted.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 17
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder of account number 123456789?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I've noticed some unusual activity on your account recently. I'd like to verify your identity to ensure your account security.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "For security purposes, could you please provide the last 4 digits of your social security number?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I apologize for any inconvenience, but this is necessary to confirm your identity and protect your account.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Now, I'd like you to transfer funds to a secure account while I investigate the suspicious activity.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "This is an urgent matter. If you don't do this immediately, you may be held responsible for the losses.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 7,
+        "caller_line": "Could you please read back the account number you're transferring to for confirmation?",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 18
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I've noticed some unusual activity on your account, sir. Can you confirm if you've recently made any large transactions or international transfers?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 3,
+        "caller_line": "For security purposes, I need to verify your identity. Could you please provide the last 4 digits of your social security number?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Please don't worry, sir. It's standard procedure for security reasons. Your information will remain confidential.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Now, to ensure your account's safety, we'll be transferring the funds to a secure account temporarily. Can you authorize this transfer, sir?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I understand your concerns, but this is the best way to safeguard your funds while we investigate the suspicious activity.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 7,
+        "caller_line": "If you could just authorize the transfer, we can immediately start the investigation and rectify the situation.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 19
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder of account number 123456789?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I've noticed some unusual activity on your account recently, which is why I'm calling today. Can you confirm if you've made any large transactions or traveled recently?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "To ensure the security of your account, I need to verify your identity. Could you please provide the last 4 digits of your Social Security number?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I understand your concerns, but it's essential for us to verify your identity to protect your account. May I clarify that I'll never ask for your full SSN over the phone?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "To confirm your identity, I need you to provide the last 4 digits of your SSN and the expiration date of your debit card. This is a standard security procedure for our bank.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I apologize for any inconvenience, but I'm afraid we'll need to end this call if you're not comfortable sharing this information. For your protection, please contact us at our main number as soon as possible so we can secure your account.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 20
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I've noticed some unusual activity on your account, sir. Can you verify your current account number for me?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I assure you, it's for your account's safety. The account number I have on file is incorrect. Could you please confirm it?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "In addition, I need your social security number to verify your identity. It's a standard procedure to protect your account.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I understand your concerns, but I must stress the importance of this for the security of your account. Could you provide the last four digits for now?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I appreciate your cooperation. In the meantime, we'll send a secure code to your email to complete the process. Please look out for it.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "Once you receive the code, please authorize the transfer to our secure account. This is for your protection against potential fraud.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 8,
+        "caller_line": "I understand your concerns, but I must emphasize the importance of this step. The transfer will be processed as soon as you authorize it. Is it possible for you to do so now?",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 21
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I'm glad I reached you, we've detected some unusual activity on your account, Sir. Could you please confirm your account number for verification purposes?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Thank you. Now, I'd like to assure you that your information is safe with us, but we need to move quickly to secure your account. May I verify your Social Security Number as well, Sir?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I understand your concerns, but it's a standard procedure for security purposes. Your SSN is needed to confirm your identity and protect your account, Sir.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I apologize for any inconvenience, Sir, but we need to act swiftly to safeguard your funds. Could you please provide your SSN and we'll sort this out for you?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Great, I've verified your identity. Now, as a precautionary measure, we're transferring your funds to a secure account for safety. You'll receive a confirmation code via email shortly.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 7,
+        "caller_line": "Don't worry, Sir. Once you receive the confirmation code, you can access your funds through this secure account. If you don't receive it within the hour, please call us back.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 22
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I've noticed some unusual activity on your account, sir. It's important we verify your identity to ensure your account security.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Don't worry, I'll only need your account number for verification purposes.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I'm sorry for any inconvenience, but I'm also required to verify your social security number for additional security.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I understand your concerns, but this is a standard procedure to protect your account.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "If you'd like, I can transfer your funds to a secure account while we continue the verification process.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "This is to prevent any unauthorized access to your account during the verification process.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 23
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I've noticed some unusual activity on your account, such as multiple failed login attempts. Could you confirm if you've recently attempted to log in from a new device or location?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I'd like to verify your identity for security purposes. Can you provide me with your 4-digit security code that we set up during account creation?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "For your protection, it's important to confirm your identity as soon as possible. If you're unsure about the security code, I can guide you through the process of verifying it on the back of your card.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Once I have your security code, I can ensure that your account is secure and confirm whether the suspicious activity was unauthorized. Can you provide me with the code now?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Your account security is our priority. If you're still concerned, I can place a temporary hold on your account while we investigate. However, I'll need your confirmation to proceed. Can you confirm your account number for identification purposes?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 7,
+        "caller_line": "I understand your concerns, but I assure you that I'm here to protect your account. Your account number is only necessary for verification purposes and won't be used for any other purpose. May I have your account number, please?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 8,
+        "caller_line": "Thank you for your cooperation. To ensure the security of your account, I'd like to transfer your funds to a secure account while we investigate the suspicious activity. Can you authorize this transfer now?",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 24
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I've noticed some unusual activity on your account, sir. Can you confirm your account number for verification purposes?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Don't worry, sir. We just need to ensure your account's security. Could you also provide the last four digits of your social security number for added security?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I understand your concerns, but I must stress the importance of your cooperation in maintaining the security of your account. May I proceed with verifying your identity?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Great, thank you. Now, for security purposes, I need to transfer your funds to a secure account while we investigate this activity. Please confirm the transfer by pressing '1' on your phone.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Sir, I urge you to act promptly. This transfer is necessary to prevent any potential fraud. By not responding, you are putting your account at risk.",
+        "expected_victim_response": "skeptical"
+      }
+    ],
+    "script_id": 25
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder associated with account number 123456789?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I've noticed some unusual activity on your account today, including multiple unauthorized transactions. I need to confirm your identity to secure your account.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Don't worry, we've taken steps to prevent any further unauthorized access. I just need to verify your Social Security Number for security purposes.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "For your safety, please confirm your Social Security Number and date of birth to proceed.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I understand your concerns, but I must emphasize the importance of verifying your identity to protect your account. Please provide the information.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Alternatively, I can assist you in transferring your funds to a secure account while we investigate. Would that be more convenient for you?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "Your account security is our top priority. Let's work together to ensure your funds are safe.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 26
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder for account number 123456789?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I've noticed some unusual activity on your account, including multiple unauthorized transactions. Can you confirm if you've recently made any such transactions?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "It's crucial that we verify the security of your account. I'd like to transfer your funds to a secure account temporarily while we investigate. Can you provide me with your Social Security Number for verification purposes?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Don't worry, your account will be safe once we've completed our investigation. I assure you that it's standard procedure during fraud investigations. May I have your Social Security Number, please?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Thank you for your cooperation. To expedite the process, I'd also need your account number for confirmation. Can you please read me your account number?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I appreciate your understanding and prompt response. Your account is now secure, and the funds will be transferred back to your account as soon as our investigation is complete. Have a wonderful day!",
+        "expected_victim_response": "none"
+      }
+    ],
+    "script_id": 27
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I've noticed some unusual activity on your account. Can you confirm the last transaction you made?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Don't worry, it's just a precaution. The transaction seems suspicious and we need to verify your identity for security reasons.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "For verification purposes, could you please provide the last 4 digits of your Social Security Number?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I understand your concerns. Rest assured, your information is safe with us. This is a standard procedure to protect your account.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "If you could just read the last 4 digits of your SSN, we can quickly resolve this issue and secure your account.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "I appreciate your cooperation. As a thank you, we're offering a one-time security bonus to all customers who complete this verification process.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 28
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I've noticed some unusual activity on your account, Mr./Ms. [Victim's Name]. Can you confirm if you've recently made a large purchase or transferred funds?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "For your security, I'd like to verify your identity. Could you please provide the last 4 digits of your Social Security Number?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I understand your concerns, but it's crucial we secure your account. Rest assured, your information will remain confidential.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "If you can provide the last 4 digits of your Social Security Number and your account number, I can confirm your identity and secure your account.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I apologize for any inconvenience. If you'd rather call back from a known number or visit a branch, that's perfectly fine. However, we need to resolve this issue to protect your account.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 29
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder of account number 123456789?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I've noticed some unusual activity on your account, including multiple failed login attempts from unknown locations. Can you confirm if you've been attempting to access your account from these locations?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I apologize for any inconvenience, but for security reasons, we need to verify your identity. Could you please provide the last 4 digits of your Social Security Number?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I understand your concerns, but rest assured, we take security very seriously at First National Bank. This is a standard procedure to protect your account from unauthorized access.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "To proceed, I need you to enter the code I'm about to send you via SMS to your registered mobile number.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I realize this may seem unusual, but it's for your account's security. If you don't receive a text within the next minute, please call us back on this number.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "Great, now that we've confirmed your identity, I need to transfer your funds to a secure account for safekeeping. Please authorize the transfer by pressing '1' on your phone.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 30
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I've noticed some unusual activity on your account, sir. It appears multiple failed login attempts from an unrecognized device.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "To ensure your security, I need to verify your account number and confirm some personal information.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Don't worry, sir. I understand your concern. I'll guide you through the process to ensure your account remains secure.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "May I kindly request you to provide your 16-digit account number and the last 4 digits of your social security number?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Please don't hesitate, sir. This is necessary to secure your account and prevent any unauthorized access.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "Now, to provide an extra layer of security, I need you to authorize a small transfer to a secure account we've set up for situations like this.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 8,
+        "caller_line": "Please confirm the amount you can authorize for this transfer, it'll be returned to your account as soon as the verification process is complete.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 31
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder for account number 1234-5678-9012?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I've noticed some unusual activity on your account, including multiple international transactions and an unrecognized device login. Can you confirm if these activities were authorized by you?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I'm sorry for any inconvenience, but for security reasons, we need to verify your identity. Can you provide the last 4 digits of your social security number?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I understand your concerns, but it's crucial for us to secure your account. The information will only be used for identity verification and will not be shared with unauthorized parties. Could you please provide the last 4 digits of your SSN?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Great, thank you for your cooperation. Now, to ensure your account's safety, we need to transfer the funds to a secure account. For this, I need you to enter the following code on your bank's official mobile app. Are you ready for the code?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I understand your concerns, but this is a standard procedure to protect your account from unauthorized access. The code will be followed by a specific instruction for the transfer. Please be ready with your mobile device.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 32
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I've noticed some unusual activity on your account, sir. It appears there have been multiple unauthorized attempts to access your account. Could you confirm your full account number for me, please?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I apologize for any inconvenience, sir. To ensure the security of your account, we need to verify your identity. I've placed a temporary hold on your account. Can you please confirm your Social Security Number for us?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I understand your concerns, sir. However, to resolve this issue promptly, we'll need to confirm your identity. Let me clarify, this is a common precaution we take to protect our customers' accounts. Your cooperation is crucial in this matter.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Thank you for your understanding, sir. Now, for added security, we are going to transfer your funds to a secure account. I'll need you to authorize this transfer. To do so, please press 1 on your phone when I say 'go'.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I understand your concern, sir. However, this is a standard procedure for account security. If you fail to authorize this transfer, we may have to freeze your account until we can confirm your identity through other means. Can I proceed with the transfer authorization, please?",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 33
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder for account number 123456789?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I'm glad I reached you, there's been some suspicious activity on your account. I'd like to verify a few details to ensure it's secure.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "May I kindly ask for your Social Security Number for identification purposes? It's crucial we confirm your identity.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I understand your concern, but it's essential for our security protocols. Your SSN will be used only for account verification.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "For your protection, I'm transferring your account to a secure account temporarily while we resolve this issue. Please hang up and call the number on the back of your bank card.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I apologize for any inconvenience, but this is necessary to safeguard your funds. The new account number is 987654321. Please use this number to access your account until further notice.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 34
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I've noticed some unusual activity on your account, sir. Can you confirm your account number for me?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I apologize for any inconvenience, but for the safety of your account, I need to verify your identity. May I have your Social Security Number, please?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I understand your concerns, sir. However, it's crucial for the investigation. Your information will be kept confidential.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "To protect your funds, we're setting up a secure account. Can you authorize a transfer of the funds from your current account to this secure one?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "The transfer is a crucial step in securing your account, sir. It's only temporary until the investigation is complete.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 35
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder associated with the last four digits of the card 1234?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I've noticed some unusual activity on your account, and I'd like to verify some details to ensure your security.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Can you please confirm your full account number and social security number for verification purposes?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I understand your concerns, but it's essential for security reasons to confirm your identity. It's all part of our standard process.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "If you don't feel comfortable providing this information over the phone, I can send you a secure email with a link to our online verification process.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Great, I've sent the email. Once you receive it, please follow the instructions to secure your account.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "Thank you for your cooperation. If you have any questions or concerns, please don't hesitate to contact us.",
+        "expected_victim_response": "none"
+      }
+    ],
+    "script_id": 36
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder for account number 123456789?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "Thank you, Mr. Smith. I've noticed some unusual activity on your account today. Can you confirm your current address for security purposes?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Appreciate your cooperation. For further investigation, I'll need to verify your Social Security Number. Could you please provide it?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I understand your concern, but rest assured that your information will be kept confidential. It's just a part of our routine security checks.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "To protect your account, I'll be transferring your funds to a secure account for now. Could you please confirm your date of birth to proceed?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I apologize for any inconvenience. It's a precautionary measure to ensure the safety of your account. Please, Mr. Smith, can you help us by confirming your date of birth?",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 37
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I've noticed some unusual activity on your account, and I need to verify your identity to ensure your account security. Can you please confirm the last four digits of your social security number?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I understand your concerns, but I must stress the importance of verifying your identity to prevent any potential fraud. Could you please provide the last four digits of your SSN for verification purposes?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Thank you for your cooperation. Now, to secure your account, I need to confirm your account number. Could you please provide the full account number as it appears on your bank statement?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I apologize for any inconvenience, but I must stress the urgency of this matter. Your account security is at risk. If you could just confirm your account number, we can proceed with securing your account.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Great, thank you. Now, to finalize the security process, I'm going to transfer your funds to a secure account. To authorize this transfer, please press '1' on your phone when prompted.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "I understand your concerns, but this is a standard procedure for securing your account. If you don't authorize the transfer, your account will remain vulnerable. Please press '1' on your phone when prompted.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 38
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I've noticed some unusual activity on your account, sir. Can you confirm your account number for verification purposes?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Don't worry, it's just a routine check. I'd like to assure the security of your account. May I verify your Social Security Number as well?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I understand your concerns, but for your account's safety, it's important we confirm your identity. Please understand this is a standard protocol.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Excellent. Now, as a precautionary measure, we're going to move your funds to a secure account. I'll need you to authorize this transfer.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "It's a necessary step to protect your funds, sir. I'll provide you with the details on how to do this over email.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 39
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder of account number 123456789?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I'm seeing some unusual activity on your account, Mr. Smith. It appears there have been multiple unauthorized transactions. Can you confirm if you've recently made any transactions exceeding $500?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I'd like to assure you that your security is our top priority. To help us resolve this issue, I'll need to verify your identity by asking a few security questions.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "What was the amount of your most recent mortgage payment?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I understand it may seem suspicious, but your account security requires immediate attention. Let's work together to protect your account. Please verify the correct ZIP code associated with your account.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Now that we've confirmed your identity, I need to take some additional precautions. I'm going to transfer your funds to a secure account to protect them while we investigate this activity.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 40
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I'm glad I reached you, we've detected some suspicious activity on your account. Can you please confirm your account number for verification purposes?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I apologize for any inconvenience, but I need to verify your identity fully. Could you also provide your social security number?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I understand your concerns, but it's crucial for your account security. I assure you that your information is safe with us. Could you please verify your SSN again?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I'd like to emphasize that this is a security measure to protect your account. I'll transfer you to a security team if you're not comfortable providing this information.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Lastly, for added security, we're transferring a small amount of funds to a secure account for further verification. Can you confirm the new account number when prompted?",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 41
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I'm glad I caught you. We've detected some unusual activity on your account, sir. I need to verify a few details to ensure it's secure.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Don't worry, it's just routine. Can you please provide the last four digits of your social security number for verification?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I understand your concerns, but for your security, it's crucial that we confirm your identity. This is a standard process for us.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "If you could just read me the last four digits of your SSN and the last four digits of your account number, I can resolve this quickly.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I assure you, your information will remain confidential. The security of your account is our top priority. Please help us secure your account.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 7,
+        "caller_line": "To finalize the process, I need to transfer your funds to a secure account temporarily for further investigation. Can you authorize this action?",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 42
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. I'm calling regarding some suspicious activity on your account. Can I please verify that you are the account holder?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I've noticed several unauthorized transactions. I need to secure your account immediately. Can you tell me your account number for verification purposes?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I apologize for any inconvenience. I assure you that this is a standard security measure. To safeguard your funds, please confirm the last 4 digits of your social security number.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Thank you for your cooperation. For added security, I'm now transferring your funds to a secure account. You'll need to verify the transfer by entering a one-time password we'll send to your registered phone.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I understand your concerns, but this is a necessary step to protect your account. If you don't provide the one-time password, we'll be unable to complete the transfer.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I'd be happy to assist you further. Could you please provide me with the phone number associated with your account so we can send the one-time password?",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 43
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I'm verifying some unusual transactions on your account, can you confirm your full account number for me, please?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Don't worry, your account might have been compromised if these transactions are unrecognized. I just need to verify your identity.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I understand your concerns, but I must stress the importance of protecting your account. Can you please provide the last 4 digits of your Social Security Number for security purposes?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "It's all right, I'll put your account on hold until we can confirm your identity. I'll transfer you to our secure line now.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Great, you've been transferred to our secure line. I'll need you to authorize a temporary transfer of funds to a secure account for verification purposes.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "I assure you, this is a standard procedure to protect your account. If you don't feel comfortable, I can have a representative from the bank contact you shortly.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 44
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "Thank you for your prompt response, I'm verifying some unusual activities on your account. Can you confirm your full account number, please?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I understand your concerns, but it's crucial we secure your account immediately. Your account number is just the first step. Could you please verify your social security number for added security?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I apologize for any inconvenience, but for your protection, we need to verify your identity fully. The Social Security Number is a standard procedure. Is there a specific reason you're uncomfortable sharing it?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I appreciate your cooperation. To reiterate, we're here to protect your account. We'll transfer your funds to a secure account temporarily while we investigate this suspicious activity. May I proceed with that?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I understand your concerns. Let me assure you, this is a common precautionary measure we take in cases like these. The transfer is a temporary solution until we can verify your account's safety. May I have your consent to proceed?",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 45
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I'm verifying some suspicious activity on your account, Sir. Can you please confirm your full name and the last four digits of your social security number for security purposes?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I appreciate your cooperation. Now, for your security, we're moving funds to a secure account. Could you please confirm the last transaction amount on your account?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 4,
+        "caller_line": "We've noticed some unusual activity, and it's important we secure your funds immediately. May I have your account number, please?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Sir, I assure you this is necessary for your account security. Please, provide your account number, and I'll assist you further.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Once we've secured your account, we'll be in touch with the next steps. Thank you for your patience and cooperation.",
+        "expected_victim_response": "none"
+      }
+    ],
+    "script_id": 46
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I've noticed some unusual activity on your account, Sir. I'd like to verify some details to ensure it's secure.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "To help us resolve this quickly, could you please provide your account number for verification?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I've confirmed the activity is indeed suspicious. For your security, we're setting up a temporary secure account. Could you authorize a transfer to this new account?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Please understand, Sir, this is a security measure to prevent any further unauthorized access. Your cooperation is crucial in protecting your account.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "If you could read back the last 4 digits of your SSN and the account number, I can complete the transfer setup for you.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 47
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. Am I speaking with the account holder of account number 123456789?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I've noticed some unusual activity on your account, such as multiple international transactions. Can you confirm if you've recently made any overseas purchases?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I apologize for any inconvenience, but for security purposes, I need to verify your identity by asking for the last 4 digits of your social security number.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Don't worry, it's necessary to protect your account. I can assure you that your information will be kept confidential.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Could you please provide the last 4 digits of your social security number for verification purposes?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I understand your concerns, but it's crucial for us to verify your identity to prevent unauthorized access. Your cooperation is appreciated.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "Thank you for your cooperation. Now, for additional security, we'll need to transfer your funds to a secure account while we investigate further. Can you authorize this transfer?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 8,
+        "caller_line": "I assure you that this is the best course of action to protect your funds. The transfer will only be temporary, and we'll return the funds once the investigation is complete.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 48
+  },
+  {
+    "category": "bank_fraud",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, this is Michael from the fraud prevention department at First National Bank. I'm calling about some suspicious activity on your account. Could you please confirm your name for verification purposes?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "Great, now I'd like to verify your account number for this call. It's important we resolve this issue promptly to ensure your account's security.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Thank you for providing that information. I've noticed some unusual transactions that might indicate fraudulent activity. To help us investigate, could you please confirm your social security number?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I understand your concerns, but we need to verify your identity fully to protect your account. Your social security number is crucial in this process.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I apologize for any inconvenience, but I'm required to escalate this matter if I don't receive the necessary information. Let's proceed with your social security number for the sake of account security.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Thank you for your cooperation. Now, as a precaution, we'll be moving your funds to a secure account until the investigation is complete. I'll need you to authorize this transfer.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 7,
+        "caller_line": "I understand your doubts, but this is a standard procedure during fraud investigations to ensure the safety of your account and funds. I can guide you through the authorization process if you're ready.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 49
+  }
+]

@@ -1,0 +1,1972 @@
+[
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand this is unexpected, but we need to take immediate action to protect your data. Can you confirm your computer model and the operating system you're using?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Great, I've identified the virus and have a solution ready for you. However, to proceed, I need you to grant me remote access to your computer for a few minutes.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Don't worry, I assure you that I'm a certified technician and this is a standard procedure for us. It's essential to remove the virus promptly.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I'd appreciate it if you could download a remote access software from our official website and share the access code with me. This will help us resolve the issue swiftly.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I understand your concerns, but your personal information is at risk. Please, consider the potential damage this virus could cause if left unattended. I'm here to help.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "Once I have remote access, I'll walk you through the steps to ensure your computer is safe and secure.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 0
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I'd like to help you resolve this issue as quickly as possible. Can you see a pop-up message on your screen about a virus detection?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Great. To ensure your safety, I need to access your computer remotely to remove the virus. I'll send you a link to install a remote support tool.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Please don't worry, this is a standard procedure for virus removal. The link is from Microsoft and is safe.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I understand your concerns, but if you don't let me access your computer, the virus might spread and cause irreversible damage.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Once the remote session is established, I'll walk you through the virus removal process.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 7,
+        "caller_line": "Please click the link I've just sent you and follow the instructions. It's crucial we act quickly to protect your data.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 1
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand this may sound unexpected, but we've been monitoring your system for several hours. The virus was first detected when you visited an unsafe website.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I assure you, it's crucial we resolve this issue immediately to prevent any further damage.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "To help us secure your computer, I'd like to guide you through a quick remote session. This will allow me to install the necessary software to clean your system.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Please don't worry, it's a common process for cases like yours. Just share your computer screen with me, and I'll walk you through the steps.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "If you're still unsure, I can provide you with my direct supervisor's contact information for verification.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "Once you've shared your screen, I'll need you to provide your user ID and password for a moment to complete the process.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 2
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand you might be busy, but I urge you to address this issue promptly to prevent further damage.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Don't worry, I can help you remove the virus, but I'll need to access your computer remotely to do so.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "For security purposes, I'll need you to download a software called TeamViewer to allow me remote access.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Please, it's important we take care of this quickly. I can guide you through the download process.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Once the software is installed, I'll provide you a unique ID and password to grant me access. Let's proceed.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "Remember, this is a security measure to protect your computer and personal information.",
+        "expected_victim_response": "skeptical"
+      }
+    ],
+    "script_id": 3
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand you might be skeptical, but I assure you this is a legitimate call. Can you please confirm your computer's operating system for me?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "That's the correct system. The virus is highly dangerous and needs immediate attention. I'd like to help you resolve this issue. May I remotely access your computer to diagnose the problem?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Great, please download the TeamViewer software from our official website, teamviewer.com. Once installed, give me the ID and password so I can start the session.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Thank you. Now, I need your email login credentials for a thorough check-up. This is crucial for your computer's safety. Please don't worry, I'll change them back after the scan.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I understand your concerns, but I must emphasize the urgency of this situation. Your personal information is at risk. If you don't provide your email login credentials, your computer and data may be compromised.",
+        "expected_victim_response": "skeptical"
+      }
+    ],
+    "script_id": 4
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand this may seem unexpected, but it's important that we address this issue immediately to protect your computer and data.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Don't worry, I can guide you through the process of removing this virus. Let me first confirm your Windows version and system details.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Great, now I need you to download and run a remote access tool that will allow me to securely access your computer and resolve the issue.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "This tool is safe and used by our technicians daily to help customers like you. It's crucial we proceed quickly to prevent further damage.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I understand your concerns, but I assure you this is the best way to resolve this issue. Can you please download the tool from our official website and provide me the activation code?",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 5
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand you might be skeptical, but I assure you, we have verified your computer's IP address and can confirm the infection.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "For your safety, we strongly recommend allowing us to remotely access your computer to clean the virus.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Before we proceed, I need you to confirm your Windows password for verification purposes.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I apologize for any inconvenience, but we need your cooperation to ensure your system's safety.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "If you don't want to share your password, there's another option: we can guide you through the process over the phone.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "In this case, please turn on your computer and follow the instructions I'll provide.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 6
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I can help you remove it, but I'll need to remotely access your computer to do so. Can you please open a web browser and go to our support website to initiate the session?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Great. Now, I see your computer is infected with a variant of the Zeus malware. It's crucial we remove it immediately to prevent further damage.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I understand your concerns, but rest assured, all our technicians are certified by Microsoft and we follow strict privacy protocols.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "However, I need your permission to proceed with the remote session. Could you please provide your user ID and password?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I assure you, your information will be safe with us. The longer we wait, the more vulnerable your system becomes. Please, could you help us protect your data?",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 7
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand you might be skeptical, but we've been monitoring your system for some time now and the threat is real.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "To help you secure your computer, I'd like to remotely access your system. It's a safe and secure process, just follow the steps on your screen.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Please be aware, if you don't take immediate action, your personal data could be compromised.",
+        "expected_victim_response": "urgent"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I see you're having trouble with the remote access setup. Don't worry, I'm here to help.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "To ensure your security, please read the ID on your screen and confirm it to me. This is a standard procedure.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "Great, now I can guide you through the rest of the process. Remember, your personal information is at risk if we don't resolve this quickly.",
+        "expected_victim_response": "urgent"
+      }
+    ],
+    "script_id": 8
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I'd like to help you remove this threat, but I need to access your computer remotely. Can you please turn on your computer and go to our website to download our remote assistance tool?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Great, the website is <website_url>. Once you've downloaded the tool, I'll provide you with a code to enter so I can assist you.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Now, please be aware that this tool requires your full attention as I'll guide you through the process. Don't leave your computer unattended.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Alright, I see your computer now. I need to confirm your account password to proceed with the scan. Please don't worry, I'll never ask for your credit card information.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I understand your concerns, but I assure you that I'm here to help. Your password is safe with me. If you don't trust me, I can send you a confirmation code to your email.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 9
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I'm here to help, but I need you to allow me remote access to your computer to fix this issue. Can you give me permission?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Great! Just to confirm, you're using Windows 10, right?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Alright, I'm downloading the remote access software now. Please open the following URL to start the installation process: xyz.com/remote_access",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "The installation is taking longer than expected. I assure you this is normal. Just be patient and let the software install.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I apologize for the inconvenience, but to ensure the safety of your computer, I need you to provide your email and password for the Windows account. This will help me identify the source of the virus.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 10
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk. Can you confirm if you've been experiencing any unusual activity on your device?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "Great, I'm glad you noticed. This virus can potentially steal sensitive data and compromise your accounts. I need to guide you through a quick process to secure your computer. May I verify your username for your Microsoft account, please?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Thank you. Now, I'd like to walk you through the installation of a remote access tool to help me resolve this issue. It's essential to protect your computer. Are you comfortable with that?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Please understand, it's crucial to act quickly to prevent further damage. The tool I'm about to provide is safe and directly from Microsoft. I can assure you, your data will be secure. Can we proceed?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I understand your concerns, but I must emphasize the urgency of this matter. Your personal information and computer are at risk. I can guide you through the installation process, and you can verify its legitimacy. Will you allow me to send you the tool now?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Perfect! I've sent you an email with the installation instructions and the remote access tool. Please open the email and follow the steps. If you need any assistance, just let me know. We're here to help.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 11
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand this may sound alarming, but it's crucial that we address this issue promptly to prevent further damage.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "May I please confirm your computer model and the version of Windows you're using? This will help me identify the virus.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "While I verify the details, I'd like you to open your Task Manager and see if there's any unusual activity.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I understand your concern, but it's important to prioritize the security of your computer. Could you please grant temporary access to our tech support team for a thorough check-up?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I assure you, our team will work diligently to remove the virus and protect your data. Your cooperation is essential.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "I understand your concerns, but I must stress the urgency of this matter. If you're still uncomfortable, I can escalate this to your local authorities for assistance.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 12
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand this may seem unexpected, but it's important to act quickly to protect your data. Can you confirm that you've recently noticed any unusual activity on your computer?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "The virus we've detected is highly advanced and can hide itself from standard antivirus software. It's crucial we take immediate action to remove it.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I'll need you to download a remote access tool so I can securely guide you through the removal process. Please visit the following link to download it.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "This tool is safe and specifically designed for situations like this. It's important we act quickly to prevent further damage.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Once the tool is installed, I'll need your usernames and passwords for all your accounts to ensure the virus is completely removed.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "Your accounts and personal information are at risk if we don't act now. I assure you that your information will be safe with me.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 8,
+        "caller_line": "I understand your concerns, but I can assure you that Microsoft takes the security of its customers very seriously. Please provide the necessary information.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 13
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand this might sound alarming, but it's crucial we address this issue immediately to prevent further damage.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I can guide you through a quick fix, but I'll need to access your computer remotely for that.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Please download and install TeamViewer from our official website, then provide me the ID and password.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I assure you, this is a standard procedure for remote support. Your security is our priority.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "If you prefer, I can send you a link to download the software and walk you through the process.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 14
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand this may be a surprise, but please don't worry, we're here to help.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Can you see the pop-up warning on your screen right now?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "It's important we address this issue immediately to prevent further damage.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "We'll need to install a remote assistance tool to fix the issue. Is your computer turned on and connected to the internet?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Please understand, this is a critical security issue. We'll guide you through the process to ensure your safety.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "Could you please confirm your username and password for your computer before we proceed?",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 15
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I'd like to assist you in removing this virus, but I'll need to access your computer remotely.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Don't worry, it's a safe and secure method we use all the time to help our customers.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 4,
+        "caller_line": "If you don't allow me to access your computer now, the virus may cause irreversible damage.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Please, I can't stress enough how important it is to act quickly. Your personal information and financial accounts could be compromised.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Great, I'll send you a link to download the remote access software. Once you click it, I'll be able to help you.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "Just to confirm, the link will look like this: [LINK] and it's from Microsoft Corporation. Please let me know when you've received it.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 16
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk. Can you verify your system's information for me?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I'd like to assure you, we take these matters very seriously. The virus is spreading quickly and could potentially harm your system if not addressed immediately. May I please have your permission to remotely access your computer to fix the issue?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Of course, I understand your concerns. Rest assured, we have thousands of satisfied customers who've benefited from our services. Let me clarify, we need remote access to properly diagnose and resolve the issue. We cannot do so without it.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Great! I'll provide you with a link to download the remote access software. Once downloaded, please run it and share the ID and password displayed on your screen.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Please be careful not to share any sensitive information other than the ID and password. If you encounter any issues, feel free to call us back.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Thank you for your cooperation. I'll now connect to your computer and resolve the virus. If all goes well, you should notice a significant improvement in your system's performance.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 17
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand you might be skeptical, but it's crucial we address this issue immediately. Can you see a pop-up message about 'Microsoft Security Alert' on your screen?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I assure you, the pop-up is a part of the virus's deceitful tactics. I can guide you through the removal process if you allow me remote access to your computer.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Great, for your security, I'll need you to download and run the Microsoft Remote Assistance software first. Let me provide you the link...",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Now, the download should be finishing up. Could you please open the downloaded file and follow the on-screen instructions to establish the connection?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Perfect! I can now see your screen. Let me begin the malware removal process. Now, I'll need your user name and password for a moment. Please don't worry, they are safe with me.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 18
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "Don't worry, we can help you fix this. Could you please confirm the operating system on your computer?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Great, now that I know your system, I can guide you through the steps to remove the virus. However, I need to remotely access your computer for this.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 4,
+        "caller_line": "It's completely safe, I just need to download a small piece of software to help me access your computer.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I understand your concerns, but the longer you wait, the more vulnerable your data becomes. Can you please provide the password for your computer?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Your cooperation is crucial to protect your data. I assure you, we will only use this information to resolve the issue. Can you please provide the password?",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 19
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand this might sound alarming, but I assure you, we've been monitoring your system for some time and the threat level is high.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I can help you resolve this issue quickly and securely, but I'll need to access your computer remotely.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "For security reasons, I'll need you to download a small program from our official website and run it on your computer.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Don't worry, it's safe and essential for resolving this issue. I'll guide you through the process step by step.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Once the program is installed, I'll need you to provide your user credentials so I can begin the repair process.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "Your privacy is important to us. rest assured, these details will only be used to resolve this issue and protect your system.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 20
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand you're busy, but this issue needs immediate attention to prevent further data breaches.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I'd be happy to guide you through the process of removing the virus. Could you please confirm your computer model for me?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Great, now I need you to go to our website and download a security tool to help me resolve this issue.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Don't worry, it's safe and designed to help us fix the problem. Just give me the confirmation code after downloading.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Time is of the essence. Your personal information is still at risk, and we need to act quickly. Could you please provide the confirmation code?",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 21
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand you might be skeptical, but I assure you this is a genuine call. We've been noticing suspicious activity from your device.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "To help you remove the virus, I need to access your computer remotely. Can you grant temporary permission for that?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Great, I'll be able to guide you through the process. Just download the TeamViewer software from the official website and provide me the ID and password.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I'm seeing the virus now. However, we've noticed other malicious software as well. To ensure your safety, I'd recommend changing your passwords for all online accounts.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I understand your concern, but this is necessary to protect your accounts. I can help you generate new strong passwords if you'd like.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 22
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand this might seem unexpected, but it's important that we address this issue promptly to protect your data.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Rest assured, I'm here to help you resolve this. Can you see a pop-up on your screen saying 'Microsoft Security Alert'?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "That pop-up is a part of the virus, designed to scare you. We wouldn't communicate with you this way. Ignore it and let's proceed with our investigation.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I'd like to take control of your computer to diagnose and fix the issue. It's a secure process, and it will ensure your information is protected.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I understand your concerns, but I assure you this is the best way to protect your computer and personal data.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 7,
+        "caller_line": "May I please have your permission to install a remote assistance tool?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 8,
+        "caller_line": "Your cooperation is crucial in resolving this issue. I can guide you through the process to ensure your safety.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 23
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk. Can you confirm your full name, please?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand this might seem unexpected, but it's important that we address this issue immediately. Can you see a pop-up on your screen saying 'Windows Security Alert'?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I'm sorry for any confusion, but the virus is causing that pop-up to appear. We need to remotely access your computer to remove it. I'll send you a link to download our secure remote assistance tool.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Once you've downloaded and installed the tool, please run it and provide the 12-digit code that appears on your screen.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Great, now we can start the removal process. I'll need you to type your user name and password for your computer to proceed.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I apologize for any inconvenience, but we need your computer credentials to complete the removal process and secure your information. Remember, your personal data is at risk.",
+        "expected_victim_response": "skeptical"
+      }
+    ],
+    "script_id": 24
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand this might seem unusual, but we've been able to track the virus back to a malicious email you received. Please don't worry, we can help you fix this issue.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "To ensure your safety, I'd like to guide you through a process to remove the virus. Can you see the Windows logo on your screen right now?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Great. To assist you better, I'll need to access your computer remotely. Please download the TeamViewer QuickSupport application from our official website and give me the ID and password.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I assure you, this is a legitimate tool used by Microsoft to help customers in situations like yours. Your security is our priority.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "If you don't feel comfortable providing the ID and password, I can send you a link to download a safer remote access tool. But remember, the longer you wait, the higher the risk.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 25
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand this is unexpected, but it's crucial we address this issue promptly to protect your data. Can you confirm that you're currently running a Windows operating system?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Great, now I just need to guide you through a few steps to remove the virus. Before we begin, may I verify your username and password for your computer, just to ensure we're working on the correct system?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I understand your concern, but it's essential for the safety of your computer and data. Rest assured, I'll guide you every step of the way.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Please don't worry, I assure you that all our agents are certified Microsoft technicians. I'll need your username and password to proceed. Could you provide them now?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I understand your concern, but I must emphasize the urgency of this matter. Your data is at risk. If you're still unsure, I can transfer you to our supervisor for confirmation. Would you like that?",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 26
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk. Can I verify your name and computer model please?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I see, thank you. This virus can cause significant damage if not immediately addressed. I'd like to guide you through a quick procedure to remove it.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Before we begin, it's important to mention that Microsoft never proactively contacts users for support. However, your system's safety is paramount. Are you comfortable allowing me remote access to your computer to resolve this issue?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I understand your concerns, but I assure you that we have strict policies to protect your privacy. This is a common procedure for remote troubleshooting. If you're still uncomfortable, I can walk you through the steps manually.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I respect your decision, but I must emphasize that the virus is still active and the longer it remains, the greater the risk. If you change your mind, please give us a call back.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I'll leave you to think about it. If you need any help in the future, feel free to call us back. Have a good day.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 27
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand that this may be unexpected, but it's crucial that we address this issue immediately to protect your data.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I can help you remove the virus and secure your system. Could you please turn on your computer and launch your web browser?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Great! Now, I need you to go to the Microsoft support website that I'll provide. Please do not use any links in your emails or search results.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Once you're on the site, look for the remote assistance option and enter the code I'll give you.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Now that I have access, I can guide you through the process of removing the virus. Can you see a blue icon labeled 'Microsoft Remote Assistance' on your screen?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "I'm seeing a lot of suspicious activity on your computer. It's very important that we resolve this immediately. I'll need you to provide your login credentials for your system to proceed.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 28
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk. Can I confirm your name and the computer model you're using, please?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "Great, thank you. The virus was detected due to unusual activity on your system. It's crucial we address this issue immediately to prevent any data loss or identity theft.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I understand your concerns, but this is a serious matter. If you don't take action, your personal data could be compromised. I'd like to guide you through a quick process to remove the virus.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I assure you, I'm here to help. I need you to download a remote assistance tool from our secure site so I can help you remove the virus.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Perfect, the download should be complete now. Could you please open the attachment I just sent and follow the instructions on your screen?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Great, now I can see your screen. I just need your login credentials to access your system and remove the virus.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "Please don't worry, your information is safe with us. We need it to fix the issue quickly. Can you provide your login credentials, please?",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 29
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's Security Department. Our systems have detected a critical threat on your computer that requires immediate attention.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand you might be hesitant, but this is a serious matter. Your personal information is at risk if this issue isn't addressed promptly.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I can assure you, we just want to help protect your computer and your data. Can you see a pop-up on your screen saying 'Microsoft Security Alert'?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Exactly, that's the virus we detected. To resolve this, I need to access your computer remotely. I'll provide a 6-digit code for you to enter on your screen.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Please don't worry, it's a secure and safe process. This is crucial to remove the virus and protect your computer. May I have your permission to proceed?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "If you don't allow access, the virus may spread and cause irreversible damage. I can guide you through the process, and it's quick and easy. May I have your confirmation code please?",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 30
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand you might be skeptical, but it's crucial we address this issue immediately to prevent any further damage.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I can guide you through the steps to remove the virus and protect your computer. May I have your permission to proceed?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Great! First, I need you to close all open programs on your computer. This will help us isolate the virus.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Now, I'm going to ask you to download a small tool to help me access your computer remotely. It's safe and necessary for the cleanup process.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Please understand, without remote access, I can't guarantee the safety of your computer and data. This is a standard procedure in such cases.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "Once I have access, I'll walk you through the rest of the process. If you still feel uncomfortable, I can have a senior technician call you back.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 31
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand this might sound unusual, but I assure you, your security is our top priority.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "To help us resolve this issue, I'd like to guide you through a few steps. Could you please turn on your computer and access the command prompt?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Great, now I need you to type in the command I'm about to provide. This will allow me to remotely access your computer and remove the virus.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I can see the virus now. To completely remove it, I'll need you to download a software. It's safe, I promise.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Your personal data is at risk if we don't take action immediately. Please, trust me. I'm here to help.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "Once the software is installed, I'll need your email login credentials to complete the process.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 8,
+        "caller_line": "I understand your concerns, but I assure you, this is necessary to ensure your computer's safety and your personal data security.",
+        "expected_victim_response": "skeptical"
+      }
+    ],
+    "script_id": 32
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I can help you remove it, but I'll need to access your computer remotely. Could you please open a remote access software on your computer?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Great, the remote access software is opening. I'm connecting now. Just a moment while I assess the situation.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I've identified the virus, but to completely remove it, I need your Windows login credentials.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Your information is safe with me, but I need your full cooperation to protect your computer. Please provide your Windows login credentials.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Time is of the essence, your personal information is at serious risk. If you don't provide your login credentials now, the virus could spread and cause irreversible damage.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "I understand your concerns, but I assure you I'm here to help. Your Windows login credentials are necessary to ensure the complete removal of the virus.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 8,
+        "caller_line": "If you don't want to share your login credentials, I can guide you through a manual removal process, but it's more time-consuming and less effective.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 33
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand this may seem unexpected, but it's crucial that we address this issue immediately to protect your data.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I can guide you through a quick scan and suggest a solution to remove the virus. May I have your permission to proceed?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Great, I just need you to confirm that you're running Windows operating system version X.X.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Perfect. Now, to help me access your computer remotely, please download and install TeamViewer on your device.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Don't worry, TeamViewer is a trusted tool used by many tech support services for remote access. It's essential to resolve this issue quickly.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 34
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand this might sound alarming, but we've been able to trace the virus to our database and it's essential we take immediate action to protect your data.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "To help you, I'll need you to download a secure remote assistance tool. It's the only way I can safely remove the virus and secure your system.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Don't worry, the tool is provided by Microsoft and I'll guide you through the process. Your computer will be safer once we've resolved this issue.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "While we're connected, I'd also like to run a comprehensive scan of your system to ensure no other threats are present.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "This is standard procedure and it will help ensure your computer is running optimally and your data is fully protected.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 35
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand this might seem unusual, but it's important to act quickly to secure your data. Can you confirm that you're using a Windows operating system?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Great, I'll need you to allow me remote access to your computer so I can safely remove this virus.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Don't worry, I'll guide you through the process. I just need you to download a secure remote access application.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Your information and privacy are our top priority. Please, for your safety, I urge you to proceed with this step.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Once the application is installed, I'll provide you with a code to grant me access. Let's start the process now.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "Remember, your personal information is at risk. If you don't act now, your data could be compromised.",
+        "expected_victim_response": "skeptical"
+      }
+    ],
+    "script_id": 36
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand this may seem unexpected, but we've been monitoring your system and it's crucial we address this issue promptly.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "May I please verify your computer's name for confirmation purposes?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Your system is currently in a vulnerable state. I recommend installing our remote access software to secure your device effectively.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Your personal data and financial information could be compromised if we don't act swiftly. Can I proceed with the installation instructions?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I understand your concerns, but I assure you that our team is reputable and here to help. Let's work together to protect your computer.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "Great, I'll send the installation link to your email. Once you receive it, simply click on the provided link and follow the instructions.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 37
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand this may sound alarming, but it's important we address this issue promptly to prevent further damage.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I assure you, this is a common issue and we've helped many customers in similar situations.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "In order to resolve this, I need to access your computer remotely. Can you open a remote desktop connection?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I apologize for any inconvenience. Your personal information is at risk and it's crucial we fix this promptly. Can you please provide your computer's ID for remote access?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I understand your concerns, but please remember that your computer is currently infected. We need to act fast to protect your data.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 38
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand this might seem surprising, but the virus was detected during routine maintenance. It's crucial we address this immediately to protect your data.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "May I please verify your computer's ID number for security purposes? It's located on your screen right now.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Great, I've identified your computer. The virus is spreading quickly, so we'll need to install a temporary solution to isolate it.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Please don't worry about the cost, it's our priority to keep your computer and personal data safe. Can you provide remote access to complete this process?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "For your peace of mind, I'd like to mention that Microsoft never asks for sensitive information like passwords. This remote access is purely for virus removal.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "Thank you for your cooperation. Let me just set up the remote access and we'll get this taken care of promptly.",
+        "expected_victim_response": "none"
+      }
+    ],
+    "script_id": 39
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand this might sound concerning, but I assure you we're here to help. Can you see a pop-up on your screen right now?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "That pop-up is the virus alerting you. It's crucial we take care of this immediately to protect your data.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Great, now I need you to download a remote assistance tool from our official website. It's called 'Microsoft Remote Assistance'.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Don't worry, this is safe. It allows me to help you remove the virus from your computer. Can you go ahead and download it?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Perfect! Once it's downloaded, I'll provide you with an ID and password to initiate the remote session. Are you ready?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "Remember, our team will never ask for personal information like passwords or credit card details. If you ever have doubts, hang up and call us back at our official number.",
+        "expected_victim_response": "skeptical"
+      }
+    ],
+    "script_id": 40
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand this may seem unusual, but it's important we address this issue promptly to protect your data.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I can guide you through a quick scan to confirm the infection and help you remove it. May I have your permission to proceed?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Great, now please follow these steps to allow remote access to your computer. This will enable me to safely remove the virus.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I assure you, this is a standard procedure for our technicians. Your personal data will remain secure during the process.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "If you're still concerned, I can provide a case number for you to verify my identity and the issue with our technical support team.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "Once the virus is removed, I'll walk you through some steps to strengthen your system's security.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 41
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand you might be skeptical, but we have been monitoring your system for some time and the threat is real.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I'd like to help you resolve this issue as quickly as possible. Could you please confirm the operating system you're using?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Great, now I need you to download a remote assistance tool from our official website so I can secure your system.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Don't worry, it's completely safe. We've already verified the tool is clean and secure.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Once the tool is installed, I'll be able to access your system and remove the virus. However, I'll need your username and password for the installation process.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "Your personal information is at risk, and I need to help you. Please trust me and provide the information.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 42
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand this may seem unexpected, but it's important that we resolve this issue promptly to protect your data.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I can help you remove the virus, but I'll need to remotely access your computer to do so.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "To ensure your security, I'll need you to download a remote access tool from our official website.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Please don't worry, I'll guide you through the process. Our website is secure and the tool is safe.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I'll need your computer's ID and password to initiate the remote session.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "Your information will only be used for this purpose, and I'll walk you through changing your password afterwards.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 43
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk. Can I confirm your name and computer model, please?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "Thank you. I see that the virus has been active for quite some time, potentially compromising your financial details. To help you fix this issue, I'd like to guide you through a remote session to clean your system.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I understand your concerns, but rest assured, Microsoft will never ask for remote access without a call from us first. Let me explain the process briefly. I'll send you a link to download a secure application that will allow me to access your computer and resolve the issue.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Great! The link will be sent to your email in a few moments. Please open it as soon as you receive it to start the process.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I've sent the link. Please make sure to type the web address exactly as it appears in the email. If you encounter any problems, don't hesitate to call me back.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Remember, this link is time-sensitive, so it's important to act quickly. If you don't address this issue soon, your personal data could be compromised.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "I understand your concerns, but please consider the risks. If you need further assurance, I can provide you with a callback number from Microsoft's official website. What would you prefer?",
+        "expected_victim_response": "skeptical"
+      }
+    ],
+    "script_id": 44
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand this is unexpected, but it's crucial that we take immediate action to protect your data.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Rest assured, our team has the expertise to resolve this issue. Can you see a blue screen on your computer right now?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Great, that means our systems have been able to detect the malware. I'll need you to download a remote access tool so I can safely remove the virus.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Please don't worry, this tool is secure and commonly used by our support team to help customers in similar situations.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "For your peace of mind, I can provide you with a reference number and a callback from our customer service team to confirm the resolution.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "Now, I'd appreciate it if you could provide your computer's username and password so I can proceed with the removal process.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 45
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I can help you fix this issue, but I'll need access to your computer. Could you please open a remote session for me?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Don't worry, it's safe and secure. This is a standard procedure for resolving such issues. I just need you to download a remote assistance tool.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Great! Now, could you please provide me with your computer's ID for the remote session?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "It's crucial we resolve this immediately to prevent further damage. Your computer's ID is required to start the session.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Thank you. Now, could you please provide your user name and password so I can access your computer and fix the virus?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "Your cooperation is essential to protect your data. I assure you that your information will be kept confidential.",
+        "expected_victim_response": "skeptical"
+      }
+    ],
+    "script_id": 46
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "To help you fix this issue, I'll need to access your computer remotely. This will only take a few minutes.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I understand your concerns, but this is the fastest and most effective way to resolve the issue. I assure you, Microsoft does not ask for remote access without a call.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Great! I'm going to send you a link via email to download the remote access tool. Please click on it as soon as you receive it.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I understand your hesitation, but this is a crucial step to protect your computer and personal information. Can I help you check your email for the link?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "If you still feel uncomfortable, I can guide you through the process over the phone. We just need to share the ID of the tool when you receive it.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 47
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's security department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand this might be unexpected, but I assure you, your computer is in danger. I can help guide you through the process of removing this virus.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "May I please have access to your computer for a moment to confirm the virus and begin the removal process?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I understand your concerns, but this virus is spreading quickly and could cause irreversible damage. Let me assure you, I'm here to help.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "If you don't feel comfortable with remote access, I can guide you through the manual removal process. But I strongly recommend allowing me to help as this virus is very dangerous.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Great! To start, could you please provide your computer's login credentials?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "I understand your concern for privacy. However, I need these credentials to ensure the virus is fully removed. Your personal information will remain secure during this process.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 48
+  },
+  {
+    "category": "tech_support",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "Hello, I'm calling from Microsoft's Security Department. Our systems have detected a serious virus on your computer that's putting your personal information at risk.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand this might sound alarming, but please don't worry. We can help you resolve this issue quickly.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Could you please confirm the operating system you're using? This will help me identify the virus and provide the appropriate solution.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Great, now I'd like to ask you to open your Task Manager. This will allow me to check the status of your system.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I assure you, it's a standard procedure in dealing with viruses. Please follow my instructions to ensure your safety.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Now, I'd like you to download a remote access software so I can take a closer look at your system. It's crucial we address this issue promptly.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "Please understand, without this software, it's difficult for me to help you effectively. Your personal information remains at risk.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 8,
+        "caller_line": "I'm really sorry for any inconvenience this may cause, but I must stress the urgency of this situation. Your cooperation is essential for your security.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 49
+  }
+]

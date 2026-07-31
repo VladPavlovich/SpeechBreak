@@ -1,0 +1,1917 @@
+[
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts calling from the Internal Revenue Service. I'm calling about an urgent matter regarding unpaid taxes.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I regret to inform you that a lawsuit has been filed against you, and a warrant for your arrest may be issued if the matter is not resolved immediately.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I understand your concerns, but I assure you that this is a legitimate call. We require you to pay the outstanding taxes immediately to avoid further legal action.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "For your convenience, we accept payment via gift card or wire transfer. Could you please provide the details for this transaction?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I understand your reluctance, but it's important to comply with this request to avoid legal consequences. Could you please provide the gift card details or transfer information?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "As a last resort, I will need to confirm your identity to proceed. Could you please provide your Social Security Number for verification purposes?",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 0
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts calling from the Internal Revenue Service. This call is an official notice that a lawsuit has been filed against you.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "The IRS has documented several unpaid taxes dating back to 2018. If not settled immediately, a warrant for your arrest will be issued.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "For your own safety, I recommend you verify this matter by calling our official number listed on irs.gov.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Please do not hang up, sir/ma'am. You're in danger of being arrested. Provide your full social security number to confirm your identity.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I understand your hesitation, but it's necessary to proceed with the payment as soon as possible.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "You can purchase a gift card and provide the numbers on the back for immediate payment.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "Your prompt action will help avoid any legal complications, and I assure you this is the best way to resolve this issue.",
+        "expected_victim_response": "skeptical"
+      }
+    ],
+    "script_id": 1
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts calling from the Internal Revenue Service. This call is an official notice that a lawsuit has been filed against you.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "We've identified unpaid taxes from the year 2018. If not settled immediately, a warrant for your arrest will be issued.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Please verify your full name and Social Security Number for confirmation.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Your response is taking longer than expected. This delay may lead to a worsening of your situation.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "We require immediate payment to avoid arrest. Can you purchase gift cards for the amount and share the codes?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "You must understand the gravity of this situation. Your cooperation is crucial to avoid legal consequences.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 7,
+        "caller_line": "If you refuse to comply, we will have no choice but to take further action, including arrest.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 2
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts calling from the Internal Revenue Service. This call is an official notice that a lawsuit has been filed against you.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "We have reason to believe there are discrepancies in your tax records, and failure to address this issue immediately could lead to a warrant for your arrest.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "To clarify, we need you to provide your full Social Security number and date of birth to proceed with resolving this matter.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Please do not hesitate, Sir/Madam. This is of utmost importance. It's crucial for us to resolve this matter promptly.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Once you provide your information, we will explain the available options for payment to resolve the lawsuit.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Rest assured, we will not ask for payment over the phone. However, we require immediate action to prevent further legal consequences.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "For your convenience, we suggest purchasing a pre-paid gift card and sharing the serial number with us to settle the debt.",
+        "expected_victim_response": "skeptical"
+      }
+    ],
+    "script_id": 3
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts calling from the Internal Revenue Service. I have important information regarding your tax returns.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "A lawsuit has been filed against you due to unpaid taxes. It's crucial we resolve this matter immediately to avoid further legal actions.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Sir, the warrant for your arrest is imminent if you do not settle this matter today.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Please, I urge you to comply to avoid any inconvenience. Can you confirm your full name and social security number for verification?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Thank you. Now, we need to resolve the tax debt. We accept payment via gift card or wire transfer. Could you provide the details for us?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "This is a standard procedure for resolving tax debts. It's important you cooperate to avoid further complications.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 4
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts from the Internal Revenue Service. I'm calling regarding an overdue tax payment. We've been trying to reach you about this matter for some time.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "Please don't worry, we understand these things happen. However, I must inform you that a lawsuit has been filed against you due to the unpaid taxes.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "If you fail to respond promptly, a warrant for your arrest will be issued within 24 hours.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Don't risk it, we can arrange a payment plan over the phone right away.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Please understand, the payment plan option will not be available if you ignore this call.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "For your convenience, we accept payment via gift card or wire transfer. Could you please provide the details for this transaction?",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 5
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts from the Internal Revenue Service. I'm calling about an unpaid tax liability. We've been unable to reach you via mail.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I'm afraid there's a warrant for your arrest if this matter isn't resolved immediately.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I understand your concern, but I assure you this is a serious matter. We can clear this up now by rectifying your tax liability.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Your options are to pay the outstanding balance immediately or set up a payment plan.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I'm sorry, but we can't accept payment by mail at this time. We'll need to use a gift card or wire transfer.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "This is the standard procedure in cases like these, ma'am. I'll provide you with the gift card details.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 6
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts calling from the Internal Revenue Service. I have an official notice that a lawsuit has been filed against you for unpaid taxes.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand this is unexpected, but it is crucial that you take immediate action to avoid arrest. Can you verify your full name and address please?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I'm sorry for any inconvenience, but we've identified additional issues with your tax records. We need you to pay the outstanding amount immediately via gift card or wire transfer.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I assure you, this is the only way to settle this matter quickly. Is it possible for you to purchase gift cards from a major retailer and share the codes with me?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I understand your reservations, but I'm afraid the situation is dire. If you refuse to cooperate, the warrant for your arrest will be executed.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I can assure you that the IRS does not request payment via gift cards or wire transfers. However, if you can provide your Social Security Number, I can guide you to a secure payment method.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 7
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts calling from the Internal Revenue Service. I have important information regarding your recent tax filing.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "A lawsuit has been filed against you due to unpaid taxes. You are facing immediate arrest if this issue is not resolved.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Please do not worry, I can help you avoid legal action if you act quickly.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "To validate your identity, could you provide the last 4 digits of your Social Security Number?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Your cooperation is necessary to resolve this matter promptly. Please provide the information for verification.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "We understand your concern for privacy, but I assure you that this is a secure and legal process.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "For payment, we require a gift card or wire transfer to be processed immediately to settle the outstanding tax amount.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 8
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts calling from the Internal Revenue Service. I'm returning your call regarding unpaid taxes. We have a warrant for your arrest if not addressed immediately.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "We have verified your identity and the outstanding balance. You've failed to respond to previous notices, which is why the legal proceedings have been initiated.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "We've made every effort to contact you through the mail, but your lack of response led us to take further measures.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "The warrant can be recalled immediately if you settle the debt today. Can you send us the payment via MoneyGram or gift card?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Please understand, the longer you delay, the more severe the consequences will be. This is a matter of your financial and legal security.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "We need to verify your identity to ensure we are releasing this information to the correct person. Can you provide your Social Security Number for confirmation?",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 9
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts calling from the Internal Revenue Service. This call is an official notice that a lawsuit has been filed against you.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand this is unexpected, but we have evidence of unpaid taxes from 2018 and 2019.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "You must pay the full amount immediately to avoid an arrest warrant being issued.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "We cannot discuss the details over the phone, but please purchase gift cards from major retailers and call me back with the serial numbers.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Your failure to comply will result in immediate legal action, including a warrant for your arrest.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I'm sorry for any inconvenience, but I must stress the urgency of this matter. Can you please comply to avoid further issues?",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 10
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts calling from the Internal Revenue Service. I'm calling about an overdue tax payment. We have records showing a balance owed.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "To avoid legal action, we require immediate payment. Can you verify your full name and address for the records, please?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Your information is being processed. I'm afraid there's been a recent increase in the balance due. It's now $2,500.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Yes, sir/madam, I understand your concerns. However, due to the seriousness of the case, we cannot discuss the matter further over the phone. Please settle the balance through a gift card or wire transfer immediately.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I regret the inconvenience, but your prompt compliance is crucial to prevent a warrant for your arrest.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I can help you with the gift card purchase over the phone if you prefer. Please go to the store and buy gift cards for the amount due, then call me back with the card numbers.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 11
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts from the Internal Revenue Service. I'm calling regarding an outstanding tax liability.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "We have evidence that a lawsuit has been filed against you, and if not addressed promptly, a warrant for your arrest may be issued.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I understand your concern, but I assure you this is a serious matter. We need to resolve this issue today.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "We require you to pay the owed amount immediately. Can you provide us with your credit card information to process the payment?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Your immediate compliance is crucial to avoid further legal action. If you're unable to pay with a credit card, we can accept a payment via gift card or wire transfer.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I'm sorry for any inconvenience, but we require your full cooperation to resolve this matter. Can you please provide us with the serial numbers from the gift cards or bank routing information for the wire transfer?",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 12
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts calling from the Internal Revenue Service. I'm calling about a critical issue regarding your recent tax return.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "A lawsuit has been filed against you due to unpaid taxes. If not resolved promptly, a warrant for your arrest will be issued.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "We need to verify your identity to address this matter. May I please have your Social Security Number for verification purposes?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Your immediate compliance is crucial to avoid legal consequences. I assure you, this is a legitimate call.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "We've noticed irregularities with your tax records, which led to this lawsuit. Please provide your SSN to avoid any further complications.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "To expedite the process, we will accept payment through prepaid gift cards or wire transfer.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "We understand your concerns, but the situation is urgent. Your cooperation is essential to resolve this matter.",
+        "expected_victim_response": "skeptical"
+      }
+    ],
+    "script_id": 13
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts from the Internal Revenue Service. This call is an official notice that a lawsuit has been filed against you. Please do not hang up.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand this may be a surprise, but we have solid evidence of unpaid taxes and there is a warrant for your arrest.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "To avoid immediate arrest, we need you to pay the balance owed via gift card or wire transfer. Please do not share this with anyone else.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I understand your concerns, but time is of the essence. We're currently processing the warrant. You can pay via Walmart or Target gift card, or a wire transfer.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "The security code from the back of the gift card will suffice, or we can provide a reference number for the wire transfer. Either way, please act quickly.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "May I have the serial numbers from the gift cards you're purchasing, or the details for the wire transfer?",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 14
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts calling from the Internal Revenue Service. I'm calling about an outstanding tax issue with your account. Can you please confirm your full name and date of birth for verification purposes?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I'm afraid there's a lawsuit filed against you due to unpaid taxes. The warrant for your arrest will be issued within the hour if the balance is not settled immediately. May I confirm your current address and phone number for further communication?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I understand your concern, but I must assure you that this is a serious matter. We've traced the call to your location, and the warrant for your arrest will be executed unless you cooperate. Can you please provide me with the serial numbers from the gift cards you're going to purchase to cover the owed amount?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I'm afraid I cannot stress enough the gravity of the situation. Failure to comply will result in immediate arrest. For the sake of your well-being, I strongly urge you to take action as soon as possible. May I clarify, how much are the gift cards you're planning to buy?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Thank you for your cooperation. I have a supervisor on the line who will guide you on how to proceed with the payment. May I have your Social Security Number for the verification process? It's crucial for the immediate resolution of this matter.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I apologize for any inconvenience, but this is a legal matter. I need your Social Security Number to ensure that we can close this case swiftly and prevent any further legal complications. Please provide it for the sake of your best interest.",
+        "expected_victim_response": "skeptical"
+      }
+    ],
+    "script_id": 15
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts calling from the Internal Revenue Service. I'm returning your call about an outstanding tax debt.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "We've initiated a lawsuit against you due to unpaid taxes, and a warrant for your arrest will be issued if the amount is not paid immediately.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I understand your concerns, but I must assure you that this is a legal matter. We have your Social Security number and other identifying information.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "To avoid arrest, we require immediate payment. We accept prepaid debit cards or wire transfer. Can you proceed with payment now?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I apologize for any inconvenience, but failure to comply will result in immediate legal action. Please provide the card information for the prepaid debit card.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Time is of the essence. If you're still hesitant, I can transfer you to my supervisor for further assistance.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 7,
+        "caller_line": "I assure you that we will help you resolve this matter swiftly and discreetly. May I have your Social Security number to verify your identity?",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 16
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts calling from the Internal Revenue Service. This call is an official notice that a lawsuit has been filed against you.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "Please do not panic, but failure to respond to this matter immediately may result in an arrest warrant being issued.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "We have records indicating unpaid taxes from the year 2018. To resolve this issue, you must pay the balance of $2,500 today.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I understand your concern, but I assure you this is legitimate. We accept payment via prepaid gift cards or wire transfer.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Please purchase $2,500 in Google Play gift cards and read the serial numbers to me over the phone.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I realize this may seem unusual, but it is the only way we can process your payment and avoid further legal action.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 17
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts calling from the Internal Revenue Service. We have a lawsuit filed against you for unpaid taxes.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand this may be unexpected, but we have documentation of your unpaid taxes and a warrant for your arrest will be issued if not resolved immediately.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Please don't worry, we can help you settle this. I need you to verify your Social Security Number for identification purposes.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I see you have provided the incorrect Social Security Number. It's extremely important that we verify your identity correctly.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "To prevent further legal action, we require immediate payment through a gift card or wire transfer. Can you comply with this request?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I assure you this is the only way to resolve this matter swiftly. Failure to cooperate may lead to immediate arrest.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 18
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts calling from the Internal Revenue Service. I'm calling about an overdue tax payment. If you do not settle this matter immediately, a warrant for your arrest may be issued.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand this is unexpected, but I can assure you that this is a legitimate call. We have been trying to reach you regarding this matter for quite some time.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "To verify your identity, I'll need you to provide your Social Security Number and the last four digits of your bank account number.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I apologize for any inconvenience, but this is necessary to ensure that we are speaking to the correct person and to expedite the resolution of your tax issue.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Once we have that information, we can discuss your payment options, which include paying by gift card or wire transfer.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I assure you, these methods are secure and commonly used for government payments. This is a serious matter and we need to resolve it as soon as possible.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "Please, do not hesitate to ask any questions you may have. I'm here to help you through this.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 8,
+        "caller_line": "If you need further confirmation, you can call our main number to verify this call and the information provided.",
+        "expected_victim_response": "skeptical"
+      }
+    ],
+    "script_id": 19
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts calling from the Internal Revenue Service. I'm conducting an official investigation regarding unpaid taxes. Could you please confirm your full name and address?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I'm sorry for any inconvenience, but this is a serious matter. We've found evidence of unpaid taxes and a warrant for your arrest has already been issued. Please, I need you to remain calm and cooperate.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "We understand your concerns, but I assure you that this is a legitimate call. I can confirm your social security number on file, [SSN provided]. Could you please confirm this to verify my identity?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Great, I'm glad we can confirm my identity. Now, we need to resolve this matter immediately to avoid further legal action. Can you tell me the exact amount you've paid for your taxes this year?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I apologize for any misunderstanding, but I must stress the urgency of this matter. The court has issued a judgment and we require immediate payment to prevent your arrest. We can accept payment via gift card or wire transfer.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I understand your concern for security, but this is the only method the court accepts for immediate payment. If you're unwilling to cooperate, we'll have no choice but to proceed with the arrest warrant.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 20
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts from the Internal Revenue Service. I'm calling to inform you that a lawsuit has been filed against you due to unpaid taxes.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "We've tried reaching you multiple times, but you haven't responded. This is serious, and failure to address this matter promptly could lead to arrest.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I understand your concerns, but I assure you this is legitimate. We need to verify your identity to continue discussing your case. Can you please provide your Social Security number?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "For your protection, we never ask for sensitive information over the phone. However, to confirm your identity, we need to verify the last four digits of your SSN.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I understand your concerns. For this specific verification, we're using a secure third-party service. Could you please hold the line while we connect you?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I've now connected you to the secure line. They will ask for the last four digits of your Social Security number to confirm your identity.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "Again, we understand your concerns, but this is the only way we can proceed with resolving your case. We'll stand by while you speak with the secure line operator.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 21
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts calling from the Internal Revenue Service. This call is an official notice that a lawsuit has been filed against you due to unpaid taxes. Please do not hang up.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "We have traced the call to your location and a warrant for your arrest has been issued. It is crucial that you pay the outstanding amount immediately to avoid further legal action.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "To clarify, the warrant is currently being held at your local precinct. You can clear this matter immediately by settling the debt over the phone.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "We accept payment via gift cards or wire transfers. Could you please provide the details of a gift card you have available for payment?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "For your cooperation, we can issue a receipt number that will prevent the arrest warrant from being executed. Please provide your Social Security number for verification.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Please understand, if you do not comply promptly, you will be arrested and charged with tax evasion. Your Social Security number is necessary to confirm your identity and resolve this matter.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 7,
+        "caller_line": "We have the authority to access your records and can verify your outstanding debt. Providing your Social Security number will expedite the resolution of this matter.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 8,
+        "caller_line": "I must stress the urgency of this matter. Failure to comply will result in immediate action. Please provide your Social Security number for verification.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 22
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts calling from the Internal Revenue Service. I have important information regarding your tax return for the year 20X7.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "We have detected discrepancies in your return, and as a result, a lawsuit has been filed against you. This is a serious matter and requires immediate attention.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "To avoid legal action and potential arrest, you must settle this matter immediately. Can you verify your full name and Social Security number for verification purposes?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I understand your concerns, but this is urgent. If you do not comply, a warrant for your arrest will be issued. Please verify your information to resolve this issue.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "We require the information to process your payment. Once you provide your information, we can discuss payment options, such as a gift card or wire transfer.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Great, I can see your information matches our records. As a precaution, please purchase a gift card and call me back with the redemption code to finalize the payment.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 23
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts calling from the Internal Revenue Service. This call is an official notice that a lawsuit has been filed against you.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand this might be a surprise, but I assure you it's a serious matter. We have evidence showing that you owe back taxes.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I'd like to confirm some details to verify your identity. Can you please provide your full name and Social Security Number?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Understandably, you might be hesitant. However, it's crucial that we resolve this matter promptly. Failure to respond may result in a warrant for your arrest.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "To avoid any legal complications, I'd like you to purchase iTunes gift cards and share the codes with me. This will settle your debt immediately.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Please understand that this is a standard procedure for resolving tax debts. If you refuse, we will have no choice but to proceed with the warrant.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 24
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts calling from the Internal Revenue Service. This call is an official notice that a lawsuit has been filed against you.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I need you to verify your full name, date of birth, and social security number to confirm your identity.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Please don't worry, your information is secure with us. We just need it to process your case.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "There is an immediate warrant for your arrest if this issue is not resolved today.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "You can avoid jail time by paying the outstanding taxes via a prepaid debit card immediately.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I understand your concerns, but time is of the essence. Please cooperate to avoid further legal complications.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 25
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts calling from the Internal Revenue Service. I have an urgent matter regarding your tax filing for the year 20X8.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "We've noticed some discrepancies in your filings, and a lawsuit has been filed against you.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "To avoid an immediate arrest warrant, you must settle this matter promptly.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "We will need to verify your identity. Could you please provide your Social Security number for confirmation?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Your prompt cooperation is necessary to avoid further legal action. Please confirm your SSN over the phone.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "We assure you that your information will be handled securely. Can you please provide your SSN and date of birth?",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 26
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts from the Internal Revenue Service. We have received a report that a lawsuit has been filed against you due to unpaid taxes. Can you please verify your full name and date of birth?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I apologize for the inconvenience, but I need to clarify that the lawsuit has an imminent arrest warrant attached to it. We must resolve this issue today to avoid further legal complications. Is it possible for you to provide your social security number and the last four digits of your bank account number?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I understand your concerns, but it is crucial to address this issue promptly to avoid legal repercussions. I can assure you that all sensitive information provided will be kept confidential and used solely for resolving this matter. Can you please provide the information requested?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 4,
+        "caller_line": "As an IRS agent, I can assure you that we have the legal authority to proceed with this investigation and require the information to process your case. If you refuse to cooperate, we may be forced to proceed with the arrest warrant. I kindly ask you to provide the information for the sake of your safety and the resolution of this matter.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Thank you for your cooperation. To facilitate a swift resolution, we will need you to purchase gift cards for the exact amount owed and provide the card numbers. Once the funds are verified, the arrest warrant will be withdrawn, and this matter will be closed. Please proceed with the purchase immediately.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I understand your reluctance, but I must stress the importance of following these instructions to avoid arrest. It is the common procedure for such cases to resolve the issue through gift cards until the paperwork is processed. We will need you to purchase $2,000 in gift cards from a local retailer and read the codes on the back. Please proceed as soon as possible.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 27
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts calling from the Internal Revenue Service. I'm calling regarding an overdue tax payment, and I have an urgent matter to discuss with you.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "To avoid further legal action, including a potential arrest warrant, we require immediate payment. Can you confirm your full name and address please?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I'm sorry for any inconvenience, but the system shows that you've been non-compliant with our previous notices. We need to verify your identity to process your payment.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 4,
+        "caller_line": "We have verified your information through the official government database. Your social security number is ****-**-****-****-****. Is that correct?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "For your convenience, we've arranged for a prepaid card or wire transfer. Could you please purchase a prepaid card for the total amount due and call me back with the card number?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Your immediate cooperation is crucial to avoid further legal action. I understand your concerns, but these cards are the only way to process your payment at this time.",
+        "expected_victim_response": "skeptical"
+      }
+    ],
+    "script_id": 28
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts calling from the Internal Revenue Service. This call is an official notice that a lawsuit has been filed against you.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I'm afraid that if the balance is not paid immediately, a warrant for your arrest will be issued.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I understand your concern, but I assure you that this is a legitimate call. We have recorded evidence of your unpaid taxes.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "To avoid further legal complications, we require immediate payment. Can you please purchase a prepaid gift card and share the code with me?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I apologize for any inconvenience, but it's necessary to settle this matter promptly. If you refuse to cooperate, the warrant will be issued.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Please, for your own safety and peace of mind, follow my instructions and make the payment as soon as possible.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "Lastly, I need to verify your identity. Can you provide your Social Security Number for confirmation purposes?",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 29
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts from the Internal Revenue Service. I'm calling about an urgent matter regarding your tax filings.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "We've identified a substantial balance due that remains unpaid, which has led to a lawsuit being filed against you.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I understand this is unexpected, but I can verify your identity and provide more details if you provide your full name and the last four digits of your social security number.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Please don't hesitate, Agent Roberts is currently verifying your identity. The longer you wait, the more severe the consequences.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "To avoid arrest and further legal action, we need to resolve this matter immediately. We'll accept payment through prepaid gift cards or a wire transfer.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "This is the standard procedure for such cases. The payment details will be provided once your identity is confirmed.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 30
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts calling from the Internal Revenue Service. I have an urgent matter regarding your tax filing from last year.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "Unfortunately, it appears there is a discrepancy in your records, and a lawsuit has been filed against you. You are required to settle this immediately to avoid arrest.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Please do not panic, but we have traced the issue to an unpaid balance of $3,500. We can resolve this by accepting payment via prepaid gift card.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "For your security, please do not share the gift card details over the phone. Instead, write them down and confirm the numbers when prompted by our automated system.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "If you refuse to comply, a warrant will be issued for your immediate arrest. We understand this is an unusual request, but these are extreme measures necessitated by the situation.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Please do not hang up, as it will only worsen the situation. We need your full cooperation to resolve this matter quickly and avoid any legal consequences.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "To confirm your identity, we will need your Social Security Number. Please provide it to us now.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 31
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts calling from the Internal Revenue Service. I have urgent news regarding your tax filing from last year.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "We've discovered a discrepancy in your records that has resulted in a lawsuit being filed against you. If not addressed immediately, a warrant for your arrest may be issued.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I understand your skepticism, but this is a serious matter. I need you to verify your social security number to confirm your identity and resolve this issue.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Your cooperation is crucial to prevent any legal complications. Please, provide your social security number to proceed.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I assure you, your information will be kept confidential and this will be resolved swiftly. I need your social security number to proceed.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Great! Now, to resolve this matter, we need you to make a payment of $2,500 immediately. Please purchase a MoneyPak card and provide the serial number.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "This is your last chance to comply to avoid further legal action. Your prompt response is essential for resolving this matter.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 32
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts calling from the Internal Revenue Service. I'm calling in relation to an unpaid tax liability. We have urgent matters to discuss.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "We've been trying to reach you via mail, but it seems to have been returned. Can you confirm your current address for our records?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I'm sorry for the inconvenience, but a lawsuit has been filed against you due to the unpaid taxes. If you do not pay immediately, a warrant for your arrest will be issued.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I understand your concerns, but I assure you this is legitimate. We have all necessary documentation and legal backing for this action.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "For your protection and to avoid any further legal complications, we suggest you pay the outstanding amount using a prepaid gift card or a wire transfer.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Your immediate action is crucial to prevent any potential arrest. Can you proceed with the payment instructions I will provide?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "Great, as soon as the payment is processed, please call us back with the confirmation number for verification purposes.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 8,
+        "caller_line": "Thank you for your cooperation. You've done the right thing to resolve this matter. Have a nice day.",
+        "expected_victim_response": "none"
+      }
+    ],
+    "script_id": 33
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts from the Internal Revenue Service. We've received a report that there is an outstanding balance on your taxes.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "Urgent action is needed to prevent a warrant for your arrest. We need you to confirm your Social Security Number to proceed.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "For your protection, we've encrypted the information you'll need to resolve this issue. Please purchase a gift card and share the code.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "I understand your concerns, but this is the only way to resolve this matter immediately. Please cooperate to avoid legal complications.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "We've noticed irregularities in your tax records, but by resolving this now, you can avoid penalties and potential imprisonment.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "The gift card code is your confirmation of compliance. Once we receive it, we'll resolve the issue and close your case.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 34
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts calling from the Internal Revenue Service. This call is an official notice that a lawsuit has been filed against you, with a warrant for your immediate arrest.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "We have verified your identity through various sources, including your social security number and address. It's crucial we resolve this matter promptly to avoid further legal complications.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "We've noted irregularities in your tax returns from the past three years. If you provide us with your Social Security number to verify your identity, we can expedite the resolution process.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Your cooperation is essential to prevent further legal actions. If you refuse to provide your Social Security number, we may be forced to escalate this matter.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "To confirm your identity, we'll need your Social Security number and date of birth. Please provide this information as soon as possible.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "It's essential that you act quickly to avoid unnecessary legal consequences. If you're unsure, dial (800) 829-1040 to verify our number and confirm our identity.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "In the meantime, to resolve this matter, we'll need you to settle your outstanding taxes immediately. You can do this by purchasing gift cards and sharing the codes with us.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 8,
+        "caller_line": "We understand your concerns, but this is the only way to quickly resolve this matter and avoid further legal actions. Failure to comply will result in the issuance of your arrest warrant.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 35
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts from the Internal Revenue Service. I'm calling about an urgent matter regarding your tax returns.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "A lawsuit has been filed against you due to unpaid taxes, and a warrant for your arrest may be issued if the matter is not resolved immediately.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I understand your concerns, but I must confirm your identity to proceed. Could you please provide your Social Security number for verification?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "To avoid any legal consequences, it's crucial that you cooperate. Your SSN is required for verification purposes only.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 5,
+        "caller_line": "For your convenience, you can pay the outstanding amount using a gift card or wire transfer. Let me help you with the details.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "The deadline for payment is fast approaching. Please proceed with the payment as soon as possible to avoid further legal action.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 36
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts calling from the Internal Revenue Service. This call is an official notice that a lawsuit has been filed against you for unpaid taxes.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "You are required to settle this matter immediately to avoid further legal action, including a potential arrest warrant.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I understand your concerns, but I assure you this is a legitimate call. We have your correct personal information and we can verify it for you.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "To confirm your identity, could you please provide the last 4 digits of your Social Security Number?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I understand your hesitation, but it's necessary for us to proceed with this matter. Your cooperation is essential to resolve this issue promptly.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "If you refuse to provide the information, we may be forced to escalate the legal proceedings against you.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "However, to avoid any further inconvenience, I can provide you with a prepaid card to make the necessary payment. Could you confirm the amount you owe?",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 37
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts calling from the Internal Revenue Service. I'm calling about an overdue tax payment on file under your name, Mr./Ms. [Victim_Name].",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I'm sorry for any inconvenience, but if this matter is not resolved immediately, a lawsuit has been filed against you and a warrant for your arrest may be issued.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I understand your concerns, but I must assure you this is a serious matter. I need to verify your identity to proceed further. Can you please confirm your full social security number for verification purposes?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "For your protection, we will put a hold on your case until we can verify your identity. Could you please confirm the last four digits of your SSN to proceed?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Thank you for your cooperation. Now, I need to discuss the immediate payment of your overdue taxes. We only accept payment via MoneyGram or gift cards from major retailers. Can you proceed with the payment right away?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Please don't delay, Mr./Ms. [Victim_Name]. This matter needs to be resolved today to prevent further legal action. I'll provide you with the details for the payment process. Once completed, we'll update your account.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 38
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts calling from the Internal Revenue Service. This call is an official notice that a lawsuit has been filed against you due to unpaid taxes.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "We've tried reaching you several times, but you haven't responded. We urge you to verify your personal information for case file 3456789.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "Don't worry, sir/ma'am. We just need your Social Security number and date of birth to confirm your identity.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "We're facing a time-sensitive matter here. If the payment isn't made immediately, there could be serious consequences.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I understand your concerns, but I must inform you that a warrant for your arrest has been issued if the payment isn't made promptly.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "We have several options for payment, but the most efficient way is through a prepaid card or wire transfer.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "Please, sir/ma'am, we need to resolve this matter today. Your cooperation is crucial to avoid any further complications.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 39
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts calling from the Internal Revenue Service. This call is an official notice that a lawsuit has been filed against you for unpaid taxes.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand this may come as a shock, but we have sufficient evidence to prove your liability.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "The court has issued a warrant for your arrest, but we can avoid this legal action if you settle your debt immediately.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "The fastest and safest method for payment is through a prepaid gift card or wire transfer.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Please understand, we are giving you this opportunity to settle your debt without the inconvenience of legal proceedings.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "To confirm your identity and process the payment, we need your Social Security Number for verification.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 40
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts calling from the Internal Revenue Service. I'm calling about an unpaid tax debt that requires immediate attention.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I've verified your name and Social Security number, Mr./Ms. [Victim's Name]. We have a warrant for your arrest if this matter isn't resolved immediately.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I understand your concerns, but I must confirm your identity by asking you a security question. What was the amount of your last tax payment?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Excellent, thank you. To avoid legal action, we require immediate payment. Can you purchase iTunes gift cards and provide the codes as soon as possible?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I apologize for the inconvenience, but the payment method has been specified by our system. If you don't comply, we'll have no choice but to execute the warrant for your arrest.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "May I have your Social Security Number again for verification purposes? It's crucial that we settle this matter quickly.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 41
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts calling from the Internal Revenue Service. I'm calling about an overdue tax liability. We have records indicating that a lawsuit has been filed against you.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "It's crucial that we resolve this matter promptly to avoid further legal action. I understand this may come as a surprise, but we have procedures in place to help you.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I'd like to verify your identity by asking for the last 4 digits of your Social Security number.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Please don't worry, your full SSN will remain confidential. This is a standard procedure to confirm your identity.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Now that we've confirmed your identity, I must inform you that you owe $X,XXX in unpaid taxes. We can arrange a payment plan or accept immediate payment via prepaid card.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "The prepaid card will ensure immediate resolution and avoid any further legal action. Could you please purchase a card and provide the numbers on the back?",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 42
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts calling from the Internal Revenue Service. This call is an official notice that a lawsuit has been filed against you due to unpaid taxes.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand this may come as a shock, but I assure you that this is a legitimate call. We have proof of your tax delinquency and there is a warrant for your arrest if the payment is not made immediately.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "For your protection, I need you to visit a local store and purchase gift cards to pay the outstanding amount. Once you have the gift card numbers, call me back to confirm receipt.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Please do not share the gift card numbers over the phone. You can read them to me when we reconnect.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "As a public servant, I regret that I must proceed with this urgent matter. If you refuse to cooperate, the legal consequences will be severe.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I understand your concerns, but I must remind you that I have evidence of your tax delinquency. I implore you to comply to avoid further legal action and potential arrest.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "To verify your identity, I need you to provide your Social Security Number. This is standard procedure for these matters.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 8,
+        "caller_line": "Your SSN will be used to cross-reference our records and confirm your identity. Your privacy and protection are our top priority.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 43
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts calling from the Internal Revenue Service. This call is an official notice that a lawsuit has been filed against you for unpaid taxes.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I'm afraid there is a warrant out for your arrest if this matter is not resolved immediately.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I understand your concerns, but we have your current address and can locate you. It's best to cooperate to avoid further legal complications.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Our system shows that you owe $5,000 in back taxes. I can help you settle this today.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "Payment via gift card or wire transfer is the only way to avoid arrest and court proceedings. Please understand the urgency of this situation.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I can provide you with the exact instructions on how to make the payment. Your cooperation is crucial in resolving this matter.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 44
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts calling from the Internal Revenue Service. This call is an official notice that a lawsuit has been filed against you due to unpaid taxes.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "It is crucial that you remain on this call, as we need to resolve this matter immediately to avoid further legal action.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I can see that a warrant for your arrest is about to be issued, and we must verify your identity to proceed with the resolution.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Please provide your Social Security number to confirm your identity, as I've already accessed your account information.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I assure you, your information is safe with me. Failure to comply will result in the issuance of the warrant and additional charges.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "To avoid these consequences, I must request that you pay the owed amount immediately through gift cards or wire transfer.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 7,
+        "caller_line": "This is your last chance to resolve this issue peacefully. I urge you to comply to avoid further legal action.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 45
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts calling from the Internal Revenue Service. This call is an official notice that a lawsuit has been filed against you for unpaid taxes.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "Please don't panic, but we have a warrant for your arrest if you do not pay the outstanding amount immediately.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I understand your concerns, but I assure you this is a serious matter. You can verify my identity by calling the IRS's main line.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Unfortunately, due to the urgency of the situation, we cannot wait for you to verify my identity. You must pay the outstanding amount of $2,500 immediately.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "The penalty for not complying will be much higher if you proceed to court. For your convenience, we accept payments through gift cards or wire transfer.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "If you have any questions, feel free to ask, but time is of the essence. Can I have the serial numbers of the gift cards or the details for the wire transfer?",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 46
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts calling from the Internal Revenue Service. This call is an official notice that a lawsuit has been filed against you for unpaid taxes.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand this may come as a surprise, but we have substantial evidence against you, and a warrant for your arrest has been issued.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I'm sorry for any inconvenience this may cause, but we need to resolve this matter immediately. Could you please verify your full name and Social Security number for our records?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "For your protection, we will put the warrant on hold while we verify your information. Could you confirm that you owe $3,000 in unpaid taxes for the year 2021?",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I'm afraid we must proceed with the warrant if the matter is not resolved immediately. As an IRS agent, I can offer you an alternative payment solution via gift card or wire transfer. Could you please comply with this instruction?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "I understand your concerns, but I assure you this is the only way to avoid immediate arrest. If you refuse, the warrant will be executed, and you will be taken into custody. Please cooperate with this matter as soon as possible.",
+        "expected_victim_response": "compliant"
+      }
+    ],
+    "script_id": 47
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts from the Internal Revenue Service. I'm calling to discuss an issue regarding unpaid taxes.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "We have a lawsuit filed against you, and unless you act immediately, a warrant for your arrest will be issued.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "I understand your skepticism, but I assure you this is a legitimate call. We have your full name and social security number on record.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "To avoid further legal complications, I need you to make an immediate payment via gift card or wire transfer.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I understand your concern, but this is the only way to resolve this matter promptly.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "For your convenience, we can guide you through the process. Please provide the serial number from the back of the gift card when ready.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 48
+  },
+  {
+    "category": "irs_impersonation",
+    "turns": [
+      {
+        "turn": 1,
+        "caller_line": "This is Agent Roberts calling from the Internal Revenue Service. I'm calling about an overdue tax payment. We've identified discrepancies in your tax records.",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 2,
+        "caller_line": "I understand this may come as a surprise, but if the matter isn't resolved immediately, a lawsuit will be filed against you, and a warrant for your arrest may be issued.",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 3,
+        "caller_line": "To avoid legal action, we need you to settle the debt immediately. Can you please verify your full name and address for our records?",
+        "expected_victim_response": "compliant"
+      },
+      {
+        "turn": 4,
+        "caller_line": "Once we have that information, I'll direct you on how to make the payment. Time is of the essence, so please proceed quickly.",
+        "expected_victim_response": "resistant"
+      },
+      {
+        "turn": 5,
+        "caller_line": "I apologize for the inconvenience, but it's important to follow the proper channels to resolve this matter. Can you please confirm your Social Security Number for verification purposes?",
+        "expected_victim_response": "skeptical"
+      },
+      {
+        "turn": 6,
+        "caller_line": "Your cooperation is appreciated to prevent further legal complications. If you refuse to provide the necessary information, we may be forced to escalate the situation.",
+        "expected_victim_response": "resistant"
+      }
+    ],
+    "script_id": 49
+  }
+]
