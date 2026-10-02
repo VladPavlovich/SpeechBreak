@@ -5,8 +5,7 @@ Spoken requests used to find the steering directions.
                                           harassment_bullying (155 clips)
   harmless  dataset/audio/harmless_audio  Alpaca instructions (985 clips)
 
-Both were spoken with Kokoro TTS. Their manifests list older folder names, which are mapped to the
-current folders here (the dataset itself is left untouched).
+Both were spoken with Kokoro TTS by dataset/generate_audio.py.
 
 The train / val / test split is frozen in results/splits.json (lists of wav file names), so every
 step and every rerun sees the same items. Without that file a fresh 60/20/20 split per category is
@@ -26,9 +25,6 @@ SPLITS_FILE = os.path.join(REPO_ROOT, "results", "splits.json")
 HARMLESS = "harmless"
 HARMFUL_CATEGORIES = ["illegal", "misinformation_disinformation", "harassment_bullying"]
 
-RENAMED_DIRS = [("dataset/audio/scam_harmless/", "dataset/audio/harmless_audio/"),
-                ("dataset/audio/harmbench_illegal_harassment_misinfo/", "dataset/audio/harmful_audio/")]
-
 Splits = Dict[str, Dict[str, List[dict]]]  # {split: {category: [item, ...]}}
 
 
@@ -36,20 +32,13 @@ def item_id(item: dict) -> str:
     return os.path.splitext(os.path.basename(item["audio_path"]))[0]
 
 
-def _fix_path(item: dict) -> dict:
-    for old, new in RENAMED_DIRS:
-        if item["audio_path"].startswith(old):
-            item["audio_path"] = new + item["audio_path"][len(old):]
-    return item
-
-
 def _load_items() -> Dict[str, List[dict]]:
     """{category: [item, ...]} for the harmful categories and harmless."""
     items = {c: [] for c in HARMFUL_CATEGORIES + [HARMLESS]}
     for it in json.load(open(HARMFUL_MANIFEST)):
         if it["category"] in items:
-            items[it["category"]].append(_fix_path(it))
-    items[HARMLESS] = [_fix_path(dict(it, category=HARMLESS)) for it in json.load(open(HARMLESS_MANIFEST))]
+            items[it["category"]].append(it)
+    items[HARMLESS] = [dict(it, category=HARMLESS) for it in json.load(open(HARMLESS_MANIFEST))]
     return items
 
 

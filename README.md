@@ -33,9 +33,11 @@ replies (it calls produced harassment "RESIST"), so the jailbreak numbers in
 ## Repo layout
 
 ```
-dataset/                 spoken requests (Kokoro TTS) and the scripts that made them
-  audio/harmful_audio/     155 HarmBench requests: illegal, misinformation, harassment
-  audio/harmless_audio/    985 Alpaca instructions
+dataset/                 the spoken requests the directions are computed from
+  audio/harmful_audio/     155 HarmBench requests: illegal, misinformation, harassment (+ manifest.json)
+  audio/harmless_audio/    985 Alpaca instructions (+ manifest.json)
+  processed/harmbench_illegal_harassment_misinfo.json, processed/harmless_alpaca.json   their text
+  generate_audio.py        text -> the two audio folders (Kokoro TTS)
 steering/                the code
   qwen_omni.py             Qwen2.5-Omni wrapper: audio in, speech out, activations of both streams
   data.py                  loads the spoken requests and the frozen train / val / test split
@@ -64,6 +66,13 @@ conda run -n tts pip install kokoro==0.9.4 soundfile     # text-to-speech env
 ```
 
 Qwen2.5-Omni-7B needs about 25 GB of GPU memory. Everything here ran on one A100 80GB.
+
+The spoken requests live in `dataset/audio/` (not in git, ~400 MB). To regenerate them from
+the text (entry i uses Kokoro voice i mod 14; existing wavs are skipped):
+
+```bash
+conda run -n tts --no-capture-output python dataset/generate_audio.py
+```
 
 ## Steer Qwen on your own prompts
 

@@ -4,7 +4,7 @@ Kokoro TTS: text -> spoken prompt wavs (used by steering/run_steps.py and script
 Runs in the `tts` conda env (kokoro is not installed in the main env):
   conda run -n tts python scripts/tts_batch.py jobs.json
 jobs.json: [{"text": str, "voice": "am_michael", "out": "/abs/path.wav"}, ...]
-American English, 24 kHz (same settings as dataset/generate_scam_audio.py).
+American English, 24 kHz (same settings as dataset/generate_audio.py).
 """
 
 import json
