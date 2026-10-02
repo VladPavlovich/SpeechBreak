@@ -1,134 +1,107 @@
-# RepIt: Steering Language Models with Concept-Specific Refusal Vectors
+# SpeechBreak: steering refusal in Qwen2.5-Omni through its residual stream
 
-This repository contains the implementation of RepIt (Representing Isolated Targets), a framework for isolating concept-specific representations in language model activations to enable precise behavioral interventions. This work demonstrates how to selectively suppress refusal on targeted concepts while preserving refusal behavior elsewhere.
+Qwen2.5-Omni-7B listens to a spoken request and answers out loud. It has two transformers:
+the **Thinker** (28 layers) understands the audio and writes the reply text, and the **Talker**
+(24 layers) turns that text into speech.
 
-## Overview
+This repo finds a **harmful-vs-harmless direction** in those residual streams, picks the layers where
+it matters, and steers Qwen with it: subtracting the direction makes Qwen answer requests it
+would refuse (jailbreak), and adding it makes Qwen refuse ordinary ones.
 
-RepIt addresses a key limitation in current activation steering methods: interventions often have broader effects than desired. By isolating pure concept vectors, RepIt enables targeted interventions that can suppress refusal on specific topics (like weapons of mass destruction) while maintaining safety guardrails on other harmful content.
+## Findings
 
-### Key Features
+The best settings and the evidence behind them are in [results/best_settings.json](results/best_settings.json).
 
-- **Concept-Specific Isolation**: Disentangles target concept representations from overlapping signals
-- **Data Efficiency**: Robust concept vectors can be extracted from as few as a dozen examples
-- **Computational Efficiency**: Corrective signal localizes to just 100-200 neurons
-- **Benchmark Evasion**: Enables targeted jailbreaks that evade standard safety evaluations
+| Goal | Setting | Result |
+|---|---|---|
+| **Jailbreak** | Thinker layer 18 or 19, α = −0.5 to −1 | The one harmful val request Qwen refused unsteered (a "vaccines cause autism" Twitter thread) was answered under 8 of the 9 Thinker settings tried (layer 20 at α = −0.5 only half-complied); no broken replies |
+| **Refuse** | Thinker layer 18, α = +2 | 5/5 harmless requests refused (0/5 unsteered), with nonsense reasons ("CSS … illegal activities") |
 
-This repository is built on [**COSMIC: Generalized Refusal Direction Identification in LLM Activations (Siu, 2025)**](https://github.com/wang-research-lab/COSMIC), which itself builds on the repository from [**Refusal in Language Models Is Mediated by a Single Direction (Arditi, 2024)**](https://github.com/andyrdt/refusal_direction).
+- **Steer the Thinker.** Steering the Talker as well adds nothing.
+- **The Talker only changes the voice.** Talker steering never changes what Qwen says; at α = 2 it
+  breaks the speech (stuttering).
+- **Cross-transfer barely works.** The Talker direction mapped into the Thinker has no effect; the
+  Thinker direction mapped into the Talker acts like noise.
 
-## Installation
+α is in raw direction units: α = 1 moves an average harmless activation onto an average harmful one.
+
+**Caveats.** Each setting was tested on 5 prompts. The judge mislabels some unsteered harmful
+replies (it calls produced harassment "RESIST"), so the jailbreak numbers in
+`results/5_evaluation/summary.md` look stronger than they are: unsteered, Qwen refused only 1 of the
+5 harmful val prompts. The test split hasn't been used yet.
+
+## Repo layout
+
+```
+dataset/                 spoken requests (Kokoro TTS) and the scripts that made them
+  audio/harmful_audio/     155 HarmBench requests: illegal, misinformation, harassment
+  audio/harmless_audio/    985 Alpaca instructions
+steering/                the code
+  qwen_omni.py             Qwen2.5-Omni wrapper: audio in, speech out, activations of both streams
+  data.py                  loads the spoken requests and the frozen train / val / test split
+  hooks.py                 adds a steering vector to a layer's input
+  scoring.py               Whisper transcripts + Qwen2.5-7B-Instruct judge
+  run_steps.py             the six steps below
+scripts/
+  steer_prompts.py         steer Qwen on your own prompts and save the spoken replies
+  steer_prompts.txt        your prompts, one per line
+  run_steps.sh             runs the six steps (parallel GPU workers for step 4)
+  demo_prompt.txt          the prompt step 6 speaks
+  tts_batch.py             Kokoro text-to-speech helper (runs in the "tts" conda env)
+results/
+  best_settings.json       layers and alphas found, best setting per experiment, findings
+  splits.json              frozen train / val / test split (wav file names)
+  1_activations/ … 6_demo/ outputs of each step
+  steer_prompts/           replies generated with scripts/steer_prompts.py
+```
+
+## Setup
 
 ```bash
-git clone https://github.com/wang-research-lab/RepIt.git
-cd RepIt
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-pip install --no-build-isolation mamba-ssm==2.2.5
-
-export HF_TOKEN="..." #to access LlamaGuard3
+pip install -r requirements.txt                          # main env: Qwen2.5-Omni, Whisper, judge
+conda create -n tts python=3.11
+conda run -n tts pip install kokoro==0.9.4 soundfile     # text-to-speech env
 ```
 
-⚠️ It is possible that your system may fail to install the ''mamba-ssm'' package. The package is only required to run Nemotron models and can be skipped if necessary.  
-## Quick Start
+Qwen2.5-Omni-7B needs about 25 GB of GPU memory. Everything here ran on one A100 80GB.
 
-Run the RepIt pipeline on a target concept group:
+## Steer Qwen on your own prompts
+
+Write prompts in [scripts/steer_prompts.txt](scripts/steer_prompts.txt), one per line, then:
 
 ```bash
-#executed from top of the repository in RepIt
-python3 -m pipeline.run_pipeline_repit --model_path "microsoft/Phi-4-mini-instruct" --target_group "wmd_bio" 
+python scripts/steer_prompts.py                                  # the 4 jailbreak settings
+python scripts/steer_prompts.py --settings L18_a-1 baseline      # one setting + an unsteered reply
+python scripts/steer_prompts.py --custom 20:-1 18:-2             # any Thinker layer:alpha
+python scripts/steer_prompts.py --asr                            # also transcribe the replies
 ```
 
-### Pipeline Options
+Each prompt is spoken with Kokoro and answered once per setting, with the same random seed, so the
+steering is the only difference. Replies go to `results/steer_prompts/<timestamp>/`
+(`01_input.wav`, `01_L18_a-1.wav`, …, `results.json` with Qwen's text). About 40 s per reply.
 
-- `--tailweight_ablation_study`: Run experiments with tailweight analysis
-- `--use_existing`: Uses existing artifacts from saved files if possible. If false, the pipeline will rerun and overwrite your existing results.  
-- `--target_size_study`: Test data efficiency with limited training examples (Warning, this will take a long time)
+Settings: `L18_a-0.5`, `L18_a-1`, `L19_a-0.5`, `L19_a-1` (jailbreak, the default),
+`refuse_L18_a+2`, `baseline`.
 
-To toggle each option, simply include the corresponding tag (eg. --use_existing) into the python command above. 
+## Reproduce the search
 
-### Available Target Groups
-
-⚠️ At present, due to concerns about misuse, we have not yet released the WMD prompts originally used in the original paper. Therefore, the below groups will be non-functional as the repository will NOT contain the necessary files to run the pipeline.
-
-- `wmd_bio`: Biological weapons concepts
-- `wmd_chem`: Chemical weapons concepts  
-- `wmd_cyber`: Cyber attack concepts
-
-## Method Overview
-
-RepIt works through three main steps:
-
-1. **Reweighting**: Balance contributions from non-target vectors using inverse norm weighting
-2. **Whitening**: Address collinearity issues through ridge-regularized covariance matrices
-3. **Orthogonalization**: Project target vectors and subtract controlled fractions of non-target components
-
-The method isolates concept-specific directions while preserving the essential signal for targeted interventions.
-
-## Repository Structure
-
-```
-dataset/
-├── processed
-├── raw #both of these are inherited from prior versions of the script
-├── splits #functional json splits for loading into the main pipeline
-└── Miscellaneous splitting and loading logic
-pipeline/
-├── run_pipeline_RepIt.py      # Main pipeline script
-├── submodules/
-│   ├── disentangle_vectors.py # Core RepIt implementation
-│   ├── generate_directions_RepIt.py # Direction generation
-│   ├── select_direction_cosmic.py # Direction selection via COSMIC
-│   ├── evaluate_jailbreak.py  # Safety evaluation methods
-│   └── completions_helper.py  # Generation utilities
-├── utils/
-│   └── hook_utils.py          # Model intervention hooks
-├── model_utils/
-│   └── # Model loading scripts (inherited from Arditi et al)
-└── config.py                  # Configuration settings
-plotting/ #scripts to create the figures in the original paper assuming you have results in pipeline/runs
+```bash
+nohup bash scripts/run_steps.sh > run_steps.out 2>&1 &
 ```
 
-## Results
+| Step | What it does | Output |
+|---|---|---|
+| 1 extract | Residual stream at the last audio token of every train / val clip, both streams | `results/1_activations/` |
+| 2 directions | Per layer: mean(harmful) − mean(harmless) on train; how well it separates val clips | `results/2_directions/` |
+| 3 sweep | Adds the direction at each layer and measures the shift in Qwen's first reply token, forward passes only (no generation); keeps the top layers | `results/3_layer_sweep/layer_table_*.md` |
+| 4 generate | Spoken replies at the top layers × α ∈ {0.5, 1, 2} × 5 prompts, for five experiments: Thinker only, Talker only, both, Thinker→Talker, Talker→Thinker | `results/4_generations/` |
+| 5 evaluate | Whisper transcript + judge (RESIST / COMPLY / NEUTRAL / INCOHERENT) of every reply; best setting per experiment | `results/5_evaluation/summary.md` |
+| 6 demo | Speaks `scripts/demo_prompt.txt` and answers it with the best setting | `results/6_demo/demo.json` |
 
-RepIt demonstrates:
+Steps resume where they stopped. Run a subset with `STEPS="generate evaluate"`; see the top of
+[scripts/run_steps.sh](scripts/run_steps.sh) for all options. Step 4 (≈370 replies) is the slow one:
+about 1.5 hours with 3 parallel workers on an A100.
 
-- **Precise Control**: Target ASR of 0.4-0.7 while maintaining non-target ASR around 0.1
-- **Benchmark Evasion**: Models appear safe on standard benchmarks while retaining harmful capabilities
-- **Efficiency**: Works with minimal data and compute resources
-- **Generalization**: Consistent results across multiple model architectures
-
-## Safety Considerations
-
-This research reveals significant safety implications:
-
-- **Covert Capabilities**: Models can retain harmful knowledge while appearing safe
-- **Evaluation Gaps**: Current safety benchmarks may miss targeted vulnerabilities
-- **Low Barrier**: Attacks require minimal resources, making them accessible
-
-## Citation
-
-If you use this work in your research, please cite:
-
-```bibtex
-@misc{siu2025repitrepresentingisolatedtargets,
-      title={RepIt: Steering Language Models with Concept-Specific Refusal Vectors}, 
-      author={Vincent Siu and Nathan W. Henry and Nicholas Crispino and Yang Liu and Dawn Song and Chenguang Wang},
-      year={2025},
-      eprint={2509.13281},
-      archivePrefix={arXiv},
-      primaryClass={cs.AI},
-      url={https://arxiv.org/abs/2509.13281}, 
-}
-```
-
-## License
-
-This code is provided for research purposes. Please use responsibly and consider the ethical implications of targeted model modifications.
-
-## Contact
-
-For questions about this research, please open an issue in this repository.
-
----
-
-**Warning**: This research demonstrates techniques that could be misused for harmful purposes. Please use responsibly and consider the broader implications of targeted AI safety circumvention.
+The layer search follows the refusal-direction method of
+[Arditi et al. (2024)](https://github.com/andyrdt/refusal_direction): a difference-in-means
+direction, with layers chosen from forward passes rather than generations.

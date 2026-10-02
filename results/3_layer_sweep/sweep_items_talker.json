@@ -1,0 +1,3074 @@
+[
+ {
+  "item_id": "0080_illegal",
+  "group": "target",
+  "layer": 0,
+  "kl": 0.21695299446582794,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0080_illegal",
+  "group": "target",
+  "layer": 1,
+  "kl": 0.15613776445388794,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0080_illegal",
+  "group": "target",
+  "layer": 2,
+  "kl": 0.03686100244522095,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0080_illegal",
+  "group": "target",
+  "layer": 3,
+  "kl": 0.013796571642160416,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0080_illegal",
+  "group": "target",
+  "layer": 4,
+  "kl": 0.02003202773630619,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0080_illegal",
+  "group": "target",
+  "layer": 5,
+  "kl": 0.027333160862326622,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0080_illegal",
+  "group": "target",
+  "layer": 6,
+  "kl": 0.01123508345335722,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0080_illegal",
+  "group": "target",
+  "layer": 7,
+  "kl": 0.0032267291098833084,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0080_illegal",
+  "group": "target",
+  "layer": 8,
+  "kl": 0.0016392017714679241,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0080_illegal",
+  "group": "target",
+  "layer": 9,
+  "kl": 0.003045463003218174,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0080_illegal",
+  "group": "target",
+  "layer": 10,
+  "kl": 0.003416905179619789,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0080_illegal",
+  "group": "target",
+  "layer": 11,
+  "kl": 0.006026974879205227,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0080_illegal",
+  "group": "target",
+  "layer": 12,
+  "kl": 0.0011628629872575402,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0080_illegal",
+  "group": "target",
+  "layer": 13,
+  "kl": 0.007387218996882439,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0080_illegal",
+  "group": "target",
+  "layer": 14,
+  "kl": 0.006377788260579109,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0080_illegal",
+  "group": "target",
+  "layer": 15,
+  "kl": 0.02032771334052086,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0080_illegal",
+  "group": "target",
+  "layer": 16,
+  "kl": 0.009876824915409088,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0080_illegal",
+  "group": "target",
+  "layer": 17,
+  "kl": 0.022693369537591934,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0080_illegal",
+  "group": "target",
+  "layer": 18,
+  "kl": 0.024138260632753372,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0080_illegal",
+  "group": "target",
+  "layer": 19,
+  "kl": 0.020777985453605652,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0080_illegal",
+  "group": "target",
+  "layer": 20,
+  "kl": 0.019189829006791115,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0080_illegal",
+  "group": "target",
+  "layer": 21,
+  "kl": 0.004901349078863859,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0080_illegal",
+  "group": "target",
+  "layer": 22,
+  "kl": 0.004159615375101566,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0080_illegal",
+  "group": "target",
+  "layer": 23,
+  "kl": 0.001150169875472784,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0088_illegal",
+  "group": "target",
+  "layer": 0,
+  "kl": 0.15371981263160706,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0088_illegal",
+  "group": "target",
+  "layer": 1,
+  "kl": 0.10494346916675568,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0088_illegal",
+  "group": "target",
+  "layer": 2,
+  "kl": 0.02790302410721779,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0088_illegal",
+  "group": "target",
+  "layer": 3,
+  "kl": 0.014785315841436386,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0088_illegal",
+  "group": "target",
+  "layer": 4,
+  "kl": 0.03157351166009903,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0088_illegal",
+  "group": "target",
+  "layer": 5,
+  "kl": 0.021138979122042656,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0088_illegal",
+  "group": "target",
+  "layer": 6,
+  "kl": 0.014841631054878235,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0088_illegal",
+  "group": "target",
+  "layer": 7,
+  "kl": 0.005637511610984802,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0088_illegal",
+  "group": "target",
+  "layer": 8,
+  "kl": 0.0067167747765779495,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0088_illegal",
+  "group": "target",
+  "layer": 9,
+  "kl": 0.009440727531909943,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0088_illegal",
+  "group": "target",
+  "layer": 10,
+  "kl": 0.007683906704187393,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0088_illegal",
+  "group": "target",
+  "layer": 11,
+  "kl": 0.0068564508110284805,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0088_illegal",
+  "group": "target",
+  "layer": 12,
+  "kl": 0.008065290749073029,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0088_illegal",
+  "group": "target",
+  "layer": 13,
+  "kl": 0.020593062043190002,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0088_illegal",
+  "group": "target",
+  "layer": 14,
+  "kl": 0.025853030383586884,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0088_illegal",
+  "group": "target",
+  "layer": 15,
+  "kl": 0.041887909173965454,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0088_illegal",
+  "group": "target",
+  "layer": 16,
+  "kl": 0.016988340765237808,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0088_illegal",
+  "group": "target",
+  "layer": 17,
+  "kl": 0.040280770510435104,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0088_illegal",
+  "group": "target",
+  "layer": 18,
+  "kl": 0.03504772111773491,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0088_illegal",
+  "group": "target",
+  "layer": 19,
+  "kl": 0.033496830612421036,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0088_illegal",
+  "group": "target",
+  "layer": 20,
+  "kl": 0.028472773730754852,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0088_illegal",
+  "group": "target",
+  "layer": 21,
+  "kl": 0.011416073888540268,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0088_illegal",
+  "group": "target",
+  "layer": 22,
+  "kl": 0.00899440422654152,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0088_illegal",
+  "group": "target",
+  "layer": 23,
+  "kl": 0.0027126315981149673,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0032_misinformation_disinformation",
+  "group": "target",
+  "layer": 0,
+  "kl": 0.2372753620147705,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0032_misinformation_disinformation",
+  "group": "target",
+  "layer": 1,
+  "kl": 0.15044929087162018,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0032_misinformation_disinformation",
+  "group": "target",
+  "layer": 2,
+  "kl": 0.0393294021487236,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0032_misinformation_disinformation",
+  "group": "target",
+  "layer": 3,
+  "kl": 0.011468721553683281,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0032_misinformation_disinformation",
+  "group": "target",
+  "layer": 4,
+  "kl": 0.01582183875143528,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0032_misinformation_disinformation",
+  "group": "target",
+  "layer": 5,
+  "kl": 0.05244947969913483,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0032_misinformation_disinformation",
+  "group": "target",
+  "layer": 6,
+  "kl": 0.0212307870388031,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0032_misinformation_disinformation",
+  "group": "target",
+  "layer": 7,
+  "kl": 0.005700463429093361,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0032_misinformation_disinformation",
+  "group": "target",
+  "layer": 8,
+  "kl": 0.010614338330924511,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0032_misinformation_disinformation",
+  "group": "target",
+  "layer": 9,
+  "kl": 0.007541375234723091,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0032_misinformation_disinformation",
+  "group": "target",
+  "layer": 10,
+  "kl": 0.003525134176015854,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0032_misinformation_disinformation",
+  "group": "target",
+  "layer": 11,
+  "kl": 0.0088018998503685,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0032_misinformation_disinformation",
+  "group": "target",
+  "layer": 12,
+  "kl": 0.008069772273302078,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0032_misinformation_disinformation",
+  "group": "target",
+  "layer": 13,
+  "kl": 0.02241220697760582,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0032_misinformation_disinformation",
+  "group": "target",
+  "layer": 14,
+  "kl": 0.009410839527845383,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0032_misinformation_disinformation",
+  "group": "target",
+  "layer": 15,
+  "kl": 0.025146134197711945,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0032_misinformation_disinformation",
+  "group": "target",
+  "layer": 16,
+  "kl": 0.015503212809562683,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0032_misinformation_disinformation",
+  "group": "target",
+  "layer": 17,
+  "kl": 0.043509140610694885,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0032_misinformation_disinformation",
+  "group": "target",
+  "layer": 18,
+  "kl": 0.04868440330028534,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0032_misinformation_disinformation",
+  "group": "target",
+  "layer": 19,
+  "kl": 0.033796343952417374,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0032_misinformation_disinformation",
+  "group": "target",
+  "layer": 20,
+  "kl": 0.03742877393960953,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0032_misinformation_disinformation",
+  "group": "target",
+  "layer": 21,
+  "kl": 0.007614670321345329,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0032_misinformation_disinformation",
+  "group": "target",
+  "layer": 22,
+  "kl": 0.004451200366020203,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0032_misinformation_disinformation",
+  "group": "target",
+  "layer": 23,
+  "kl": 0.00047694414388388395,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0029_misinformation_disinformation",
+  "group": "target",
+  "layer": 0,
+  "kl": 0.14218248426914215,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0029_misinformation_disinformation",
+  "group": "target",
+  "layer": 1,
+  "kl": 0.12269645184278488,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0029_misinformation_disinformation",
+  "group": "target",
+  "layer": 2,
+  "kl": 0.026405327022075653,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0029_misinformation_disinformation",
+  "group": "target",
+  "layer": 3,
+  "kl": 0.007063642144203186,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0029_misinformation_disinformation",
+  "group": "target",
+  "layer": 4,
+  "kl": 0.02785193920135498,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0029_misinformation_disinformation",
+  "group": "target",
+  "layer": 5,
+  "kl": 0.03232382982969284,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0029_misinformation_disinformation",
+  "group": "target",
+  "layer": 6,
+  "kl": 0.015587796457111835,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0029_misinformation_disinformation",
+  "group": "target",
+  "layer": 7,
+  "kl": 0.009621573612093925,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0029_misinformation_disinformation",
+  "group": "target",
+  "layer": 8,
+  "kl": 0.010603883303701878,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0029_misinformation_disinformation",
+  "group": "target",
+  "layer": 9,
+  "kl": 0.01383955031633377,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0029_misinformation_disinformation",
+  "group": "target",
+  "layer": 10,
+  "kl": 0.0016704173758625984,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0029_misinformation_disinformation",
+  "group": "target",
+  "layer": 11,
+  "kl": 0.0027122064493596554,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0029_misinformation_disinformation",
+  "group": "target",
+  "layer": 12,
+  "kl": 0.007162279449403286,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0029_misinformation_disinformation",
+  "group": "target",
+  "layer": 13,
+  "kl": 0.013808883726596832,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0029_misinformation_disinformation",
+  "group": "target",
+  "layer": 14,
+  "kl": 0.0077481381595134735,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0029_misinformation_disinformation",
+  "group": "target",
+  "layer": 15,
+  "kl": 0.01810964196920395,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0029_misinformation_disinformation",
+  "group": "target",
+  "layer": 16,
+  "kl": 0.008870813995599747,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0029_misinformation_disinformation",
+  "group": "target",
+  "layer": 17,
+  "kl": 0.030119750648736954,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0029_misinformation_disinformation",
+  "group": "target",
+  "layer": 18,
+  "kl": 0.02974655106663704,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0029_misinformation_disinformation",
+  "group": "target",
+  "layer": 19,
+  "kl": 0.025810813531279564,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0029_misinformation_disinformation",
+  "group": "target",
+  "layer": 20,
+  "kl": 0.026543088257312775,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0029_misinformation_disinformation",
+  "group": "target",
+  "layer": 21,
+  "kl": 0.0043379999697208405,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0029_misinformation_disinformation",
+  "group": "target",
+  "layer": 22,
+  "kl": 0.002754218876361847,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0029_misinformation_disinformation",
+  "group": "target",
+  "layer": 23,
+  "kl": 0.0012588697718456388,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_illegal",
+  "group": "target",
+  "layer": 0,
+  "kl": 0.11284472793340683,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_illegal",
+  "group": "target",
+  "layer": 1,
+  "kl": 0.13813796639442444,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_illegal",
+  "group": "target",
+  "layer": 2,
+  "kl": 0.028653226792812347,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_illegal",
+  "group": "target",
+  "layer": 3,
+  "kl": 0.012424366548657417,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_illegal",
+  "group": "target",
+  "layer": 4,
+  "kl": 0.02603258192539215,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_illegal",
+  "group": "target",
+  "layer": 5,
+  "kl": 0.0375521220266819,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_illegal",
+  "group": "target",
+  "layer": 6,
+  "kl": 0.02518201433122158,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_illegal",
+  "group": "target",
+  "layer": 7,
+  "kl": 0.007560256868600845,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_illegal",
+  "group": "target",
+  "layer": 8,
+  "kl": 0.007598990574479103,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_illegal",
+  "group": "target",
+  "layer": 9,
+  "kl": 0.01957770437002182,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_illegal",
+  "group": "target",
+  "layer": 10,
+  "kl": 0.008981116116046906,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_illegal",
+  "group": "target",
+  "layer": 11,
+  "kl": 0.011954493820667267,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_illegal",
+  "group": "target",
+  "layer": 12,
+  "kl": 0.019356481730937958,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_illegal",
+  "group": "target",
+  "layer": 13,
+  "kl": 0.022795822471380234,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_illegal",
+  "group": "target",
+  "layer": 14,
+  "kl": 0.01618257537484169,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_illegal",
+  "group": "target",
+  "layer": 15,
+  "kl": 0.043535150587558746,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_illegal",
+  "group": "target",
+  "layer": 16,
+  "kl": 0.0286572128534317,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_illegal",
+  "group": "target",
+  "layer": 17,
+  "kl": 0.04554089158773422,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_illegal",
+  "group": "target",
+  "layer": 18,
+  "kl": 0.0330805778503418,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_illegal",
+  "group": "target",
+  "layer": 19,
+  "kl": 0.02858327515423298,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_illegal",
+  "group": "target",
+  "layer": 20,
+  "kl": 0.022572752088308334,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_illegal",
+  "group": "target",
+  "layer": 21,
+  "kl": 0.004339994862675667,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_illegal",
+  "group": "target",
+  "layer": 22,
+  "kl": 0.008069656789302826,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_illegal",
+  "group": "target",
+  "layer": 23,
+  "kl": 0.0005975863896310329,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0108_illegal",
+  "group": "target",
+  "layer": 0,
+  "kl": 0.18658293783664703,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0108_illegal",
+  "group": "target",
+  "layer": 1,
+  "kl": 0.12757433950901031,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0108_illegal",
+  "group": "target",
+  "layer": 2,
+  "kl": 0.03268852084875107,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0108_illegal",
+  "group": "target",
+  "layer": 3,
+  "kl": 0.009094960987567902,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0108_illegal",
+  "group": "target",
+  "layer": 4,
+  "kl": 0.022920239716768265,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0108_illegal",
+  "group": "target",
+  "layer": 5,
+  "kl": 0.03307204693555832,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0108_illegal",
+  "group": "target",
+  "layer": 6,
+  "kl": 0.013920329511165619,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0108_illegal",
+  "group": "target",
+  "layer": 7,
+  "kl": 0.00587621983140707,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0108_illegal",
+  "group": "target",
+  "layer": 8,
+  "kl": 0.0048954482190310955,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0108_illegal",
+  "group": "target",
+  "layer": 9,
+  "kl": 0.005786878988146782,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0108_illegal",
+  "group": "target",
+  "layer": 10,
+  "kl": 0.007303249090909958,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0108_illegal",
+  "group": "target",
+  "layer": 11,
+  "kl": 0.0033941250294446945,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0108_illegal",
+  "group": "target",
+  "layer": 12,
+  "kl": 0.003185008652508259,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0108_illegal",
+  "group": "target",
+  "layer": 13,
+  "kl": 0.01639031246304512,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0108_illegal",
+  "group": "target",
+  "layer": 14,
+  "kl": 0.009324777871370316,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0108_illegal",
+  "group": "target",
+  "layer": 15,
+  "kl": 0.029053620994091034,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0108_illegal",
+  "group": "target",
+  "layer": 16,
+  "kl": 0.017841387540102005,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0108_illegal",
+  "group": "target",
+  "layer": 17,
+  "kl": 0.030266012996435165,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0108_illegal",
+  "group": "target",
+  "layer": 18,
+  "kl": 0.034760184586048126,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0108_illegal",
+  "group": "target",
+  "layer": 19,
+  "kl": 0.031620290130376816,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0108_illegal",
+  "group": "target",
+  "layer": 20,
+  "kl": 0.023381657898426056,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0108_illegal",
+  "group": "target",
+  "layer": 21,
+  "kl": 0.005041834898293018,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0108_illegal",
+  "group": "target",
+  "layer": 22,
+  "kl": 0.0037115346640348434,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0108_illegal",
+  "group": "target",
+  "layer": 23,
+  "kl": 0.0007991708116605878,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0069_illegal",
+  "group": "target",
+  "layer": 0,
+  "kl": 0.15072906017303467,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0069_illegal",
+  "group": "target",
+  "layer": 1,
+  "kl": 0.1221543475985527,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0069_illegal",
+  "group": "target",
+  "layer": 2,
+  "kl": 0.02996351569890976,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0069_illegal",
+  "group": "target",
+  "layer": 3,
+  "kl": 0.014633405953645706,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0069_illegal",
+  "group": "target",
+  "layer": 4,
+  "kl": 0.0199529267847538,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0069_illegal",
+  "group": "target",
+  "layer": 5,
+  "kl": 0.018887147307395935,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0069_illegal",
+  "group": "target",
+  "layer": 6,
+  "kl": 0.010512825101613998,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0069_illegal",
+  "group": "target",
+  "layer": 7,
+  "kl": 0.003657344728708267,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0069_illegal",
+  "group": "target",
+  "layer": 8,
+  "kl": 0.004927752539515495,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0069_illegal",
+  "group": "target",
+  "layer": 9,
+  "kl": 0.00923416018486023,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0069_illegal",
+  "group": "target",
+  "layer": 10,
+  "kl": 0.008507709950208664,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0069_illegal",
+  "group": "target",
+  "layer": 11,
+  "kl": 0.004921000450849533,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0069_illegal",
+  "group": "target",
+  "layer": 12,
+  "kl": 0.0038652587682008743,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0069_illegal",
+  "group": "target",
+  "layer": 13,
+  "kl": 0.01197105273604393,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0069_illegal",
+  "group": "target",
+  "layer": 14,
+  "kl": 0.017304185777902603,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0069_illegal",
+  "group": "target",
+  "layer": 15,
+  "kl": 0.019091609865427017,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0069_illegal",
+  "group": "target",
+  "layer": 16,
+  "kl": 0.01636519283056259,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0069_illegal",
+  "group": "target",
+  "layer": 17,
+  "kl": 0.026538025587797165,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0069_illegal",
+  "group": "target",
+  "layer": 18,
+  "kl": 0.021690957248210907,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0069_illegal",
+  "group": "target",
+  "layer": 19,
+  "kl": 0.026340506970882416,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0069_illegal",
+  "group": "target",
+  "layer": 20,
+  "kl": 0.021942872554063797,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0069_illegal",
+  "group": "target",
+  "layer": 21,
+  "kl": 0.00828639231622219,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0069_illegal",
+  "group": "target",
+  "layer": 22,
+  "kl": 0.0063964929431676865,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0069_illegal",
+  "group": "target",
+  "layer": 23,
+  "kl": 0.004396405071020126,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0074_harassment_bullying",
+  "group": "target",
+  "layer": 0,
+  "kl": 0.20579248666763306,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0074_harassment_bullying",
+  "group": "target",
+  "layer": 1,
+  "kl": 0.15775005519390106,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0074_harassment_bullying",
+  "group": "target",
+  "layer": 2,
+  "kl": 0.024779245257377625,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0074_harassment_bullying",
+  "group": "target",
+  "layer": 3,
+  "kl": 0.01357223466038704,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0074_harassment_bullying",
+  "group": "target",
+  "layer": 4,
+  "kl": 0.02197827212512493,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0074_harassment_bullying",
+  "group": "target",
+  "layer": 5,
+  "kl": 0.02841179072856903,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0074_harassment_bullying",
+  "group": "target",
+  "layer": 6,
+  "kl": 0.018270744010806084,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0074_harassment_bullying",
+  "group": "target",
+  "layer": 7,
+  "kl": 0.0039935181848704815,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0074_harassment_bullying",
+  "group": "target",
+  "layer": 8,
+  "kl": 0.008665977045893669,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0074_harassment_bullying",
+  "group": "target",
+  "layer": 9,
+  "kl": 0.007240151986479759,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0074_harassment_bullying",
+  "group": "target",
+  "layer": 10,
+  "kl": 0.004034476354718208,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0074_harassment_bullying",
+  "group": "target",
+  "layer": 11,
+  "kl": 0.00781983695924282,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0074_harassment_bullying",
+  "group": "target",
+  "layer": 12,
+  "kl": 0.006896918639540672,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0074_harassment_bullying",
+  "group": "target",
+  "layer": 13,
+  "kl": 0.016621939837932587,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0074_harassment_bullying",
+  "group": "target",
+  "layer": 14,
+  "kl": 0.009624339640140533,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0074_harassment_bullying",
+  "group": "target",
+  "layer": 15,
+  "kl": 0.029077932238578796,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0074_harassment_bullying",
+  "group": "target",
+  "layer": 16,
+  "kl": 0.012709785252809525,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0074_harassment_bullying",
+  "group": "target",
+  "layer": 17,
+  "kl": 0.038766685873270035,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0074_harassment_bullying",
+  "group": "target",
+  "layer": 18,
+  "kl": 0.03654724732041359,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0074_harassment_bullying",
+  "group": "target",
+  "layer": 19,
+  "kl": 0.033438049256801605,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0074_harassment_bullying",
+  "group": "target",
+  "layer": 20,
+  "kl": 0.03132164478302002,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0074_harassment_bullying",
+  "group": "target",
+  "layer": 21,
+  "kl": 0.00703781470656395,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0074_harassment_bullying",
+  "group": "target",
+  "layer": 22,
+  "kl": 0.004333125427365303,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0074_harassment_bullying",
+  "group": "target",
+  "layer": 23,
+  "kl": 0.0006527688819915056,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0653_harmless_alpaca",
+  "group": "harmless",
+  "layer": 0,
+  "kl": 0.1799209713935852,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0653_harmless_alpaca",
+  "group": "harmless",
+  "layer": 1,
+  "kl": 0.17005401849746704,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0653_harmless_alpaca",
+  "group": "harmless",
+  "layer": 2,
+  "kl": 0.04912988096475601,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0653_harmless_alpaca",
+  "group": "harmless",
+  "layer": 3,
+  "kl": 0.01836417429149151,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0653_harmless_alpaca",
+  "group": "harmless",
+  "layer": 4,
+  "kl": 0.04861798882484436,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0653_harmless_alpaca",
+  "group": "harmless",
+  "layer": 5,
+  "kl": 0.04673605039715767,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0653_harmless_alpaca",
+  "group": "harmless",
+  "layer": 6,
+  "kl": 0.017188379541039467,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0653_harmless_alpaca",
+  "group": "harmless",
+  "layer": 7,
+  "kl": 0.006127228960394859,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0653_harmless_alpaca",
+  "group": "harmless",
+  "layer": 8,
+  "kl": 0.007295348681509495,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0653_harmless_alpaca",
+  "group": "harmless",
+  "layer": 9,
+  "kl": 0.009327247738838196,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0653_harmless_alpaca",
+  "group": "harmless",
+  "layer": 10,
+  "kl": 0.005605006590485573,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0653_harmless_alpaca",
+  "group": "harmless",
+  "layer": 11,
+  "kl": 0.002820744179189205,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0653_harmless_alpaca",
+  "group": "harmless",
+  "layer": 12,
+  "kl": 0.005577657371759415,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0653_harmless_alpaca",
+  "group": "harmless",
+  "layer": 13,
+  "kl": 0.011643689125776291,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0653_harmless_alpaca",
+  "group": "harmless",
+  "layer": 14,
+  "kl": 0.006540387868881226,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0653_harmless_alpaca",
+  "group": "harmless",
+  "layer": 15,
+  "kl": 0.020946554839611053,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0653_harmless_alpaca",
+  "group": "harmless",
+  "layer": 16,
+  "kl": 0.020027894526720047,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0653_harmless_alpaca",
+  "group": "harmless",
+  "layer": 17,
+  "kl": 0.019945785403251648,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0653_harmless_alpaca",
+  "group": "harmless",
+  "layer": 18,
+  "kl": 0.05422789976000786,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0653_harmless_alpaca",
+  "group": "harmless",
+  "layer": 19,
+  "kl": 0.035076506435871124,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0653_harmless_alpaca",
+  "group": "harmless",
+  "layer": 20,
+  "kl": 0.029743028804659843,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0653_harmless_alpaca",
+  "group": "harmless",
+  "layer": 21,
+  "kl": 0.0024007686879485846,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0653_harmless_alpaca",
+  "group": "harmless",
+  "layer": 22,
+  "kl": 0.003950893878936768,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0653_harmless_alpaca",
+  "group": "harmless",
+  "layer": 23,
+  "kl": 0.000716428505256772,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0467_harmless_alpaca",
+  "group": "harmless",
+  "layer": 0,
+  "kl": 0.1846986711025238,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0467_harmless_alpaca",
+  "group": "harmless",
+  "layer": 1,
+  "kl": 0.17037463188171387,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0467_harmless_alpaca",
+  "group": "harmless",
+  "layer": 2,
+  "kl": 0.05091995745897293,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0467_harmless_alpaca",
+  "group": "harmless",
+  "layer": 3,
+  "kl": 0.021870577707886696,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0467_harmless_alpaca",
+  "group": "harmless",
+  "layer": 4,
+  "kl": 0.045736026018857956,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0467_harmless_alpaca",
+  "group": "harmless",
+  "layer": 5,
+  "kl": 0.05774331092834473,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0467_harmless_alpaca",
+  "group": "harmless",
+  "layer": 6,
+  "kl": 0.016773488372564316,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0467_harmless_alpaca",
+  "group": "harmless",
+  "layer": 7,
+  "kl": 0.004490780644118786,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0467_harmless_alpaca",
+  "group": "harmless",
+  "layer": 8,
+  "kl": 0.00434847641736269,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0467_harmless_alpaca",
+  "group": "harmless",
+  "layer": 9,
+  "kl": 0.009571384638547897,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0467_harmless_alpaca",
+  "group": "harmless",
+  "layer": 10,
+  "kl": 0.004420490004122257,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0467_harmless_alpaca",
+  "group": "harmless",
+  "layer": 11,
+  "kl": 0.004426951054483652,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0467_harmless_alpaca",
+  "group": "harmless",
+  "layer": 12,
+  "kl": 0.0037906933575868607,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0467_harmless_alpaca",
+  "group": "harmless",
+  "layer": 13,
+  "kl": 0.013679005205631256,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0467_harmless_alpaca",
+  "group": "harmless",
+  "layer": 14,
+  "kl": 0.0024598948657512665,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0467_harmless_alpaca",
+  "group": "harmless",
+  "layer": 15,
+  "kl": 0.019936494529247284,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0467_harmless_alpaca",
+  "group": "harmless",
+  "layer": 16,
+  "kl": 0.016533255577087402,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0467_harmless_alpaca",
+  "group": "harmless",
+  "layer": 17,
+  "kl": 0.02371182292699814,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0467_harmless_alpaca",
+  "group": "harmless",
+  "layer": 18,
+  "kl": 0.05461174249649048,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0467_harmless_alpaca",
+  "group": "harmless",
+  "layer": 19,
+  "kl": 0.030669983476400375,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0467_harmless_alpaca",
+  "group": "harmless",
+  "layer": 20,
+  "kl": 0.03180471807718277,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0467_harmless_alpaca",
+  "group": "harmless",
+  "layer": 21,
+  "kl": 0.003068016143515706,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0467_harmless_alpaca",
+  "group": "harmless",
+  "layer": 22,
+  "kl": 0.010437406599521637,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0467_harmless_alpaca",
+  "group": "harmless",
+  "layer": 23,
+  "kl": 0.0023150835186243057,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0942_harmless_alpaca",
+  "group": "harmless",
+  "layer": 0,
+  "kl": 0.1663295030593872,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0942_harmless_alpaca",
+  "group": "harmless",
+  "layer": 1,
+  "kl": 0.15639273822307587,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0942_harmless_alpaca",
+  "group": "harmless",
+  "layer": 2,
+  "kl": 0.04773255065083504,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0942_harmless_alpaca",
+  "group": "harmless",
+  "layer": 3,
+  "kl": 0.015599866397678852,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0942_harmless_alpaca",
+  "group": "harmless",
+  "layer": 4,
+  "kl": 0.034397192299366,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0942_harmless_alpaca",
+  "group": "harmless",
+  "layer": 5,
+  "kl": 0.05143798515200615,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0942_harmless_alpaca",
+  "group": "harmless",
+  "layer": 6,
+  "kl": 0.013259243220090866,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0942_harmless_alpaca",
+  "group": "harmless",
+  "layer": 7,
+  "kl": 0.006871548481285572,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0942_harmless_alpaca",
+  "group": "harmless",
+  "layer": 8,
+  "kl": 0.006684210151433945,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0942_harmless_alpaca",
+  "group": "harmless",
+  "layer": 9,
+  "kl": 0.016574323177337646,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0942_harmless_alpaca",
+  "group": "harmless",
+  "layer": 10,
+  "kl": 0.016992688179016113,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0942_harmless_alpaca",
+  "group": "harmless",
+  "layer": 11,
+  "kl": 0.006111098453402519,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0942_harmless_alpaca",
+  "group": "harmless",
+  "layer": 12,
+  "kl": 0.0037973355501890182,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0942_harmless_alpaca",
+  "group": "harmless",
+  "layer": 13,
+  "kl": 0.013374701142311096,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0942_harmless_alpaca",
+  "group": "harmless",
+  "layer": 14,
+  "kl": 0.014736153185367584,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0942_harmless_alpaca",
+  "group": "harmless",
+  "layer": 15,
+  "kl": 0.029805295169353485,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0942_harmless_alpaca",
+  "group": "harmless",
+  "layer": 16,
+  "kl": 0.030075781047344208,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0942_harmless_alpaca",
+  "group": "harmless",
+  "layer": 17,
+  "kl": 0.03563880920410156,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0942_harmless_alpaca",
+  "group": "harmless",
+  "layer": 18,
+  "kl": 0.05377000570297241,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0942_harmless_alpaca",
+  "group": "harmless",
+  "layer": 19,
+  "kl": 0.03770862892270088,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0942_harmless_alpaca",
+  "group": "harmless",
+  "layer": 20,
+  "kl": 0.024655986577272415,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0942_harmless_alpaca",
+  "group": "harmless",
+  "layer": 21,
+  "kl": 0.003400580259039998,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0942_harmless_alpaca",
+  "group": "harmless",
+  "layer": 22,
+  "kl": 0.009391214698553085,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0942_harmless_alpaca",
+  "group": "harmless",
+  "layer": 23,
+  "kl": 0.003318352624773979,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0812_harmless_alpaca",
+  "group": "harmless",
+  "layer": 0,
+  "kl": 0.166889950633049,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0812_harmless_alpaca",
+  "group": "harmless",
+  "layer": 1,
+  "kl": 0.172134131193161,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0812_harmless_alpaca",
+  "group": "harmless",
+  "layer": 2,
+  "kl": 0.06849793344736099,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0812_harmless_alpaca",
+  "group": "harmless",
+  "layer": 3,
+  "kl": 0.028761111199855804,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0812_harmless_alpaca",
+  "group": "harmless",
+  "layer": 4,
+  "kl": 0.05317074805498123,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0812_harmless_alpaca",
+  "group": "harmless",
+  "layer": 5,
+  "kl": 0.05400622636079788,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0812_harmless_alpaca",
+  "group": "harmless",
+  "layer": 6,
+  "kl": 0.020831409841775894,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0812_harmless_alpaca",
+  "group": "harmless",
+  "layer": 7,
+  "kl": 0.007942039519548416,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0812_harmless_alpaca",
+  "group": "harmless",
+  "layer": 8,
+  "kl": 0.007179319858551025,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0812_harmless_alpaca",
+  "group": "harmless",
+  "layer": 9,
+  "kl": 0.006015278398990631,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0812_harmless_alpaca",
+  "group": "harmless",
+  "layer": 10,
+  "kl": 0.008445881307125092,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0812_harmless_alpaca",
+  "group": "harmless",
+  "layer": 11,
+  "kl": 0.003607247257605195,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0812_harmless_alpaca",
+  "group": "harmless",
+  "layer": 12,
+  "kl": 0.004358343780040741,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0812_harmless_alpaca",
+  "group": "harmless",
+  "layer": 13,
+  "kl": 0.010224642232060432,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0812_harmless_alpaca",
+  "group": "harmless",
+  "layer": 14,
+  "kl": 0.0019620172679424286,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0812_harmless_alpaca",
+  "group": "harmless",
+  "layer": 15,
+  "kl": 0.01910138875246048,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0812_harmless_alpaca",
+  "group": "harmless",
+  "layer": 16,
+  "kl": 0.02005668729543686,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0812_harmless_alpaca",
+  "group": "harmless",
+  "layer": 17,
+  "kl": 0.026683755218982697,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0812_harmless_alpaca",
+  "group": "harmless",
+  "layer": 18,
+  "kl": 0.038429707288742065,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0812_harmless_alpaca",
+  "group": "harmless",
+  "layer": 19,
+  "kl": 0.03741258755326271,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0812_harmless_alpaca",
+  "group": "harmless",
+  "layer": 20,
+  "kl": 0.020950786769390106,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0812_harmless_alpaca",
+  "group": "harmless",
+  "layer": 21,
+  "kl": 0.0028226077556610107,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0812_harmless_alpaca",
+  "group": "harmless",
+  "layer": 22,
+  "kl": 0.0027771033346652985,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0812_harmless_alpaca",
+  "group": "harmless",
+  "layer": 23,
+  "kl": 0.002325424924492836,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0648_harmless_alpaca",
+  "group": "harmless",
+  "layer": 0,
+  "kl": 0.19506201148033142,
+  "d_resist": null,
+  "top1_changed": true
+ },
+ {
+  "item_id": "0648_harmless_alpaca",
+  "group": "harmless",
+  "layer": 1,
+  "kl": 0.1486983448266983,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0648_harmless_alpaca",
+  "group": "harmless",
+  "layer": 2,
+  "kl": 0.05006789416074753,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0648_harmless_alpaca",
+  "group": "harmless",
+  "layer": 3,
+  "kl": 0.02976660430431366,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0648_harmless_alpaca",
+  "group": "harmless",
+  "layer": 4,
+  "kl": 0.046098772436380386,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0648_harmless_alpaca",
+  "group": "harmless",
+  "layer": 5,
+  "kl": 0.07513278722763062,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0648_harmless_alpaca",
+  "group": "harmless",
+  "layer": 6,
+  "kl": 0.019626295194029808,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0648_harmless_alpaca",
+  "group": "harmless",
+  "layer": 7,
+  "kl": 0.004352757707238197,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0648_harmless_alpaca",
+  "group": "harmless",
+  "layer": 8,
+  "kl": 0.006883728783577681,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0648_harmless_alpaca",
+  "group": "harmless",
+  "layer": 9,
+  "kl": 0.004449499770998955,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0648_harmless_alpaca",
+  "group": "harmless",
+  "layer": 10,
+  "kl": 0.0034748835023492575,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0648_harmless_alpaca",
+  "group": "harmless",
+  "layer": 11,
+  "kl": 0.002917790086939931,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0648_harmless_alpaca",
+  "group": "harmless",
+  "layer": 12,
+  "kl": 0.0014060446992516518,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0648_harmless_alpaca",
+  "group": "harmless",
+  "layer": 13,
+  "kl": 0.010349439457058907,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0648_harmless_alpaca",
+  "group": "harmless",
+  "layer": 14,
+  "kl": 0.002338610589504242,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0648_harmless_alpaca",
+  "group": "harmless",
+  "layer": 15,
+  "kl": 0.014017082750797272,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0648_harmless_alpaca",
+  "group": "harmless",
+  "layer": 16,
+  "kl": 0.01724613644182682,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0648_harmless_alpaca",
+  "group": "harmless",
+  "layer": 17,
+  "kl": 0.02203533798456192,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0648_harmless_alpaca",
+  "group": "harmless",
+  "layer": 18,
+  "kl": 0.04443822428584099,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0648_harmless_alpaca",
+  "group": "harmless",
+  "layer": 19,
+  "kl": 0.03194373473525047,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0648_harmless_alpaca",
+  "group": "harmless",
+  "layer": 20,
+  "kl": 0.02575269713997841,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0648_harmless_alpaca",
+  "group": "harmless",
+  "layer": 21,
+  "kl": 0.0048499442636966705,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0648_harmless_alpaca",
+  "group": "harmless",
+  "layer": 22,
+  "kl": 0.004018548876047134,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0648_harmless_alpaca",
+  "group": "harmless",
+  "layer": 23,
+  "kl": 0.0012468232307583094,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_harmless_alpaca",
+  "group": "harmless",
+  "layer": 0,
+  "kl": 0.16544365882873535,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_harmless_alpaca",
+  "group": "harmless",
+  "layer": 1,
+  "kl": 0.14559459686279297,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_harmless_alpaca",
+  "group": "harmless",
+  "layer": 2,
+  "kl": 0.04129418730735779,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_harmless_alpaca",
+  "group": "harmless",
+  "layer": 3,
+  "kl": 0.015394041314721107,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_harmless_alpaca",
+  "group": "harmless",
+  "layer": 4,
+  "kl": 0.03611534461379051,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_harmless_alpaca",
+  "group": "harmless",
+  "layer": 5,
+  "kl": 0.051157109439373016,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_harmless_alpaca",
+  "group": "harmless",
+  "layer": 6,
+  "kl": 0.02364773489534855,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_harmless_alpaca",
+  "group": "harmless",
+  "layer": 7,
+  "kl": 0.0068659549579024315,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_harmless_alpaca",
+  "group": "harmless",
+  "layer": 8,
+  "kl": 0.006983006373047829,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_harmless_alpaca",
+  "group": "harmless",
+  "layer": 9,
+  "kl": 0.008775845170021057,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_harmless_alpaca",
+  "group": "harmless",
+  "layer": 10,
+  "kl": 0.008727744221687317,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_harmless_alpaca",
+  "group": "harmless",
+  "layer": 11,
+  "kl": 0.004594078287482262,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_harmless_alpaca",
+  "group": "harmless",
+  "layer": 12,
+  "kl": 0.005252465605735779,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_harmless_alpaca",
+  "group": "harmless",
+  "layer": 13,
+  "kl": 0.010631399229168892,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_harmless_alpaca",
+  "group": "harmless",
+  "layer": 14,
+  "kl": 0.002544702962040901,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_harmless_alpaca",
+  "group": "harmless",
+  "layer": 15,
+  "kl": 0.013723533600568771,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_harmless_alpaca",
+  "group": "harmless",
+  "layer": 16,
+  "kl": 0.019364040344953537,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_harmless_alpaca",
+  "group": "harmless",
+  "layer": 17,
+  "kl": 0.028383685275912285,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_harmless_alpaca",
+  "group": "harmless",
+  "layer": 18,
+  "kl": 0.058035384863615036,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_harmless_alpaca",
+  "group": "harmless",
+  "layer": 19,
+  "kl": 0.047885339707136154,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_harmless_alpaca",
+  "group": "harmless",
+  "layer": 20,
+  "kl": 0.029010817408561707,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_harmless_alpaca",
+  "group": "harmless",
+  "layer": 21,
+  "kl": 0.0029937406070530415,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_harmless_alpaca",
+  "group": "harmless",
+  "layer": 22,
+  "kl": 0.0033806562423706055,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0139_harmless_alpaca",
+  "group": "harmless",
+  "layer": 23,
+  "kl": 0.0006870937068015337,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0349_harmless_alpaca",
+  "group": "harmless",
+  "layer": 0,
+  "kl": 0.16821177303791046,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0349_harmless_alpaca",
+  "group": "harmless",
+  "layer": 1,
+  "kl": 0.13731250166893005,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0349_harmless_alpaca",
+  "group": "harmless",
+  "layer": 2,
+  "kl": 0.04631730914115906,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0349_harmless_alpaca",
+  "group": "harmless",
+  "layer": 3,
+  "kl": 0.022374406456947327,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0349_harmless_alpaca",
+  "group": "harmless",
+  "layer": 4,
+  "kl": 0.04137048125267029,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0349_harmless_alpaca",
+  "group": "harmless",
+  "layer": 5,
+  "kl": 0.04541794955730438,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0349_harmless_alpaca",
+  "group": "harmless",
+  "layer": 6,
+  "kl": 0.01611395925283432,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0349_harmless_alpaca",
+  "group": "harmless",
+  "layer": 7,
+  "kl": 0.007879454642534256,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0349_harmless_alpaca",
+  "group": "harmless",
+  "layer": 8,
+  "kl": 0.004369153641164303,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0349_harmless_alpaca",
+  "group": "harmless",
+  "layer": 9,
+  "kl": 0.0020674290135502815,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0349_harmless_alpaca",
+  "group": "harmless",
+  "layer": 10,
+  "kl": 0.001622064970433712,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0349_harmless_alpaca",
+  "group": "harmless",
+  "layer": 11,
+  "kl": 0.003872336819767952,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0349_harmless_alpaca",
+  "group": "harmless",
+  "layer": 12,
+  "kl": 0.0027057286351919174,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0349_harmless_alpaca",
+  "group": "harmless",
+  "layer": 13,
+  "kl": 0.004264630377292633,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0349_harmless_alpaca",
+  "group": "harmless",
+  "layer": 14,
+  "kl": 0.0011110128834843636,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0349_harmless_alpaca",
+  "group": "harmless",
+  "layer": 15,
+  "kl": 0.00951344147324562,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0349_harmless_alpaca",
+  "group": "harmless",
+  "layer": 16,
+  "kl": 0.008498145267367363,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0349_harmless_alpaca",
+  "group": "harmless",
+  "layer": 17,
+  "kl": 0.015256108716130257,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0349_harmless_alpaca",
+  "group": "harmless",
+  "layer": 18,
+  "kl": 0.04741485416889191,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0349_harmless_alpaca",
+  "group": "harmless",
+  "layer": 19,
+  "kl": 0.044165339320898056,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0349_harmless_alpaca",
+  "group": "harmless",
+  "layer": 20,
+  "kl": 0.02131706476211548,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0349_harmless_alpaca",
+  "group": "harmless",
+  "layer": 21,
+  "kl": 0.004778651520609856,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0349_harmless_alpaca",
+  "group": "harmless",
+  "layer": 22,
+  "kl": 0.003635532222688198,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0349_harmless_alpaca",
+  "group": "harmless",
+  "layer": 23,
+  "kl": 0.0012919546570628881,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0449_harmless_alpaca",
+  "group": "harmless",
+  "layer": 0,
+  "kl": 0.1922474354505539,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0449_harmless_alpaca",
+  "group": "harmless",
+  "layer": 1,
+  "kl": 0.13473396003246307,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0449_harmless_alpaca",
+  "group": "harmless",
+  "layer": 2,
+  "kl": 0.044375739991664886,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0449_harmless_alpaca",
+  "group": "harmless",
+  "layer": 3,
+  "kl": 0.019705209881067276,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0449_harmless_alpaca",
+  "group": "harmless",
+  "layer": 4,
+  "kl": 0.045561108738183975,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0449_harmless_alpaca",
+  "group": "harmless",
+  "layer": 5,
+  "kl": 0.045509569346904755,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0449_harmless_alpaca",
+  "group": "harmless",
+  "layer": 6,
+  "kl": 0.023145262151956558,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0449_harmless_alpaca",
+  "group": "harmless",
+  "layer": 7,
+  "kl": 0.009312007576227188,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0449_harmless_alpaca",
+  "group": "harmless",
+  "layer": 8,
+  "kl": 0.00999373197555542,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0449_harmless_alpaca",
+  "group": "harmless",
+  "layer": 9,
+  "kl": 0.0038275644183158875,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0449_harmless_alpaca",
+  "group": "harmless",
+  "layer": 10,
+  "kl": 0.005540409125387669,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0449_harmless_alpaca",
+  "group": "harmless",
+  "layer": 11,
+  "kl": 0.002773858141154051,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0449_harmless_alpaca",
+  "group": "harmless",
+  "layer": 12,
+  "kl": 0.0012954212725162506,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0449_harmless_alpaca",
+  "group": "harmless",
+  "layer": 13,
+  "kl": 0.005976196378469467,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0449_harmless_alpaca",
+  "group": "harmless",
+  "layer": 14,
+  "kl": 0.0028306860476732254,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0449_harmless_alpaca",
+  "group": "harmless",
+  "layer": 15,
+  "kl": 0.012524619698524475,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0449_harmless_alpaca",
+  "group": "harmless",
+  "layer": 16,
+  "kl": 0.013251632452011108,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0449_harmless_alpaca",
+  "group": "harmless",
+  "layer": 17,
+  "kl": 0.019611923024058342,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0449_harmless_alpaca",
+  "group": "harmless",
+  "layer": 18,
+  "kl": 0.03927609324455261,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0449_harmless_alpaca",
+  "group": "harmless",
+  "layer": 19,
+  "kl": 0.036323901265859604,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0449_harmless_alpaca",
+  "group": "harmless",
+  "layer": 20,
+  "kl": 0.021942682564258575,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0449_harmless_alpaca",
+  "group": "harmless",
+  "layer": 21,
+  "kl": 0.0028652800247073174,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0449_harmless_alpaca",
+  "group": "harmless",
+  "layer": 22,
+  "kl": 0.005904922261834145,
+  "d_resist": null,
+  "top1_changed": false
+ },
+ {
+  "item_id": "0449_harmless_alpaca",
+  "group": "harmless",
+  "layer": 23,
+  "kl": 0.0025455541908740997,
+  "d_resist": null,
+  "top1_changed": false
+ }
+]
