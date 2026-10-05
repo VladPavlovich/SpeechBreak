@@ -37,7 +37,7 @@ class QwenOmni:
         device = "cuda" if torch.cuda.is_available() else "cpu"
         # .to() instead of device_map: the full model (~21 GB peak) fits on one GPU
         self.model = Qwen2_5OmniForConditionalGeneration.from_pretrained(
-            model_id, dtype=torch.bfloat16, attn_implementation="sdpa").to(device).eval()
+    model_id, dtype=torch.bfloat16, attn_implementation="sdpa", device_map="auto").eval()
         self.processor = Qwen2_5OmniProcessor.from_pretrained(model_id)
         self.device = self.model.device
 

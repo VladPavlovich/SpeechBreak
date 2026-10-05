@@ -131,12 +131,12 @@ def seed_for(key: str) -> int:
     return int(hashlib.md5(key.encode()).hexdigest()[:8], 16)
 
 
-def generate_reply(model: QwenOmni, audio_path: str, hooks, wav_out: str, seed: int) -> dict:
+def generate_reply(model: QwenOmni, audio_path: str, hooks, wav_out: str, seed: int, max_new_tokens: int = 400, talker_max_new_tokens: int = 3000) -> dict:
     """Spoken reply to one wav with steering hooks; saves it to wav_out -> {"text", "duration_s"}."""
     torch.manual_seed(seed)
     inputs = model.process_audio(audio_path)
     with torch.inference_mode(), add_hooks(module_forward_pre_hooks=hooks, module_forward_hooks=[]):
-        out = model.generate(inputs)
+        out = model.generate(inputs, max_new_tokens=max_new_tokens, talker_max_new_tokens=talker_max_new_tokens)
     audio = out["audio"]
     audio = audio.float().cpu().flatten().numpy() if torch.is_tensor(audio) else np.zeros(0, dtype=np.float32)
     sf.write(wav_out, audio, OUTPUT_SR)
