@@ -1,0 +1,147 @@
+{
+  "total_records": 1140,
+  "unique_normalized_instructions": 1140,
+  "counts": {
+    "source": {
+      "HarmBench": 155,
+      "Alpaca": 985
+    },
+    "safety_category": {
+      "illegal": 65,
+      "misinformation_disinformation": 65,
+      "harassment_bullying": 25,
+      "harmless": 985
+    },
+    "language": {
+      "unknown": 1100,
+      "en": 40
+    },
+    "topic": {
+      "finance_business": 41,
+      "other_uncertain": 602,
+      "crime_security": 23,
+      "arts_entertainment": 75,
+      "health_wellbeing": 50,
+      "relationships_identity": 17,
+      "politics_history_society": 46,
+      "science_environment": 54,
+      "education_language": 128,
+      "daily_life_geography": 34,
+      "math_reasoning": 24,
+      "coding_technology": 46
+    },
+    "task_type": {
+      "procedural_advice": 82,
+      "content_generation": 318,
+      "other_uncertain": 249,
+      "listing": 103,
+      "explanation_qa": 247,
+      "coding": 13,
+      "rewriting_editing": 44,
+      "classification_extraction": 46,
+      "summarization": 15,
+      "calculation_reasoning": 18,
+      "translation": 5
+    },
+    "split": {
+      "train": 684,
+      "val": 228,
+      "test": 228
+    },
+    "review_status": {
+      "provisional": 1140
+    }
+  },
+  "category_cross_tabs": {
+    "language": {
+      "illegal": {
+        "unknown": 55,
+        "en": 10
+      },
+      "misinformation_disinformation": {
+        "unknown": 55,
+        "en": 10
+      },
+      "harassment_bullying": {
+        "unknown": 15,
+        "en": 10
+      },
+      "harmless": {
+        "unknown": 975,
+        "en": 10
+      }
+    },
+    "split": {
+      "illegal": {
+        "train": 39,
+        "val": 13,
+        "test": 13
+      },
+      "misinformation_disinformation": {
+        "train": 39,
+        "test": 13,
+        "val": 13
+      },
+      "harassment_bullying": {
+        "train": 15,
+        "val": 5,
+        "test": 5
+      },
+      "harmless": {
+        "train": 591,
+        "test": 197,
+        "val": 197
+      }
+    }
+  },
+  "prompt_words": {
+    "n": 1140,
+    "min": 3,
+    "median": 10.0,
+    "mean": 19.279824561403508,
+    "max": 625
+  },
+  "prompt_characters": {
+    "n": 1140,
+    "min": 18,
+    "median": 58.0,
+    "mean": 119.75175438596492,
+    "max": 3450
+  },
+  "audio_durations_seconds": {
+    "n": 1140,
+    "min": 1.8,
+    "median": 4.25,
+    "mean": 7.980350877192983,
+    "max": 251.0
+  },
+  "audio_total_seconds": 9097.600000000004,
+  "manifest_available": {
+    "harmful": true,
+    "harmless": true
+  },
+  "voices": {
+    "am_michael": 83,
+    "am_adam": 82,
+    "am_eric": 82,
+    "am_liam": 82,
+    "am_onyx": 82,
+    "am_fenrir": 81,
+    "am_puck": 81,
+    "am_echo": 81,
+    "af_heart": 81,
+    "af_bella": 81,
+    "af_nicole": 81,
+    "af_sarah": 81,
+    "af_nova": 81,
+    "af_sky": 81
+  },
+  "missing_audio_files": [],
+  "issues": [],
+  "duplicate_groups": [],
+  "input_sha256": {
+    "dataset/processed/harmbench_illegal_harassment_misinfo.json": "7af0e5689fc87292cf801bf04909de191dbdf634d3e9749526aa7ff900d3f890",
+    "dataset/processed/harmless_alpaca.json": "d8de31fb8d048d71580013feb6fd000d27744fc704993be68ebf2ce91964820b"
+  },
+  "annotation_method": "Topic/task: ordered regex suggestions. Language: unknown until reviewed. No automatic label is human-verified."
+}
