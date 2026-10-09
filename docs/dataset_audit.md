@@ -24,54 +24,51 @@ This checkout contains **1,140 prompt records**. Counts describe the full datase
 
 | Label | Count | % |
 |---|---:|---:|
-| en | 40 | 3.51 |
-| unknown | 1100 | 96.49 |
+| en | 1139 | 99.91 |
+| unknown | 1 | 0.09 |
 
 ## Topic distribution
 
 | Label | Count | % |
 |---|---:|---:|
-| arts_entertainment | 75 | 6.58 |
-| coding_technology | 46 | 4.04 |
-| crime_security | 23 | 2.02 |
-| daily_life_geography | 34 | 2.98 |
-| education_language | 128 | 11.23 |
-| finance_business | 41 | 3.60 |
+| arts_entertainment | 206 | 18.07 |
+| coding_technology | 125 | 10.96 |
+| crime_security | 73 | 6.40 |
+| daily_life_geography | 117 | 10.26 |
+| education_language | 206 | 18.07 |
+| finance_business | 32 | 2.81 |
 | health_wellbeing | 50 | 4.39 |
-| math_reasoning | 24 | 2.11 |
-| other_uncertain | 602 | 52.81 |
-| politics_history_society | 46 | 4.04 |
-| relationships_identity | 17 | 1.49 |
-| science_environment | 54 | 4.74 |
+| math_reasoning | 66 | 5.79 |
+| other_uncertain | 68 | 5.96 |
+| politics_history_society | 69 | 6.05 |
+| relationships_identity | 35 | 3.07 |
+| science_environment | 93 | 8.16 |
 
 ## Task Type distribution
 
 | Label | Count | % |
 |---|---:|---:|
-| calculation_reasoning | 18 | 1.58 |
-| classification_extraction | 46 | 4.04 |
-| coding | 13 | 1.14 |
-| content_generation | 318 | 27.89 |
-| explanation_qa | 247 | 21.67 |
-| listing | 103 | 9.04 |
-| other_uncertain | 249 | 21.84 |
-| procedural_advice | 82 | 7.19 |
-| rewriting_editing | 44 | 3.86 |
-| summarization | 15 | 1.32 |
+| calculation_reasoning | 58 | 5.09 |
+| classification_extraction | 191 | 16.75 |
+| coding | 42 | 3.68 |
+| content_generation | 306 | 26.84 |
+| explanation_qa | 248 | 21.75 |
+| listing | 101 | 8.86 |
+| other_uncertain | 1 | 0.09 |
+| procedural_advice | 118 | 10.35 |
+| rewriting_editing | 61 | 5.35 |
+| summarization | 9 | 0.79 |
 | translation | 5 | 0.44 |
 
 ## Category × language
 
 | Category | Language | Count | % within category |
 |---|---|---:|---:|
-| harassment_bullying | en | 10 | 40.00 |
-| harassment_bullying | unknown | 15 | 60.00 |
-| harmless | en | 10 | 1.02 |
-| harmless | unknown | 975 | 98.98 |
-| illegal | en | 10 | 15.38 |
-| illegal | unknown | 55 | 84.62 |
-| misinformation_disinformation | en | 10 | 15.38 |
-| misinformation_disinformation | unknown | 55 | 84.62 |
+| harassment_bullying | en | 25 | 100.00 |
+| harmless | en | 985 | 100.00 |
+| illegal | en | 64 | 98.46 |
+| illegal | unknown | 1 | 1.54 |
+| misinformation_disinformation | en | 65 | 100.00 |
 
 ## Quality and lengths
 
@@ -87,9 +84,9 @@ This checkout contains **1,140 prompt records**. Counts describe the full datase
 
 Safety categories come from the original dataset; Alpaca is normalized to harmless. Experiment splits come from results/splits.json, not the HarmBench source split field. Prompt IDs use source and original list index; source hashes are saved in summary.json.
 
-Topic/task labels are provisional ordered keyword matches on the request after the final context separator. They can miss paraphrases or choose the wrong topic. Language remains unknown until reviewed; American English TTS voices do not prove prompt language. Foreign words, translation targets, names and code require separate judgment.
+Annotation status counts: {'model_labeled': 980, 'model_flagged': 160}. Provisional topic/task labels use keyword rules. Model labels use scripts/label_dataset.py with its saved model name, configuration hash and raw-output journal. Model labels are automatic, not human verified. Flagged cases need review; unflagged outputs can still be wrong. Language unknown means unannotated, not necessarily a non-English input. TTS voices do not prove input language.
 
-A deterministic pilot contains ten records from each safety category (40 total); it deliberately oversamples harmful categories and is not representative of overall proportions. Review pilot_sample.csv, refine the guide, then review the full metadata CSV. Set review_status and language_status to human_reviewed only after checking the corresponding labels. Re-running preserves edited annotations.
+A deterministic pilot contains ten records from each safety category (40 total); it deliberately oversamples harmful categories and is not representative of overall proportions. Review pilot_sample.csv, refine the guide, then review the full metadata CSV. Set review_status and language_status to human_reviewed only after checking the corresponding labels. Re-running preserves edited annotations. The review queue includes provisional, model-flagged and invalid records. Assess an independent stratified sample of unflagged model labels too; model agreement with itself is not accuracy.
 
 Exact duplicates use case-folding and whitespace normalization, not semantic similarity. Length counts include supplied context. Missing manifests mean audio statistics are unavailable, not zero. Existing harmless/harmful source labels are inherited rather than a new independent safety assessment.
 

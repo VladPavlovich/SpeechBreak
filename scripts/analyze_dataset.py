@@ -74,7 +74,7 @@ def main():
     word_count=len(text.split()),character_count=len(text),audio_filename=wav,audio_path=audio_path,duration_s=duration,voice=m.get('voice',''),
     review_status='provisional',pilot_sample='no',review_notes='Language requires review; topic/task labels are keyword suggestions.')
    if pid in old:
-    for k in ['topic','task_type','language','language_status','review_status','review_notes']:row[k]=old[pid].get(k,row[k])
+    for k in ['topic','topic_candidates','task_type','language','language_status','review_status','review_notes','label_model','label_config_hash','label_needs_review','label_reason']:row[k]=old[pid].get(k,row.get(k,''))
     if old[pid].get('instruction')!=text:row.update(review_status='provisional',language_status='unreviewed',review_notes='Source text changed; re-review labels.')
    rows.append(row);text_groups[norm(text)].append(pid)
  groups=defaultdict(list)
@@ -83,7 +83,7 @@ def main():
   for r in random.Random(8).sample(rs,min(10,len(rs))):r['pilot_sample']='yes'
  with dest.open('w',newline='') as f:
   w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
- for filename,selected in [('pilot_sample.csv',[r for r in rows if r['pilot_sample']=='yes']),('review_queue.csv',[r for r in rows if r['review_status']!='human_reviewed' or r['language_status']!='human_reviewed'])]:
+ for filename,selected in [('pilot_sample.csv',[r for r in rows if r['pilot_sample']=='yes']),('review_queue.csv',[r for r in rows if r['review_status'] not in {'human_reviewed','model_labeled'} or r['language_status'] not in {'human_reviewed','model_labeled'}])]:
   with (out/filename).open('w',newline='') as f:
    w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(selected)
  counters={field:dict(Counter(r[field] for r in rows)) for field in ['source','safety_category','language','topic','task_type','split','review_status']}
@@ -95,7 +95,7 @@ def main():
  'prompt_words':describe([r['word_count'] for r in rows]),'prompt_characters':describe([r['character_count'] for r in rows]),
  'audio_durations_seconds':describe(durations),'audio_total_seconds':sum(durations) if durations else None,'manifest_available':manifest_status,
  'voices':dict(Counter(r['voice'] for r in rows if r['voice'])),'missing_audio_files':audio_missing,'issues':issues,'duplicate_groups':duplicate_groups,'input_sha256':hashes,
- 'annotation_method':'Topic/task: ordered regex suggestions. Language: unknown until reviewed. No automatic label is human-verified.'}
+ 'annotation_method':'See per-row review_status/language_status. Provisional labels are regex suggestions; model_labeled/model_flagged are automatic Qwen annotations; human_reviewed requires a human check.'}
  (out/'summary.json').write_text(json.dumps(summary,indent=2)+'\n')
  report=['# Dataset audit','',f'This checkout contains **{len(rows):,} prompt records**. Counts describe the full dataset, not the small generation evaluation subset.','',
  '## Safety category distribution','',table(counters['safety_category'],len(rows)),'','## Frozen experiment splits','',
@@ -112,8 +112,8 @@ def main():
  f'- Missing audio files referenced by available manifests: {len(audio_missing)}.','',
  '## Method and limitations','',
  'Safety categories come from the original dataset; Alpaca is normalized to harmless. Experiment splits come from results/splits.json, not the HarmBench source split field. Prompt IDs use source and original list index; source hashes are saved in summary.json.',
- '', 'Topic/task labels are provisional ordered keyword matches on the request after the final context separator. They can miss paraphrases or choose the wrong topic. Language remains unknown until reviewed; American English TTS voices do not prove prompt language. Foreign words, translation targets, names and code require separate judgment.',
- '', 'A deterministic pilot contains ten records from each safety category (40 total); it deliberately oversamples harmful categories and is not representative of overall proportions. Review pilot_sample.csv, refine the guide, then review the full metadata CSV. Set review_status and language_status to human_reviewed only after checking the corresponding labels. Re-running preserves edited annotations.',
+ '', 'Annotation status counts: '+str(counters['review_status'])+'. Provisional topic/task labels use keyword rules. Model labels use scripts/label_dataset.py with its saved model name, configuration hash and raw-output journal. Model labels are automatic, not human verified. Flagged cases need review; unflagged outputs can still be wrong. Language unknown means unannotated, not necessarily a non-English input. TTS voices do not prove input language.',
+ '', 'A deterministic pilot contains ten records from each safety category (40 total); it deliberately oversamples harmful categories and is not representative of overall proportions. Review pilot_sample.csv, refine the guide, then review the full metadata CSV. Set review_status and language_status to human_reviewed only after checking the corresponding labels. Re-running preserves edited annotations. The review queue includes provisional, model-flagged and invalid records. Assess an independent stratified sample of unflagged model labels too; model agreement with itself is not accuracy.',
  '', 'Exact duplicates use case-folding and whitespace normalization, not semantic similarity. Length counts include supplied context. Missing manifests mean audio statistics are unavailable, not zero. Existing harmless/harmful source labels are inherited rather than a new independent safety assessment.',
  '', 'The harmless/harmful class imbalance and unequal harmful category sizes should be reported; this audit does not resample data or change frozen splits.']
  docs=root/'docs';docs.mkdir(exist_ok=True);(docs/'dataset_audit.md').write_text('\n'.join(report)+'\n')
