@@ -18,6 +18,11 @@ def generate_and_save_completions_for_dataset(cfg, model_base, fwd_pre_hooks, fw
 
     if dataset is None:
         dataset = load_dataset(dataset_name)
+        modality = getattr(cfg, "modality", "text")
+        if modality != "text" or dataset_name.startswith("voicebench_"):
+            from dataset.audio_data import apply_modality
+            # voicebench under text modality -> its transcripts (text baseline)
+            dataset = apply_modality(dataset, modality, tts=getattr(cfg, "tts", "mms"))
 
     completions = model_base.generate_completions(dataset, fwd_pre_hooks=fwd_pre_hooks, fwd_hooks=fwd_hooks, max_new_tokens=cfg.max_new_tokens, batch_size = batch_size)
     

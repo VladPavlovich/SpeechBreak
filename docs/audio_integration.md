@@ -18,7 +18,7 @@ count / width live in the config, and the data format.
 | 1 | Modality-agnostic forward passes (`model(**inputs)`) | Done |
 | 2 | Audio model adapters: Qwen2-Audio | Done (structural tests pass; real-weights run pending on GPU) |
 | 2b | More adapters: Ultravox, Qwen2.5-Omni | Planned |
-| 3 | Voice data: TTS of existing splits, VoiceBench loader, `--modality text\|audio\|both` | Planned |
+| 3 | Voice data: TTS of existing splits, VoiceBench loader, `--modality` / `--train_modality` | Done (tested on CPU with tiny model) |
 | 4 | Judging: unchanged (judges read transcript + response) | — |
 | 5 | Gradio UI: run pipeline, browse results, try-it with mic upload | Planned |
 
@@ -134,6 +134,80 @@ LlamaGuard-3-8B judging, long generations) are more comfortable on an A100.
 Lower the pipeline's batch sizes (`batch_size_denom` in `run_pipeline`) on a
 3090: audio prompts are much longer than text ones (about 25 tokens per
 second of audio).
+
+## Phase 3: voice data and modality flags
+
+### Running
+
+```bash
+# spoken prompts everywhere
+python3 -m pipeline.run_pipeline_repit --model_path Qwen/Qwen2-Audio-7B-Instruct --target_group hate --modality audio
+
+# cross-modal transfer: directions from text prompts, tested on spoken prompts
+python3 -m pipeline.run_pipeline_repit --model_path Qwen/Qwen2-Audio-7B-Instruct --target_group hate \
+    --train_modality text --modality audio
+
+# text baseline on the same audio model
+python3 -m pipeline.run_pipeline_repit --model_path Qwen/Qwen2-Audio-7B-Instruct --target_group hate --modality text
+```
+
+| Flag | Values | Meaning |
+|---|---|---|
+| `--modality` | `text` (default), `audio`, `audio+text` | What the model sees for held-out test prompts and eval datasets. `audio+text` = speech followed by its transcript. |
+| `--train_modality` | same, defaults to `--modality` | What the model sees for direction extraction and selection (train/val). `audio` and `audio+text` can't be mixed in one run. |
+| `--tts` | `mms` (default), `mms:<hf id>`, `say`, `say:<voice>` | How text prompts are turned into speech. |
+
+Runs are saved under `pipeline/runs/<model>-RepIt-<group>[-<modality>][-from_<train_modality>]`,
+so text and audio runs of the same model don't overwrite each other.
+
+### Target groups
+
+The `wmd_*` groups need data that isn't in this repo. These groups use
+categories that already exist in the shipped jailbreakv / strongreject splits:
+
+| Group | Categories |
+|---|---|
+| `hate` | Hate_Speech, Hate,_harassment_and_discrimination, Bias |
+| `fraud` | Fraud, Economic_Harm |
+| `privacy` | Privacy_Violation |
+| `disinfo` | Disinformation_and_deception |
+
+### Where the audio comes from (`dataset/audio_data.py`)
+
+- **TTS, on demand and cached.** When a modality isn't `text`, the loader
+  speaks each sampled prompt and caches the WAV under `dataset/audio/cache/`
+  (git-ignored). The cache is keyed by backend, voice and text, so reruns and
+  other target groups reuse clips. Set `SPEECHBREAK_AUDIO_CACHE` to put it on a
+  bigger disk. The default backend is `facebook/mms-tts-eng` (VITS, ~150 MB,
+  16 kHz, deterministic per prompt). It's a single neutral voice; voice
+  variety (Kokoro, VoiceBench's `alpacaeval_speaker` voices) is a later step.
+- **VoiceBench.** `voicebench_advbench` (520 spoken AdvBench prompts) and
+  `voicebench_alpacaeval` (spoken harmless prompts) load through
+  `load_dataset(...)`. Audio runs add `voicebench_advbench` to the eval sets
+  automatically; under `--modality text` it falls back to its transcripts.
+- **Long prompts.** The audio encoder sees at most 30 s. The loader warns
+  when prompts are likely longer than that; they get truncated.
+
+Pre-warming the cache (optional, e.g. on a CPU node before a GPU run):
+
+```bash
+python -m dataset.audio_data --tts mms --splits strongreject_harmful_train jailbreakv_harmful_train harmless_train
+python -m dataset.audio_data --tts mms --datasets advbench jailbreakbench harmbench tdc2023 malicious_instruct
+```
+
+Note `harmless_train` has ~18.8k prompts; the pipeline only samples as many
+as there are harmful ones, so lazy synthesis during the run does far less work.
+
+### Tests
+
+```bash
+TOKENIZERS_PARALLELISM=false python -m tests.test_voice_data /tmp/tiny-qwen2-audio --device cpu
+```
+
+Checks TTS output and caching, `apply_modality`, the VoiceBench loader,
+config validation, the real dataset loader with `train=text, test=audio`,
+and audio items going through direction extraction, layer selection,
+candidate isolation and generation (including a VoiceBench batch).
 
 ## Known limitations
 
