@@ -7,6 +7,7 @@ import hashlib
 from typing import Dict, List, Tuple, Union
 
 import torch
+from pipeline.utils.utils import to_model_inputs, get_n_layers, get_d_model, empty_device_cache
 import numpy as np
 from torch import Tensor
 from tqdm import tqdm
@@ -672,7 +673,7 @@ def rho_search_phase(
     except Exception:
         pass
     gc.collect()
-    torch.cuda.empty_cache()
+    empty_device_cache()
 
     # Evaluate initial grid (writes *_evaluations.json)
     if verbose: print("[RhoSearch] Evaluating initial rho grid...")
@@ -687,7 +688,7 @@ def rho_search_phase(
     )
     unload_llamaguard_model()
     gc.collect()
-    torch.cuda.empty_cache()
+    empty_device_cache()
 
     # Read metrics and form bracket
     param_dir = os.path.join(cfg.artifact_path(), "rho_search")
@@ -750,7 +751,7 @@ def rho_search_phase(
         except Exception:
             pass
         gc.collect()
-        torch.cuda.empty_cache()
+        empty_device_cache()
 
         # Evaluate refinement rhos
         if verbose: print("[RhoSearch] Evaluating refinement rhos...")
@@ -765,7 +766,7 @@ def rho_search_phase(
         )
         unload_llamaguard_model()
         gc.collect()
-        torch.cuda.empty_cache()
+        empty_device_cache()
 
     # ---------- Finalize using the UNION of initial + refinement ----------
     all_rhos = sorted(set(rho_grid + refine_rhos))
@@ -801,7 +802,7 @@ def compute_and_save_similarity(model, cfg, harmful_data, harmless_data, tokeniz
     and returns the layers ranked by the least similarities.
     """
 
-    num_layers = model.config.num_hidden_layers
+    num_layers = get_n_layers(model)
     save_dir = os.path.join(cfg.artifact_path(), 'select_direction')
     os.makedirs(save_dir, exist_ok=True)
     save_path = os.path.join(save_dir, "COSMIC_evaluation_layers.json")
@@ -810,8 +811,8 @@ def compute_and_save_similarity(model, cfg, harmful_data, harmless_data, tokeniz
         with open(save_path, "r") as f:
             return json.load(f)["ranked_layers"][:int(fraction * num_layers)]
 
-    harmful_outputs = torch.zeros((len(harmful_data), num_layers, model.config.hidden_size), device=model.device)
-    harmless_outputs = torch.zeros((len(harmless_data), num_layers, model.config.hidden_size), device=model.device)
+    harmful_outputs = torch.zeros((len(harmful_data), num_layers, get_d_model(model)), device=model.device)
+    harmless_outputs = torch.zeros((len(harmless_data), num_layers, get_d_model(model)), device=model.device)
 
     progress = tqdm(total=2, desc="Finding COSMIC Evaluation Layers")
 
@@ -822,8 +823,7 @@ def compute_and_save_similarity(model, cfg, harmful_data, harmless_data, tokeniz
 
             with add_hooks(module_forward_pre_hooks=fwd_pre_hooks, module_forward_hooks=fwd_hooks):
                 hidden_states = model(
-                    input_ids=tokenized.input_ids.to(model.device),
-                    attention_mask=tokenized.attention_mask.to(model.device),
+                    **to_model_inputs(tokenized, model.device),
                     output_hidden_states=True
                 ).hidden_states[1:]  # skip embeddings
 
@@ -1365,7 +1365,7 @@ def run_pipeline(model_path, target_group, tailweight_ablation_study, use_existi
                                    )"""
     unload_llamaguard_model()
     gc.collect()
-    torch.cuda.empty_cache()
+    empty_device_cache()
 
 
 if __name__ == "__main__":

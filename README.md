@@ -1,5 +1,9 @@
 # RepIt: Steering Language Models with Concept-Specific Refusal Vectors
 
+> **SpeechBreak:** this fork extends RepIt to audio LLMs (e.g. Qwen2-Audio) and spoken prompts.
+> See [docs/audio_integration.md](docs/audio_integration.md) for the design, roadmap and status.
+
+
 This repository contains the implementation of RepIt (Representing Isolated Targets), a framework for isolating concept-specific representations in language model activations to enable precise behavioral interventions. This work demonstrates how to selectively suppress refusal on targeted concepts while preserving refusal behavior elsewhere.
 
 ## Overview

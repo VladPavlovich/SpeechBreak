@@ -1,4 +1,5 @@
 import torch
+from pipeline.utils.utils import to_model_inputs, get_n_layers, get_d_model, empty_device_cache
 import os
 
 from typing import List
@@ -30,12 +31,12 @@ def get_mean_activations_post_hook(layer, cache: Float[Tensor, "pos layer d_mode
 
 
 def get_mean_activations(model, tokenizer, instructions, tokenize_instructions_fn, block_modules: List[torch.nn.Module], with_adv_system_prompt=False, batch_size=32, positions=[-1]):
-    torch.cuda.empty_cache()
+    empty_device_cache()
 
     n_positions = len(positions)
-    n_layers = model.config.num_hidden_layers
+    n_layers = get_n_layers(model)
     n_samples = len(instructions)
-    d_model = model.config.hidden_size
+    d_model = get_d_model(model)
 
     # we store the mean activations in high-precision to avoid numerical issues
     pre_mean_activations = torch.zeros((n_positions, n_layers, d_model), dtype=torch.float64, device=model.device)
@@ -56,8 +57,7 @@ def get_mean_activations(model, tokenizer, instructions, tokenize_instructions_f
 
         with add_hooks(module_forward_pre_hooks=fwd_pre_hooks, module_forward_hooks=[]):
             model(
-                input_ids=inputs.input_ids.to(model.device),
-                attention_mask=inputs.attention_mask.to(model.device),
+                **to_model_inputs(inputs, model.device),
             )
 
     return pre_mean_activations
@@ -84,7 +84,7 @@ def generate_directions(model_base: ModelBase, harmful_instructions, harmless_in
                                                         batch_size=batch_size,
                                                         positions=list(range(-len(model_base.eoi_toks), 0)))
 
-    assert mean_diffs.shape == (len(model_base.eoi_toks), model_base.model.config.num_hidden_layers, model_base.model.config.hidden_size)
+    assert mean_diffs.shape == (len(model_base.eoi_toks), get_n_layers(model_base.model), get_d_model(model_base.model))
     assert not mean_diffs.isnan().any()
 
     torch.save(mean_diffs, f"{artifact_dir}/mean_diffs.pt")

@@ -8,6 +8,7 @@ from collections import defaultdict
 
 
 import torch, random, gc
+from pipeline.utils.utils import empty_device_cache
 from torch import Tensor
 import torch.nn.functional as F
 
@@ -344,8 +345,7 @@ def generate_completions_for_rhos(
 
         # --- cleanup aggressively after each rho ---
         del w, direction, pre_hooks, sampled_harmful
-        torch.cuda.synchronize()
-        torch.cuda.empty_cache()
+        empty_device_cache(synchronize=True)
         gc.collect()
 
 

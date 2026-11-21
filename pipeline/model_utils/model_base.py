@@ -4,6 +4,7 @@ from tqdm import tqdm
 from torch import Tensor
 from jaxtyping import Int, Float
 import torch
+from pipeline.utils.utils import to_model_inputs, empty_device_cache, get_n_layers, get_d_model
 import gc
 
 from pipeline.utils.hook_utils import add_hooks
@@ -24,6 +25,31 @@ class ModelBase(ABC):
         self.model_mlp_modules = self._get_mlp_modules()
         self.model_post_attn_modules = self._get_post_attn_modules()
         self.gen_config = self._get_generation_config()
+
+    # ------------------------------------------------------------------
+    # Modality extension points. Text models use the defaults; audio models
+    # override `_batch_items` (keep the whole item so the processor can see
+    # e.g. item["audio"]) and `_get_tokenize_instructions_fn` (return a
+    # processor-backed fn).  Everything downstream calls model(**inputs).
+    # ------------------------------------------------------------------
+    @property
+    def n_layers(self) -> int:
+        return get_n_layers(self.model)
+
+    @property
+    def d_model(self) -> int:
+        return get_d_model(self.model)
+
+    def _batch_items(self, batch):
+        """What gets handed to tokenize_instructions_fn for a slice of a dataset."""
+        return [x['instruction'] for x in batch]
+
+    def prepare_inputs(self, items, system=None, **kwargs) -> dict:
+        """Tokenize/process a batch and return device-ready kwargs for model(**...)."""
+        if system is not None:
+            kwargs['system'] = system
+        batch = self.tokenize_instructions_fn(instructions=items, **kwargs)
+        return to_model_inputs(batch, self.model.device)
 
     def del_model(self):
         if hasattr(self, 'model') and self.model is not None:
@@ -98,7 +124,7 @@ class ModelBase(ABC):
         
         for i in progress_iter:
             tokenized_instructions = self.tokenize_instructions_fn(
-                instructions=instructions[i:i + batch_size]
+                instructions=self._batch_items(dataset[i:i + batch_size])
             )
 
             with torch.inference_mode():
@@ -106,13 +132,12 @@ class ModelBase(ABC):
                             module_forward_hooks=fwd_hooks):
 
                     generation_toks = self.model.generate(
-                        input_ids=tokenized_instructions.input_ids.to(self.model.device),
-                        attention_mask=tokenized_instructions.attention_mask.to(self.model.device),
+                        **to_model_inputs(tokenized_instructions, self.model.device),
                         generation_config=generation_config,
                     )
 
             # Slice off the prompt tokens
-            generation_toks = generation_toks[:, tokenized_instructions.input_ids.shape[-1]:]
+            generation_toks = generation_toks[:, tokenized_instructions["input_ids"].shape[-1]:]
 
             # Build completions
             for generation_idx, generation in enumerate(generation_toks):
@@ -124,7 +149,7 @@ class ModelBase(ABC):
 
             # --- cleanup step ---
             del tokenized_instructions, generation_toks
-            torch.cuda.empty_cache()
+            empty_device_cache()
             gc.collect()
 
         return completions
@@ -142,16 +167,15 @@ class ModelBase(ABC):
         progress_iter = tqdm(range(0, len(dataset), batch_size), disable=not progress)
 
         for i in progress_iter:
-            tokenized_instructions = self.tokenize_instructions_fn(instructions=instructions[i:i + batch_size], system=system_prompt)
+            tokenized_instructions = self.tokenize_instructions_fn(instructions=self._batch_items(dataset[i:i + batch_size]), system=system_prompt)
 
             with add_hooks(module_forward_pre_hooks=fwd_pre_hooks, module_forward_hooks=fwd_hooks):
                 generation_toks = self.model.generate(
-                    input_ids=tokenized_instructions.input_ids.to(self.model.device),
-                    attention_mask=tokenized_instructions.attention_mask.to(self.model.device),
+                    **to_model_inputs(tokenized_instructions, self.model.device),
                     generation_config=generation_config,
                 )
 
-                generation_toks = generation_toks[:, tokenized_instructions.input_ids.shape[-1]:]
+                generation_toks = generation_toks[:, tokenized_instructions["input_ids"].shape[-1]:]
 
                 for generation_idx, generation in enumerate(generation_toks):
                     completions.append({
