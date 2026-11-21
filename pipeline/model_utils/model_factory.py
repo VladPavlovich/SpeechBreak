@@ -3,6 +3,10 @@ from pipeline.model_utils.model_base import ModelBase
 def construct_model_base(model_path: str) -> ModelBase:
 
     model_path_lower = model_path.lower()
+    # Audio models first: their names also contain text-model family names.
+    if 'qwen2-audio' in model_path_lower or 'qwen2_audio' in model_path_lower:
+        from pipeline.model_utils.qwen2_audio_model import Qwen2AudioModel
+        return Qwen2AudioModel(model_path)
     if 'qwen' in model_path_lower:
         from pipeline.model_utils.qwen_model import QwenModel
         return QwenModel(model_path)

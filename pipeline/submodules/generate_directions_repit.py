@@ -98,7 +98,8 @@ def get_mean_activations(model, instructions: List[str],
 def _group_prompts_by_category(items: List[dict]) -> Dict[str, List[str]]:
     buckets = collections.defaultdict(list)
     for obj in items:
-        buckets[obj["category"]].append(obj["instruction"])
+        # keep the whole item when it carries audio, else the audio is lost here
+        buckets[obj["category"]].append(obj if obj.get("audio") is not None else obj["instruction"])
     return buckets
 
 
