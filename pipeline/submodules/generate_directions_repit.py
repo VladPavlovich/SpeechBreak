@@ -6,6 +6,7 @@ from typing import List, Dict, Tuple, Union
 import numpy as np
 from tqdm import tqdm
 import torch
+from pipeline.utils.utils import to_model_inputs, get_n_layers, get_d_model, empty_device_cache
 from torch import Tensor
 import torch.nn.functional as F
 from jaxtyping import Float
@@ -31,12 +32,12 @@ def get_activations(model, instructions: List[str],
     """
     Returns the layer-input activations per prompt (n, pos, layer, d_model).
     """
-    torch.cuda.empty_cache()
+    empty_device_cache()
 
     n_samples = len(instructions)
     n_pos = len(positions)
-    n_layers = model.config.num_hidden_layers
-    d_model = model.config.hidden_size
+    n_layers = get_n_layers(model)
+    d_model = get_d_model(model)
 
     all_acts = torch.zeros((n_samples, n_pos, n_layers, d_model),
                            dtype=torch.float32, device=model.device)
@@ -57,8 +58,7 @@ def get_activations(model, instructions: List[str],
         hooks = [(blocks[l], make_hook(l, i)) for l in range(n_layers)]
 
         with add_hooks(module_forward_pre_hooks=hooks, module_forward_hooks=[]):
-            model(input_ids=inputs.input_ids.to(model.device),
-                  attention_mask=inputs.attention_mask.to(model.device))
+            model(**to_model_inputs(inputs, model.device))
 
     return all_acts
 
@@ -70,12 +70,12 @@ def get_mean_activations(model, instructions: List[str],
     """
     Returns only the **layer-input** mean activations (pos, layer, d_model).
     """
-    torch.cuda.empty_cache()
+    empty_device_cache()
 
     n_pos = len(positions)
-    n_layers = model.config.num_hidden_layers
+    n_layers = get_n_layers(model)
     n_samples = len(instructions)
-    d_model = model.config.hidden_size
+    d_model = get_d_model(model)
 
     pre_means = torch.zeros((n_pos, n_layers, d_model),
                              dtype=torch.float64, device=model.device)
@@ -90,8 +90,7 @@ def get_mean_activations(model, instructions: List[str],
                                 system=system_prompt)
             with add_hooks(module_forward_pre_hooks=pre_hooks,
                         module_forward_hooks=[]):            # empty list, not None
-                model(input_ids=inputs.input_ids.to(model.device),
-                    attention_mask=inputs.attention_mask.to(model.device))
+                model(**to_model_inputs(inputs, model.device))
     return pre_means
 
 
@@ -99,7 +98,8 @@ def get_mean_activations(model, instructions: List[str],
 def _group_prompts_by_category(items: List[dict]) -> Dict[str, List[str]]:
     buckets = collections.defaultdict(list)
     for obj in items:
-        buckets[obj["category"]].append(obj["instruction"])
+        # keep the whole item when it carries audio, else the audio is lost here
+        buckets[obj["category"]].append(obj if obj.get("audio") is not None else obj["instruction"])
     return buckets
 
 
@@ -163,7 +163,7 @@ def generate_category_directions(
         del direction
 
         # Free memory
-        torch.cuda.empty_cache()
+        empty_device_cache()
         gc.collect()
 
     return cat_dirs, harmless_means.to(torch.float32)

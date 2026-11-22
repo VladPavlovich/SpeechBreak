@@ -7,6 +7,7 @@ import hashlib
 from typing import Dict, List, Tuple, Union
 
 import torch
+from pipeline.utils.utils import to_model_inputs, get_n_layers, get_d_model, empty_device_cache
 import numpy as np
 from torch import Tensor
 from tqdm import tqdm
@@ -74,6 +75,13 @@ def parse_arguments():
         action='store_true',
         help='If set, runs experiments limiting the target_size'
     )
+    parser.add_argument('--modality', choices=["text", "audio", "audio+text"], default="text",
+                        help='What the model sees for test/eval prompts: text, spoken audio, or audio followed by its transcript')
+    parser.add_argument('--train_modality', choices=["text", "audio", "audio+text"], default=None,
+                        help='Modality for direction extraction/selection (train/val). Defaults to --modality; '
+                             'e.g. --train_modality text --modality audio tests text->speech transfer')
+    parser.add_argument('--tts', default="mms",
+                        help='TTS backend for spoken versions of text prompts: mms, mms:<hf id>, say, say:<voice>')
     #parser.add_argument('--seed', type=int, default = 8, help='Which seed to use to split the data')
     return parser.parse_args()
 
@@ -141,6 +149,8 @@ def load_and_sample_repit_datasets(cfg, target_group, target_categories, target_
 
 
     for split_name, storage in [('train', harmful_train_all), ('val', harmful_val_all), ('test', harmful_test_all)]:
+        if target_group in BUILTIN_TARGET_GROUPS:
+            break  # categories already present in the base datasets; no extra split file
         try:
             extra_data = load_dataset_split(harmtype=f'{target_group}_harmful', split=split_name)
             storage.extend(extra_data)
@@ -188,6 +198,18 @@ def load_and_sample_repit_datasets(cfg, target_group, target_categories, target_
     del harmless_test_all
     del harmful_target_train
     del harmful_nontarget_train
+
+    # SpeechBreak: spoken versions of the prompts. Direction extraction and
+    # selection use train_modality, held-out test uses modality.
+    from dataset.audio_data import apply_modality, long_prompt_report
+    def _m(data, modality):
+        out = apply_modality(data, modality, tts=cfg.tts)
+        if modality != "text":
+            long_prompt_report(out)
+        return out
+    harmful_train, harmless_train, harmful_val, nontarget_val, harmless_val = (
+        _m(d, cfg.train_modality) for d in (harmful_train, harmless_train, harmful_val, nontarget_val, harmless_val))
+    harmful_test, harmless_test = (_m(d, cfg.modality) for d in (harmful_test, harmless_test))
 
     return (
         harmful_train,
@@ -672,7 +694,7 @@ def rho_search_phase(
     except Exception:
         pass
     gc.collect()
-    torch.cuda.empty_cache()
+    empty_device_cache()
 
     # Evaluate initial grid (writes *_evaluations.json)
     if verbose: print("[RhoSearch] Evaluating initial rho grid...")
@@ -687,7 +709,7 @@ def rho_search_phase(
     )
     unload_llamaguard_model()
     gc.collect()
-    torch.cuda.empty_cache()
+    empty_device_cache()
 
     # Read metrics and form bracket
     param_dir = os.path.join(cfg.artifact_path(), "rho_search")
@@ -721,7 +743,7 @@ def rho_search_phase(
         # (Re)load generator for refinement — replace this with your loader if needed
         if verbose: print("[RhoSearch] Reloading generation model for refinement...")
         
-        model_base = construct_model_base(model_path)
+        model_base = construct_model_base(model_path, modality=cfg.modality)
 
         run_rho_generation_and_cache(
             cfg=cfg,
@@ -750,7 +772,7 @@ def rho_search_phase(
         except Exception:
             pass
         gc.collect()
-        torch.cuda.empty_cache()
+        empty_device_cache()
 
         # Evaluate refinement rhos
         if verbose: print("[RhoSearch] Evaluating refinement rhos...")
@@ -765,7 +787,7 @@ def rho_search_phase(
         )
         unload_llamaguard_model()
         gc.collect()
-        torch.cuda.empty_cache()
+        empty_device_cache()
 
     # ---------- Finalize using the UNION of initial + refinement ----------
     all_rhos = sorted(set(rho_grid + refine_rhos))
@@ -801,7 +823,7 @@ def compute_and_save_similarity(model, cfg, harmful_data, harmless_data, tokeniz
     and returns the layers ranked by the least similarities.
     """
 
-    num_layers = model.config.num_hidden_layers
+    num_layers = get_n_layers(model)
     save_dir = os.path.join(cfg.artifact_path(), 'select_direction')
     os.makedirs(save_dir, exist_ok=True)
     save_path = os.path.join(save_dir, "COSMIC_evaluation_layers.json")
@@ -810,8 +832,8 @@ def compute_and_save_similarity(model, cfg, harmful_data, harmless_data, tokeniz
         with open(save_path, "r") as f:
             return json.load(f)["ranked_layers"][:int(fraction * num_layers)]
 
-    harmful_outputs = torch.zeros((len(harmful_data), num_layers, model.config.hidden_size), device=model.device)
-    harmless_outputs = torch.zeros((len(harmless_data), num_layers, model.config.hidden_size), device=model.device)
+    harmful_outputs = torch.zeros((len(harmful_data), num_layers, get_d_model(model)), device=model.device)
+    harmless_outputs = torch.zeros((len(harmless_data), num_layers, get_d_model(model)), device=model.device)
 
     progress = tqdm(total=2, desc="Finding COSMIC Evaluation Layers")
 
@@ -822,8 +844,7 @@ def compute_and_save_similarity(model, cfg, harmful_data, harmless_data, tokeniz
 
             with add_hooks(module_forward_pre_hooks=fwd_pre_hooks, module_forward_hooks=fwd_hooks):
                 hidden_states = model(
-                    input_ids=tokenized.input_ids.to(model.device),
-                    attention_mask=tokenized.attention_mask.to(model.device),
+                    **to_model_inputs(tokenized, model.device),
                     output_hidden_states=True
                 ).hidden_states[1:]  # skip embeddings
 
@@ -916,7 +937,19 @@ def run_evaluations(
             )
 
 
+# SpeechBreak target groups built from categories already in the shipped
+# jailbreakv / strongreject splits (no extra data file needed).
+BUILTIN_TARGET_GROUPS = {
+    "hate": ["Hate_Speech", "Hate,_harassment_and_discrimination", "Bias"],
+    "fraud": ["Fraud", "Economic_Harm"],
+    "privacy": ["Privacy_Violation"],
+    "disinfo": ["Disinformation_and_deception"],
+}
+
+
 def get_category_groups_by_name(target_name: str):
+    if target_name in BUILTIN_TARGET_GROUPS:
+        return BUILTIN_TARGET_GROUPS[target_name], []
     predefined_groups = {
         "wmd_bio": ["WMDP_BIO"],
         "wmd_chem": ["WMDP_CHEM"],
@@ -936,11 +969,12 @@ def get_category_groups_by_name(target_name: str):
     return predefined_groups.get(target_name), predefined_exclusions.get(target_name)
 
 
-def run_pipeline(model_path, target_group, tailweight_ablation_study, use_existing, target_size_study):
+def run_pipeline(model_path, target_group, tailweight_ablation_study, use_existing, target_size_study,
+                 modality="text", train_modality=None, tts="mms"):
     target_categories, static_excludes = get_category_groups_by_name(target_group)
 
     global model_base
-    model_base = construct_model_base(model_path)
+    model_base = construct_model_base(model_path, modality=modality)
 
     nontarget_asr_target = 0.1
     batch_size_denom = 1
@@ -949,7 +983,14 @@ def run_pipeline(model_path, target_group, tailweight_ablation_study, use_existi
     with torch.inference_mode():
         print(f"NOW RUNNING TOPIC - {target_group}")
         model_alias = os.path.basename(model_path) + f"-RepIt-{target_group}"
-        cfg = Config(model_alias=model_alias, model_path=model_path)
+        train_modality = train_modality or modality
+        if (modality, train_modality) != ("text", "text"):
+            model_alias += f"-{modality.replace('+', '_')}"
+            if train_modality != modality:
+                model_alias += f"-from_{train_modality.replace('+', '_')}"
+        cfg = Config(model_alias=model_alias, model_path=model_path,
+                     modality=modality, train_modality=train_modality, tts=tts)
+        print(f"Modality: train={cfg.train_modality} test/eval={cfg.modality} (tts={cfg.tts}); artifacts -> {cfg.artifact_path()}")
 
         harmful_train, harmless_train, harmful_val, nontarget_val, \
         harmless_val, harmful_test, harmless_test = load_and_sample_repit_datasets(
@@ -1022,7 +1063,7 @@ def run_pipeline(model_path, target_group, tailweight_ablation_study, use_existi
         )
 
 
-        model_base = construct_model_base(model_path)
+        model_base = construct_model_base(model_path, modality=cfg.modality)
 
         nontarget_direction = torch.mean(torch.stack([
             n * direction[pos, layer]
@@ -1365,7 +1406,7 @@ def run_pipeline(model_path, target_group, tailweight_ablation_study, use_existi
                                    )"""
     unload_llamaguard_model()
     gc.collect()
-    torch.cuda.empty_cache()
+    empty_device_cache()
 
 
 if __name__ == "__main__":
@@ -1373,4 +1414,7 @@ if __name__ == "__main__":
     run_pipeline(model_path=args.model_path, target_group=args.target_group, 
                                                 tailweight_ablation_study = args.tailweight_ablation_study,
                                                 use_existing = args.use_existing,
-                                                target_size_study = args.target_size_study)
+                                                target_size_study = args.target_size_study,
+                                                modality = args.modality,
+                                                train_modality = args.train_modality,
+                                                tts = args.tts)

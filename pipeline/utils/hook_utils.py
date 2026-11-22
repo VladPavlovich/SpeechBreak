@@ -1,5 +1,6 @@
 
 import torch
+from pipeline.utils.utils import get_n_layers
 import contextlib
 import functools
 
@@ -263,9 +264,9 @@ def get_all_linear_direction_ablation_hooks(
     model_base,
     direction: Float[Tensor, 'd_model'],
 ):
-    fwd_pre_hooks = [(model_base.model_block_modules[layer], get_linear_direction_ablation_input_pre_hook(direction=direction)) for layer in range(model_base.model.config.num_hidden_layers)]
-    fwd_hooks = [(model_base.model_attn_modules[layer], get_linear_direction_ablation_output_hook(direction=direction)) for layer in range(model_base.model.config.num_hidden_layers)]
-    fwd_hooks += [(model_base.model_mlp_modules[layer], get_linear_direction_ablation_output_hook(direction=direction)) for layer in range(model_base.model.config.num_hidden_layers)]
+    fwd_pre_hooks = [(model_base.model_block_modules[layer], get_linear_direction_ablation_input_pre_hook(direction=direction)) for layer in range(get_n_layers(model_base.model))]
+    fwd_hooks = [(model_base.model_attn_modules[layer], get_linear_direction_ablation_output_hook(direction=direction)) for layer in range(get_n_layers(model_base.model))]
+    fwd_hooks += [(model_base.model_mlp_modules[layer], get_linear_direction_ablation_output_hook(direction=direction)) for layer in range(get_n_layers(model_base.model))]
 
     return fwd_pre_hooks, fwd_hooks
 

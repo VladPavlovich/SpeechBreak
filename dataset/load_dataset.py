@@ -23,7 +23,12 @@ def load_dataset_split(harmtype: str, split: str, instructions_only: bool=False)
     return dataset
 
 def load_dataset(dataset_name, instructions_only: bool=False):
-    assert dataset_name in PROCESSED_DATASET_NAMES, f"Valid datasets: {PROCESSED_DATASET_NAMES}"
+    if dataset_name.startswith("voicebench_"):  # spoken prompts with real audio
+        from dataset.audio_data import load_voicebench
+        dataset = load_voicebench(dataset_name)
+        return [d['instruction'] for d in dataset] if instructions_only else dataset
+
+    assert dataset_name in PROCESSED_DATASET_NAMES, f"Valid datasets: {PROCESSED_DATASET_NAMES} or voicebench_*"
 
     file_path = os.path.join(dataset_dir_path, 'processed', f"{dataset_name}.json")
 

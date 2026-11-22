@@ -9,3 +9,4 @@ dataset/*WMDP*
 dataset/splits/*wmd*
 plotting
 .venv
+dataset/audio/

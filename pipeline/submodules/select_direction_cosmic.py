@@ -1,5 +1,6 @@
 import json
 import torch
+from pipeline.utils.utils import to_model_inputs, get_d_model
 import functools
 import math
 import matplotlib.pyplot as plt
@@ -51,8 +52,7 @@ def get_refusal_scores(model, instructions, tokenize_instructions_fn, refusal_to
 
         with add_hooks(module_forward_pre_hooks=fwd_pre_hooks, module_forward_hooks=fwd_hooks):
             logits = model(
-                input_ids=tokenized_instructions.input_ids.to(model.device),
-                attention_mask=tokenized_instructions.attention_mask.to(model.device),
+                **to_model_inputs(tokenized_instructions, model.device),
             ).logits
 
         refusal_scores[i:i+batch_size] = refusal_score_fn(logits=logits)
@@ -64,14 +64,13 @@ def get_baseline_vector(model, baseline_instructions, tokenize_instructions_fn, 
     Computes the baseline vector by averaging the last hidden states for baseline instructions across all specified layers.
     """
     num_instructions = len(baseline_instructions)
-    raw_outputs = torch.zeros((num_instructions, len(layers_to_evaluate), model.config.hidden_size), device=model.device)
+    raw_outputs = torch.zeros((num_instructions, len(layers_to_evaluate), get_d_model(model)), device=model.device)
 
     for i in range(0, num_instructions, batch_size):
         tokenized_instructions = tokenize_instructions_fn(instructions=baseline_instructions[i:i+batch_size])
         with add_hooks(module_forward_pre_hooks=fwd_pre_hooks, module_forward_hooks=fwd_hooks):
             outputs = model(
-                input_ids=tokenized_instructions.input_ids.to(model.device),
-                attention_mask=tokenized_instructions.attention_mask.to(model.device),
+                **to_model_inputs(tokenized_instructions, model.device),
                 output_hidden_states=True
             )
         
@@ -91,14 +90,13 @@ def get_refusal_similarity(model, instructions, baseline_vector, tokenize_instru
     Computes a single global cosine similarity between instruction responses and the baseline vector across all evaluated layers.
     """
     num_instructions = len(instructions)
-    raw_outputs = torch.zeros((num_instructions, len(layers_to_evaluate), model.config.hidden_size), device=model.device)
+    raw_outputs = torch.zeros((num_instructions, len(layers_to_evaluate), get_d_model(model)), device=model.device)
 
     for i in range(0, num_instructions, batch_size):
         tokenized_instructions = tokenize_instructions_fn(instructions=instructions[i:i+batch_size])
         with add_hooks(module_forward_pre_hooks=fwd_pre_hooks, module_forward_hooks=fwd_hooks):
             outputs = model(
-                input_ids=tokenized_instructions.input_ids.to(model.device),
-                attention_mask=tokenized_instructions.attention_mask.to(model.device),
+                **to_model_inputs(tokenized_instructions, model.device),
                 output_hidden_states=True
             )
         
@@ -125,8 +123,7 @@ def get_last_position_logits(model, tokenizer, instructions, tokenize_instructio
 
         with add_hooks(module_forward_pre_hooks=fwd_pre_hooks, module_forward_hooks=fwd_hooks):
             logits = model(
-                input_ids=tokenized_instructions.input_ids.to(model.device),
-                attention_mask=tokenized_instructions.attention_mask.to(model.device),
+                **to_model_inputs(tokenized_instructions, model.device),
                 use_cache=False
             ).logits
 
