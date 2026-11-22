@@ -20,7 +20,7 @@ count / width live in the config, and the data format.
 | 2b | More adapters: Ultravox, Qwen2.5-Omni | Planned |
 | 3 | Voice data: TTS of existing splits, VoiceBench loader, `--modality` / `--train_modality` | Done (tested on CPU with tiny model) |
 | 4 | Judging: unchanged (judges read transcript + response) | — |
-| 5 | Gradio UI: run pipeline, browse results, try-it with mic upload | Planned |
+| 5 | Gradio UI (`app.py`): run pipeline, browse results, try it with mic/upload | Done (tested in browser with tiny model + synthetic run) |
 
 ## Phase 1: modality-agnostic inputs
 
@@ -208,6 +208,43 @@ Checks TTS output and caching, `apply_modality`, the VoiceBench loader,
 config validation, the real dataset loader with `train=text, test=audio`,
 and audio items going through direction extraction, layer selection,
 candidate isolation and generation (including a VoiceBench batch).
+
+## Phase 5: UI (`app.py`)
+
+```bash
+python app.py            # http://127.0.0.1:7860
+```
+
+On the GPU server, keep the default `127.0.0.1` bind and tunnel from your
+laptop instead of exposing the port or using a public Gradio share link (the
+Try-it tab can produce unsafe outputs):
+
+```bash
+ssh -L 7860:localhost:7860 <user>@<gpu-server>   # then open http://localhost:7860
+```
+
+**Run.** Choose the model, target group, modality, train modality, TTS
+backend, GPU (`CUDA_VISIBLE_DEVICES`) and study flags. The exact command is
+shown before you start. The pipeline runs as a background process (one at a
+time) with a live log; Stop kills the whole process group. Logs are kept in
+`pipeline/runs/_ui_logs/`, and runs keep going if you close the browser.
+
+**Results.** Pick a run to see:
+- attack success rate per intervention (Baseline, Nontarget, Natural, RepIt,
+  Projection) for each judge (LlamaGuard3, substring), split into target and
+  non-target categories. RepIt working means high target ASR with low
+  non-target ASR;
+- per-category ASR on the held-out harmful split;
+- the chosen layer, position and rho, plus every plot the run saved;
+- a completions browser with search and a "judged jailbreaks only" filter.
+
+**Try it.** Load a model (~16 GB of GPU memory for the 7B; don't share a GPU
+with a running pipeline), pick a finished run and either its RepIt direction
+(target concept only) or the full refusal direction (rho = 0), then record,
+upload or type a prompt. You get the baseline answer and the answer with the
+direction ablated side by side.
+
+`SPEECHBREAK_RUNS_DIR` points the UI at a different runs folder.
 
 ## Known limitations
 
